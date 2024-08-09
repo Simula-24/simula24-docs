@@ -1,0 +1,70 @@
+\hypertarget{classradium_1_1Allocator}{}\doxysection{radium\+::Allocator Class Reference}
+\label{classradium_1_1Allocator}\index{radium::Allocator@{radium::Allocator}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void $\ast$ \mbox{\hyperlink{classradium_1_1Allocator_a46b7fdba400b7238d21cf799170aba04}{alloc\+\_\+aligned}} (size\+\_\+t size, size\+\_\+t n, size\+\_\+t alignment)
+\item 
+\mbox{\Hypertarget{classradium_1_1Allocator_aa1acbca05b27b4deb5b8b221fde8706a}\label{classradium_1_1Allocator_aa1acbca05b27b4deb5b8b221fde8706a}} 
+static void $\ast$ {\bfseries alloc\+\_\+aligned} (size\+\_\+t size, size\+\_\+t alignment)
+\item 
+static void \mbox{\hyperlink{classradium_1_1Allocator_a61f88d1b614c180ded4677425201a4e2}{free\+\_\+aligned}} (void $\ast$ptr)
+\item 
+\mbox{\Hypertarget{classradium_1_1Allocator_a6a9bb24173274217bd66e5a2d77c5068}\label{classradium_1_1Allocator_a6a9bb24173274217bd66e5a2d77c5068}} 
+{\footnotesize template$<$class T $>$ }\\static constexpr T $\ast$ {\bfseries alloc\+\_\+aligned} (int n)
+\item 
+\mbox{\Hypertarget{classradium_1_1Allocator_abe2091cc81dfc15e36fa344f8f9f9bd0}\label{classradium_1_1Allocator_abe2091cc81dfc15e36fa344f8f9f9bd0}} 
+static constexpr void $\ast$ {\bfseries get\+\_\+pointer\+\_\+base\+\_\+unsafe} (void $\ast$ptr)
+\item 
+\mbox{\Hypertarget{classradium_1_1Allocator_a3c88a783a95ee222e96f26b969277cd4}\label{classradium_1_1Allocator_a3c88a783a95ee222e96f26b969277cd4}} 
+static constexpr uintptr\+\_\+t {\bfseries get\+\_\+aligned\+\_\+address\+\_\+unsafe} (size\+\_\+t alignment, void $\ast$ptr)
+\item 
+\mbox{\Hypertarget{classradium_1_1Allocator_a7601490aed9e6241bd8f9901e8f24ec1}\label{classradium_1_1Allocator_a7601490aed9e6241bd8f9901e8f24ec1}} 
+static constexpr uintptr\+\_\+t {\bfseries get\+\_\+num\+\_\+bytes\+\_\+aligned\+\_\+unsafe} (void $\ast$ptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classradium_1_1Allocator_a46b7fdba400b7238d21cf799170aba04}\label{classradium_1_1Allocator_a46b7fdba400b7238d21cf799170aba04}} 
+\index{radium::Allocator@{radium::Allocator}!alloc\_aligned@{alloc\_aligned}}
+\index{alloc\_aligned@{alloc\_aligned}!radium::Allocator@{radium::Allocator}}
+\doxysubsubsection{\texorpdfstring{alloc\_aligned()}{alloc\_aligned()}}
+{\footnotesize\ttfamily void $\ast$ Allocator\+::alloc\+\_\+aligned (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Allocate (size $\ast$ n) bytes that are aligned.
+
+This will allocate an extra 4-\/8 bytes of memory You will receive the end of that 4-\/8 bytes. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{0               64            128}
+\DoxyCodeLine{↓               ↓              ↓}
+\DoxyCodeLine{┌───────────────┬──────────────┐}
+\DoxyCodeLine{│  Raw Address  │ Aligned Addr │}
+\DoxyCodeLine{└───────────────┴──────────────┘}
+\DoxyCodeLine{                        ↑}
+\DoxyCodeLine{                You receive \textcolor{keyword}{this}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classradium_1_1Allocator_a61f88d1b614c180ded4677425201a4e2}\label{classradium_1_1Allocator_a61f88d1b614c180ded4677425201a4e2}} 
+\index{radium::Allocator@{radium::Allocator}!free\_aligned@{free\_aligned}}
+\index{free\_aligned@{free\_aligned}!radium::Allocator@{radium::Allocator}}
+\doxysubsubsection{\texorpdfstring{free\_aligned()}{free\_aligned()}}
+{\footnotesize\ttfamily void Allocator\+::free\+\_\+aligned (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Free aligned memory
+This will backtrack in memory
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{┌───────────────┬──────────────┐}
+\DoxyCodeLine{│  Raw Address  │ Aligned Addr │}
+\DoxyCodeLine{└───────────────┴──────────────┘}
+\DoxyCodeLine{       ↑                ↑}
+\DoxyCodeLine{Frees \textcolor{keyword}{this} address  Based on \textcolor{keyword}{this} address}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/memory/Memory.\+h\item 
+core/memory/Memory.\+cpp\end{DoxyCompactItemize}
