@@ -1,0 +1,52 @@
+\hypertarget{classrtl_1_1unique__ptr}{}\doxysection{rtl\+::unique\+\_\+ptr$<$ T $>$ Class Template Reference}
+\label{classrtl_1_1unique__ptr}\index{rtl::unique\_ptr$<$ T $>$@{rtl::unique\_ptr$<$ T $>$}}
+
+
+Generic Unique Smart Pointer class.  
+
+
+
+
+{\ttfamily \#include $<$smart\+\_\+ptr.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unique__ptr_a16674977d797cce7ac4013b842f4263d}\label{classrtl_1_1unique__ptr_a16674977d797cce7ac4013b842f4263d}} 
+{\bfseries unique\+\_\+ptr} (T $\ast$\+\_\+new)
+\item 
+\mbox{\Hypertarget{classrtl_1_1unique__ptr_a68cca589fcb8e97dfafd7ec5e7001fa3}\label{classrtl_1_1unique__ptr_a68cca589fcb8e97dfafd7ec5e7001fa3}} 
+{\bfseries unique\+\_\+ptr} (\mbox{\hyperlink{classrtl_1_1unique__ptr}{unique\+\_\+ptr}} \&\&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1unique__ptr_a8d7fe012941be62dd44b31ebc4f4c08b}\label{classrtl_1_1unique__ptr_a8d7fe012941be62dd44b31ebc4f4c08b}} 
+\mbox{\hyperlink{classrtl_1_1unique__ptr}{unique\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{classrtl_1_1unique__ptr}{unique\+\_\+ptr}} \&\&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1unique__ptr_a72cd3b827af500426c28c9023c1fdd37}\label{classrtl_1_1unique__ptr_a72cd3b827af500426c28c9023c1fdd37}} 
+T \& {\bfseries operator$\ast$} ()
+\item 
+\mbox{\Hypertarget{classrtl_1_1unique__ptr_a6995d8a5f4c064a4e8e9dc688f0bbc80}\label{classrtl_1_1unique__ptr_a6995d8a5f4c064a4e8e9dc688f0bbc80}} 
+T $\ast$ {\bfseries operator-\/$>$} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unique__ptr_a704166b3bdeda16f1481d5f85848d7be}\label{classrtl_1_1unique__ptr_a704166b3bdeda16f1481d5f85848d7be}} 
+T $\ast$ {\bfseries m\+\_\+ptr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class rtl\+::unique\+\_\+ptr$<$ T $>$}
+
+Generic Unique Smart Pointer class. 
+
+This object cannot be shared or copied, it can only be moved
+
+Create with rtl\+::make\+\_\+unique$<$\+T$>$
+
+Access the data via the overloaded member access operators 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/smart\+\_\+ptr.\+h\end{DoxyCompactItemize}

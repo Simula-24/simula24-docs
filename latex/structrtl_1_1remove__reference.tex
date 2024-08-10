@@ -1,0 +1,37 @@
+\hypertarget{structrtl_1_1remove__reference}{}\doxysection{rtl\+::remove\+\_\+reference$<$ T $>$ Struct Template Reference}
+\label{structrtl_1_1remove__reference}\index{rtl::remove\_reference$<$ T $>$@{rtl::remove\_reference$<$ T $>$}}
+
+
+This was mostly copied from the STL because it has very little performance over head ( if any) and is really the best way to implement perfect forwarding and movement.  
+
+
+
+
+{\ttfamily \#include $<$utility.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structrtl_1_1remove__reference_aa387068d9ca5a1f5ea62ecb1d952805f}\label{structrtl_1_1remove__reference_aa387068d9ca5a1f5ea62ecb1d952805f}} 
+using {\bfseries type} = T
+\item 
+\mbox{\Hypertarget{structrtl_1_1remove__reference_a3f5f2cde5ef1cb78020518c69802da54}\label{structrtl_1_1remove__reference_a3f5f2cde5ef1cb78020518c69802da54}} 
+using {\bfseries const\+\_\+type} = const T
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+struct rtl\+::remove\+\_\+reference$<$ T $>$}
+
+This was mostly copied from the STL because it has very little performance over head ( if any) and is really the best way to implement perfect forwarding and movement. 
+
+remove\+\_\+reference$<$\+T$>$\+::type will simply give you the type without the reference
+
+e.\+g. remove\+\_\+reference$<$const int\&$>$\+::type = int
+
+This first class exists so the following two can use template specialization 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/utility.\+h\end{DoxyCompactItemize}

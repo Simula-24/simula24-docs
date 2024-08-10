@@ -1,0 +1,85 @@
+\hypertarget{classrtl_1_1shared__ptr}{}\doxysection{rtl\+::shared\+\_\+ptr$<$ T $>$ Class Template Reference}
+\label{classrtl_1_1shared__ptr}\index{rtl::shared\_ptr$<$ T $>$@{rtl::shared\_ptr$<$ T $>$}}
+
+
+Generic Shared Pointer class.  
+
+
+
+
+{\ttfamily \#include $<$smart\+\_\+ptr.\+h$>$}
+
+
+
+Collaboration diagram for rtl\+::shared\+\_\+ptr$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classrtl_1_1shared__ptr__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrtl_1_1shared__ptr_1_1____ref__cnt__ptr}{\+\_\+\+\_\+ref\+\_\+cnt\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em A simple container for holding a pointer and ~\newline
+ the number of shared\+\_\+ptrs referencing it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_a88feb3ebcc954fad0044b6cf60f58888}\label{classrtl_1_1shared__ptr_a88feb3ebcc954fad0044b6cf60f58888}} 
+{\bfseries shared\+\_\+ptr} (T $\ast$\+\_\+new)
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_adbd400c63486d8458123d7aa5b0163f4}\label{classrtl_1_1shared__ptr_adbd400c63486d8458123d7aa5b0163f4}} 
+{\bfseries shared\+\_\+ptr} (const \mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}} \&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_a4701d548882315009e4749a3aad00767}\label{classrtl_1_1shared__ptr_a4701d548882315009e4749a3aad00767}} 
+{\bfseries shared\+\_\+ptr} (const \mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}} \&\&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_a861fb55715e271035a8d918632924f69}\label{classrtl_1_1shared__ptr_a861fb55715e271035a8d918632924f69}} 
+\mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}} \&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_a5e448c17cfc73013c8adf87269596e5a}\label{classrtl_1_1shared__ptr_a5e448c17cfc73013c8adf87269596e5a}} 
+\mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}} \&\&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_a2bfd789328927b277b202130592fccca}\label{classrtl_1_1shared__ptr_a2bfd789328927b277b202130592fccca}} 
+T $\ast$ \mbox{\hyperlink{classrtl_1_1shared__ptr_a2bfd789328927b277b202130592fccca}{operator-\/$>$}} ()
+\begin{DoxyCompactList}\small\item\em get the pointer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_a250f6f1a67958271a1022fde10562bf3}\label{classrtl_1_1shared__ptr_a250f6f1a67958271a1022fde10562bf3}} 
+T \& \mbox{\hyperlink{classrtl_1_1shared__ptr_a250f6f1a67958271a1022fde10562bf3}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em dereference the pointer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_abcbb523f1514c8dc65060aae11a0fffa}\label{classrtl_1_1shared__ptr_abcbb523f1514c8dc65060aae11a0fffa}} 
+void {\bfseries release} ()
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_a0f5fcc19fff844b66c325ea25390708e}\label{classrtl_1_1shared__ptr_a0f5fcc19fff844b66c325ea25390708e}} 
+uint32\+\_\+t {\bfseries reference\+\_\+count} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1shared__ptr_ac907b394c4793d652cf820c912531135}\label{classrtl_1_1shared__ptr_ac907b394c4793d652cf820c912531135}} 
+\mbox{\hyperlink{structrtl_1_1shared__ptr_1_1____ref__cnt__ptr}{\+\_\+\+\_\+ref\+\_\+cnt\+\_\+ptr}} $\ast$ {\bfseries \+\_\+int\+\_\+store}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class rtl\+::shared\+\_\+ptr$<$ T $>$}
+
+Generic Shared Pointer class. 
+
+create via rtl\+::make\+\_\+shared $<$\+Your\+Type$>$(Your\+Args...);
+
+This is a reference counted Smart Pointer. It will use a structure called \mbox{\hyperlink{structrtl_1_1shared__ptr_1_1____ref__cnt__ptr}{\+\_\+\+\_\+ref\+\_\+cnt\+\_\+ptr}} to hold the pointer and it\textquotesingle{}s reference count
+
+Copying this class will simply increase the reference count Moving this class will NOT
+
+During destruction, this class will try to release itself
+\begin{DoxyEnumerate}
+\item if the reference count is 1, we are the owner\+: destroy the data
+\item otherwise, decrement the refcount 
+\end{DoxyEnumerate}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/smart\+\_\+ptr.\+h\end{DoxyCompactItemize}

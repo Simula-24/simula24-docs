@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logger_20',['Logger',['../classradium_1_1Logger.html',1,'radium']]]
+  ['copy_5fon_5fwrite_28',['copy_on_write',['../classrtl_1_1copy__on__write.html',1,'rtl']]]
 ];

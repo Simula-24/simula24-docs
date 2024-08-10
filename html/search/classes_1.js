@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['basic_5fstring_18',['basic_string',['../classrtl_1_1basic__string.html',1,'rtl']]]
+  ['allocator_26',['Allocator',['../classradium_1_1Allocator.html',1,'radium']]]
 ];

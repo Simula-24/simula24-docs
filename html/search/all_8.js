@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reference_15',['reference',['../classrtl_1_1copy__on__write.html#ae163f0887ebbb117dd957448eeab8be9',1,'rtl::copy_on_write']]],
-  ['resize_16',['resize',['../classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c',1,'rtl::copy_on_write']]]
+  ['operator_2a_16',['operator*',['../classrtl_1_1shared__ptr.html#a250f6f1a67958271a1022fde10562bf3',1,'rtl::shared_ptr']]],
+  ['operator_2d_3e_17',['operator-&gt;',['../classrtl_1_1shared__ptr.html#a2bfd789328927b277b202130592fccca',1,'rtl::shared_ptr']]]
 ];
