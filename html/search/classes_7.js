@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unique_5fptr_34',['unique_ptr',['../classrtl_1_1unique__ptr.html',1,'rtl']]]
+  ['ostream_80',['ostream',['../classrtl_1_1ostream.html',1,'rtl']]],
+  ['outputsystem_81',['OutputSystem',['../classradium_1_1OutputSystem.html',1,'radium']]]
 ];

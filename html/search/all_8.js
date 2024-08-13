@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['operator_2a_16',['operator*',['../classrtl_1_1shared__ptr.html#a250f6f1a67958271a1022fde10562bf3',1,'rtl::shared_ptr']]],
-  ['operator_2d_3e_17',['operator-&gt;',['../classrtl_1_1shared__ptr.html#a2bfd789328927b277b202130592fccca',1,'rtl::shared_ptr']]]
+  ['info_29',['info',['../classradium_1_1Logger.html#aec0dc34113c8bdd5aeee2d9f93bd8714',1,'radium::Logger']]],
+  ['is_5fvalid_30',['is_valid',['../classrtl_1_1function_3_01T_07Args_8_8_8_08_4.html#adb44fa09705401769c0f45dcb4020b23',1,'rtl::function&lt; T(Args...)&gt;']]]
 ];

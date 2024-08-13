@@ -1,0 +1,86 @@
+\hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4}{}\doxysection{rtl\+::function$<$ T(Args...)$>$ Class Template Reference}
+\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4}\index{rtl::function$<$ T(Args...)$>$@{rtl::function$<$ T(Args...)$>$}}
+
+
+function pointer template  
+
+
+
+
+{\ttfamily \#include $<$function.\+h$>$}
+
+
+
+Collaboration diagram for rtl\+::function$<$ T(Args...)$>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classrtl_1_1function_3_01T_07Args_8_8_8_08_4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a8ad28188cb0617935624f529c45bbfd1}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a8ad28188cb0617935624f529c45bbfd1}} 
+using {\bfseries fn\+\_\+ptr\+\_\+t} = T($\ast$)(Args...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a482cabaaee52935c6b74d6b00a529b58}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a482cabaaee52935c6b74d6b00a529b58}} 
+constexpr {\bfseries function} (T fn)
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a65ffaa9d42723ded06ddcbf8e1db5e6d}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a65ffaa9d42723ded06ddcbf8e1db5e6d}} 
+constexpr {\bfseries function} (T \&\&fn)
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_accbb069678b0ee611710228cbf30edf6}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_accbb069678b0ee611710228cbf30edf6}} 
+constexpr {\bfseries function} (\mbox{\hyperlink{classrtl_1_1function}{function}} \&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a25152a61c4fd9ca503b0e06570ad527c}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a25152a61c4fd9ca503b0e06570ad527c}} 
+{\footnotesize template$<$class Tx $>$ }\\{\bfseries function} (Tx \&\&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_ac9b761fc44ec388e92a135e0ecd154ec}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_ac9b761fc44ec388e92a135e0ecd154ec}} 
+\mbox{\hyperlink{classrtl_1_1function}{function}} \& {\bfseries operator=} (\mbox{\hyperlink{classrtl_1_1function}{function}} \&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_af2bb293a49cc53546d0c5c55e7f93ff1}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_af2bb293a49cc53546d0c5c55e7f93ff1}} 
+\mbox{\hyperlink{classrtl_1_1function}{function}} \& {\bfseries operator=} (\mbox{\hyperlink{classrtl_1_1function}{function}} \&\&other)
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a1d45a71b4e87671f2f53ce8ba083ba0a}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a1d45a71b4e87671f2f53ce8ba083ba0a}} 
+constexpr T \mbox{\hyperlink{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a1d45a71b4e87671f2f53ce8ba083ba0a}{operator()}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em call the function \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_adb44fa09705401769c0f45dcb4020b23}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_adb44fa09705401769c0f45dcb4020b23}} 
+constexpr bool \mbox{\hyperlink{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_adb44fa09705401769c0f45dcb4020b23}{is\+\_\+valid}} ()
+\begin{DoxyCompactList}\small\item\em check if the function is set \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a6738a07c0bf181dfcaa3dcfe551f683e}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a6738a07c0bf181dfcaa3dcfe551f683e}} 
+constexpr const fn\+\_\+ptr\+\_\+t {\bfseries get} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a41ae85361fada6aecf34f6b7c77aeb4b}\label{classrtl_1_1function_3_01T_07Args_8_8_8_08_4_a41ae85361fada6aecf34f6b7c77aeb4b}} 
+fn\+\_\+ptr\+\_\+t {\bfseries m\+\_\+fn}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T, class... Args$>$\newline
+class rtl\+::function$<$ T(\+Args...)$>$}
+
+function pointer template 
+
+Generic Function Pointer wrapper
+
+This can take take ordinary functions and lambdas
+
+Constructed via 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classrtl_1_1function}{rtl::function}}<ReturnType(ParameterTypes...)> myFunction = ...;         }
+
+\end{DoxyCode}
+
+
+Called via overloaded \textquotesingle{}()\textquotesingle{} operator 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/function.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\hypertarget{classradium_1_1OutputSystem}{}\doxysection{radium\+::Output\+System Class Reference}
+\label{classradium_1_1OutputSystem}\index{radium::OutputSystem@{radium::OutputSystem}}
+
+
+Base class for logging output.  
+
+
+
+
+{\ttfamily \#include $<$Output\+System.\+h$>$}
+
+
+
+Inheritance diagram for radium\+::Output\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classradium_1_1OutputSystem__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1OutputSystem_a5f72b0f3f46dcb9b2c5a8c42f3ff3703}\label{classradium_1_1OutputSystem_a5f72b0f3f46dcb9b2c5a8c42f3ff3703}} 
+virtual bool \mbox{\hyperlink{classradium_1_1OutputSystem_a5f72b0f3f46dcb9b2c5a8c42f3ff3703}{supports\+Color}} ()=0
+\begin{DoxyCompactList}\small\item\em Can we print with color? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1OutputSystem_a3125b553d8fbe3038b7b80b896058875}\label{classradium_1_1OutputSystem_a3125b553d8fbe3038b7b80b896058875}} 
+virtual void \mbox{\hyperlink{classradium_1_1OutputSystem_a3125b553d8fbe3038b7b80b896058875}{log}} (const \mbox{\hyperlink{classbasic__string}{rtl\+::string}} \&msg)=0
+\begin{DoxyCompactList}\small\item\em Handle the log. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1OutputSystem_a3672f15826ac416da7e3c2faa56883d2}\label{classradium_1_1OutputSystem_a3672f15826ac416da7e3c2faa56883d2}} 
+virtual void \mbox{\hyperlink{classradium_1_1OutputSystem_a3672f15826ac416da7e3c2faa56883d2}{flush}} ()=0
+\begin{DoxyCompactList}\small\item\em Flush a list of logs if we maintian one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for logging output. 
+
+Any class derived from \mbox{\hyperlink{classradium_1_1OutputSystem}{Output\+System}} will be responsible for handling out from \mbox{\hyperlink{classradium_1_1Logger}{radium\+::\+Logger}} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/log/outputsystems/Output\+System.\+h\end{DoxyCompactItemize}

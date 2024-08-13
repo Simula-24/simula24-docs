@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shared_5fptr_33',['shared_ptr',['../classrtl_1_1shared__ptr.html',1,'rtl']]]
+  ['logger_79',['Logger',['../classradium_1_1Logger.html',1,'radium']]]
 ];

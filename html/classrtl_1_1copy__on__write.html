@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>rtl</b></li><li class="navelem"><a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacertl.html">rtl</a></li><li class="navelem"><a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,37 +71,49 @@ $(function() {
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classrtl_1_1copy__on__write-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rtl::copy_on_write&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A template class that allows clients to use copy-on-write. Use <a class="el" href="classrtl_1_1copy__on__write.html#a1339e528bc8c3e57e8026e6938d01ed1">copy()</a> to create your own copy.  
+<p>A template class that allows clients to <br  />
+ use copy-on-write. Use <a class="el" href="classrtl_1_1copy__on__write.html#a1053027fbbb6eca5ab9c9550532ae6fc">copy()</a> to create your own copy.  
  <a href="classrtl_1_1copy__on__write.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="copy__on__write_8h_source.html">copy_on_write.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af243f92a91af37f42ae8ceea4e7d31ce"><td class="memItemLeft" align="right" valign="top"><a id="af243f92a91af37f42ae8ceea4e7d31ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>copy_on_write</b> (<a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;other)</td></tr>
-<tr class="separator:af243f92a91af37f42ae8ceea4e7d31ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df278c0b42c3a8a0bffddbdeb80cfc2"><td class="memItemLeft" align="right" valign="top"><a id="a2df278c0b42c3a8a0bffddbdeb80cfc2"></a>
-<a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;other)</td></tr>
-<tr class="separator:a2df278c0b42c3a8a0bffddbdeb80cfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a3b8243b2f4483a8780f21dccd765e"><td class="memItemLeft" align="right" valign="top"><a id="ae5a3b8243b2f4483a8780f21dccd765e"></a>
-const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#ae5a3b8243b2f4483a8780f21dccd765e">at</a> (size_t where)</td></tr>
-<tr class="memdesc:ae5a3b8243b2f4483a8780f21dccd765e"><td class="mdescLeft">&#160;</td><td class="mdescRight">data[where] without copy <br /></td></tr>
-<tr class="separator:ae5a3b8243b2f4483a8780f21dccd765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3614038ea84664906b8198d73d63be82"><td class="memItemLeft" align="right" valign="top"><a id="a3614038ea84664906b8198d73d63be82"></a>
-T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a3614038ea84664906b8198d73d63be82">at_c</a> (size_t where)</td></tr>
-<tr class="memdesc:a3614038ea84664906b8198d73d63be82"><td class="mdescLeft">&#160;</td><td class="mdescRight">data[where] with copy <br /></td></tr>
-<tr class="separator:a3614038ea84664906b8198d73d63be82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37fe5cdbc7db77c6849a0000a99dd764"><td class="memItemLeft" align="right" valign="top"><a id="a37fe5cdbc7db77c6849a0000a99dd764"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a37fe5cdbc7db77c6849a0000a99dd764">get_alloc_size</a> () const</td></tr>
-<tr class="memdesc:a37fe5cdbc7db77c6849a0000a99dd764"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many bytes are allocated? <br /></td></tr>
-<tr class="separator:a37fe5cdbc7db77c6849a0000a99dd764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a066e83e486a0119b10d7744c867b90"><td class="memItemLeft" align="right" valign="top"><a id="a4a066e83e486a0119b10d7744c867b90"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>copy_on_write</b> (const <a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;other)</td></tr>
+<tr class="separator:a4a066e83e486a0119b10d7744c867b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad92d50f4c6b0397bc52e7d23a10782f"><td class="memItemLeft" align="right" valign="top"><a id="aad92d50f4c6b0397bc52e7d23a10782f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>copy_on_write</b> (const <a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;&amp;other)</td></tr>
+<tr class="separator:aad92d50f4c6b0397bc52e7d23a10782f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f809643796da6b760935e96540e75b"><td class="memItemLeft" align="right" valign="top"><a id="aa6f809643796da6b760935e96540e75b"></a>
+<a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;other)</td></tr>
+<tr class="separator:aa6f809643796da6b760935e96540e75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5082544e2e9d0a357b5a720914bbf240"><td class="memItemLeft" align="right" valign="top"><a id="a5082544e2e9d0a357b5a720914bbf240"></a>
+<a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classrtl_1_1copy__on__write.html">copy_on_write</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a5082544e2e9d0a357b5a720914bbf240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801bf9b3dd2233656fc0bfe5343a35ee"><td class="memItemLeft" align="right" valign="top"><a id="a801bf9b3dd2233656fc0bfe5343a35ee"></a>
+const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a801bf9b3dd2233656fc0bfe5343a35ee">at</a> (size_t where) const</td></tr>
+<tr class="memdesc:a801bf9b3dd2233656fc0bfe5343a35ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">data[where] without copy <br /></td></tr>
+<tr class="separator:a801bf9b3dd2233656fc0bfe5343a35ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c06c3eb6b23f241b7d9d23653fe1bc"><td class="memItemLeft" align="right" valign="top"><a id="ac8c06c3eb6b23f241b7d9d23653fe1bc"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#ac8c06c3eb6b23f241b7d9d23653fe1bc">at_c</a> (size_t where)</td></tr>
+<tr class="memdesc:ac8c06c3eb6b23f241b7d9d23653fe1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">data[where] with copy <br /></td></tr>
+<tr class="separator:ac8c06c3eb6b23f241b7d9d23653fe1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1053027fbbb6eca5ab9c9550532ae6fc"><td class="memItemLeft" align="right" valign="top"><a id="a1053027fbbb6eca5ab9c9550532ae6fc"></a>
+T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a1053027fbbb6eca5ab9c9550532ae6fc">copy</a> ()</td></tr>
+<tr class="memdesc:a1053027fbbb6eca5ab9c9550532ae6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get your own copy. <br /></td></tr>
+<tr class="separator:a1053027fbbb6eca5ab9c9550532ae6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926ab509ec076c5cb3ea7ee46cc377ce"><td class="memItemLeft" align="right" valign="top"><a id="a926ab509ec076c5cb3ea7ee46cc377ce"></a>
+const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a926ab509ec076c5cb3ea7ee46cc377ce">reference</a> () const</td></tr>
+<tr class="memdesc:a926ab509ec076c5cb3ea7ee46cc377ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a const reference to the data. <br /></td></tr>
+<tr class="separator:a926ab509ec076c5cb3ea7ee46cc377ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af880073bf0fb164bd5d789b708e290d4"><td class="memItemLeft" align="right" valign="top"><a id="af880073bf0fb164bd5d789b708e290d4"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#af880073bf0fb164bd5d789b708e290d4">get_size</a> () const</td></tr>
 <tr class="memdesc:af880073bf0fb164bd5d789b708e290d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of data section <br /></td></tr>
@@ -110,16 +122,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a52866ecfaab2d48c4055ef4bf3992058">get_num_data</a> () const</td></tr>
 <tr class="memdesc:a52866ecfaab2d48c4055ef4bf3992058"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many individual T's can fit in the data section This is generally what you will want to use. <br /></td></tr>
 <tr class="separator:a52866ecfaab2d48c4055ef4bf3992058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1339e528bc8c3e57e8026e6938d01ed1"><td class="memItemLeft" align="right" valign="top"><a id="a1339e528bc8c3e57e8026e6938d01ed1"></a>
-T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a1339e528bc8c3e57e8026e6938d01ed1">copy</a> ()</td></tr>
-<tr class="memdesc:a1339e528bc8c3e57e8026e6938d01ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get your own copy. <br /></td></tr>
-<tr class="separator:a1339e528bc8c3e57e8026e6938d01ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae163f0887ebbb117dd957448eeab8be9"><td class="memItemLeft" align="right" valign="top"><a id="ae163f0887ebbb117dd957448eeab8be9"></a>
-const T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#ae163f0887ebbb117dd957448eeab8be9">reference</a> () const</td></tr>
-<tr class="memdesc:ae163f0887ebbb117dd957448eeab8be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a const reference to the data. <br /></td></tr>
-<tr class="separator:ae163f0887ebbb117dd957448eeab8be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d581cba2441eeec164a63f5ad81fb9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c">resize</a> (size_t n)</td></tr>
-<tr class="memdesc:a8d581cba2441eeec164a63f5ad81fb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the buffer to (n * T) + DATA_SECTION_OFFSET bytes Will create a new copy.  <a href="classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c">More...</a><br /></td></tr>
+<tr class="memdesc:a8d581cba2441eeec164a63f5ad81fb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the buffer to (n * T) + DATA_OFFSET bytes Will create a new copy.  <a href="classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c">More...</a><br /></td></tr>
 <tr class="separator:a8d581cba2441eeec164a63f5ad81fb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ed2c715a87394ac108e1a6d0c5cd8c4"><td class="memItemLeft" align="right" valign="top"><a id="a2ed2c715a87394ac108e1a6d0c5cd8c4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a2ed2c715a87394ac108e1a6d0c5cd8c4">memcpy</a> (const T *source, size_t n)</td></tr>
@@ -129,57 +133,77 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#ad3dd30e446c8fdbf7a85987e55b5cccc">memcpy</a> (const T *source, size_t n, size_t offset)</td></tr>
 <tr class="memdesc:ad3dd30e446c8fdbf7a85987e55b5cccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy to the data section + offset Note that this will copy relative to the offset. <br /></td></tr>
 <tr class="separator:ad3dd30e446c8fdbf7a85987e55b5cccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d35ac604ce08e3dcf2431353358e110"><td class="memItemLeft" align="right" valign="top"><a id="a0d35ac604ce08e3dcf2431353358e110"></a>
-FORCEINLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_reference_count</b> () const</td></tr>
-<tr class="separator:a0d35ac604ce08e3dcf2431353358e110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa008ef0dadfa294fa199e810c6075bdb"><td class="memItemLeft" align="right" valign="top"><a id="aa008ef0dadfa294fa199e810c6075bdb"></a>
-FORCEINLINE uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_data_size</b> () const</td></tr>
-<tr class="separator:aa008ef0dadfa294fa199e810c6075bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83aefa66df603d6892e65c2fa75053fe"><td class="memItemLeft" align="right" valign="top"><a id="a83aefa66df603d6892e65c2fa75053fe"></a>
+constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_reference_count</b> () const</td></tr>
+<tr class="separator:a83aefa66df603d6892e65c2fa75053fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a60ddb711e6700c429fce3d080cc22"><td class="memItemLeft" align="right" valign="top"><a id="ad1a60ddb711e6700c429fce3d080cc22"></a>
+constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_data_size</b> () const</td></tr>
+<tr class="separator:ad1a60ddb711e6700c429fce3d080cc22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a84de492ef9909bb0362b8d3c4537a31f"><td class="memItemLeft" align="right" valign="top"><a id="a84de492ef9909bb0362b8d3c4537a31f"></a>
-FORCEINLINE T *&#160;</td><td class="memItemRight" valign="bottom"><b>get_data</b> ()</td></tr>
-<tr class="separator:a84de492ef9909bb0362b8d3c4537a31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a437df37ef87c826d7adef164682205"><td class="memItemLeft" align="right" valign="top"><a id="a5a437df37ef87c826d7adef164682205"></a>
-FORCEINLINE uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>get_refc_ptr</b> ()</td></tr>
-<tr class="separator:a5a437df37ef87c826d7adef164682205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ba01ae01b8af1b39287135edf71c1c"><td class="memItemLeft" align="right" valign="top"><a id="a49ba01ae01b8af1b39287135edf71c1c"></a>
-FORCEINLINE uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>get_data_size_ptr</b> ()</td></tr>
-<tr class="separator:a49ba01ae01b8af1b39287135edf71c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5aa9540ee4413af3323db05a8597b77"><td class="memItemLeft" align="right" valign="top"><a id="af5aa9540ee4413af3323db05a8597b77"></a>
+constexpr T *&#160;</td><td class="memItemRight" valign="bottom"><b>get_data</b> ()</td></tr>
+<tr class="separator:af5aa9540ee4413af3323db05a8597b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b74bfc06bc2a34cf2e7edd5cd0014d7"><td class="memItemLeft" align="right" valign="top"><a id="a4b74bfc06bc2a34cf2e7edd5cd0014d7"></a>
+constexpr const T *&#160;</td><td class="memItemRight" valign="bottom"><b>get_data</b> () const</td></tr>
+<tr class="separator:a4b74bfc06bc2a34cf2e7edd5cd0014d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8606be240a0d02df03d98e32eedc6e"><td class="memItemLeft" align="right" valign="top"><a id="acf8606be240a0d02df03d98e32eedc6e"></a>
+constexpr uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>get_refc_ptr</b> ()</td></tr>
+<tr class="separator:acf8606be240a0d02df03d98e32eedc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dae82cfc3bcc8bad5e873778da0ace9"><td class="memItemLeft" align="right" valign="top"><a id="a1dae82cfc3bcc8bad5e873778da0ace9"></a>
+constexpr uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>get_data_size_ptr</b> ()</td></tr>
+<tr class="separator:a1dae82cfc3bcc8bad5e873778da0ace9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925bd0bc8eab279c27ff3adb54f6f120"><td class="memItemLeft" align="right" valign="top"><a id="a925bd0bc8eab279c27ff3adb54f6f120"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_alloc_size</b> (size_t n)</td></tr>
+<tr class="separator:a925bd0bc8eab279c27ff3adb54f6f120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f35627a05369714f302dc831c603840"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a3f35627a05369714f302dc831c603840">__copy_on_write</a> ()</td></tr>
 <tr class="memdesc:a3f35627a05369714f302dc831c603840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a copy of the buffer for our own use.  <a href="classrtl_1_1copy__on__write.html#a3f35627a05369714f302dc831c603840">More...</a><br /></td></tr>
 <tr class="separator:a3f35627a05369714f302dc831c603840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2807a7e732cd3788be87c55aacc472a"><td class="memItemLeft" align="right" valign="top"><a id="aa2807a7e732cd3788be87c55aacc472a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ref</b> ()</td></tr>
+<tr class="separator:aa2807a7e732cd3788be87c55aacc472a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eda9e80ccc9db627cfc483f7b57476c"><td class="memItemLeft" align="right" valign="top"><a id="a5eda9e80ccc9db627cfc483f7b57476c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unref</b> ()</td></tr>
+<tr class="separator:a5eda9e80ccc9db627cfc483f7b57476c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6f6952fcc5d5102c0a878b23d823891c"><td class="memItemLeft" align="right" valign="top"><a id="a6f6952fcc5d5102c0a878b23d823891c"></a>
 T *&#160;</td><td class="memItemRight" valign="bottom"><b>m_ptr</b></td></tr>
 <tr class="separator:a6f6952fcc5d5102c0a878b23d823891c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a907b299336283d249a8c78f42be4d254"><td class="memItemLeft" align="right" valign="top"><a id="a907b299336283d249a8c78f42be4d254"></a>
-T **&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataPtr</b></td></tr>
-<tr class="separator:a907b299336283d249a8c78f42be4d254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a250a9c9b18dc24a22804f9a8ae5caa28"><td class="memItemLeft" align="right" valign="top"><a id="a250a9c9b18dc24a22804f9a8ae5caa28"></a>
-static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>REF_SECTION_OFFSET</b> = 0</td></tr>
-<tr class="separator:a250a9c9b18dc24a22804f9a8ae5caa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fce2d4c761b9e68846d165255c31cdd"><td class="memItemLeft" align="right" valign="top"><a id="a7fce2d4c761b9e68846d165255c31cdd"></a>
-static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_SIZE_SECTION_OFFSET</b> = REF_SECTION_OFFSET + alignof(T) &lt; sizeof(uint32_t) ? sizeof(uint32_t) : 1</td></tr>
-<tr class="separator:a7fce2d4c761b9e68846d165255c31cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17425d1e82635e7c6b2a04348983b8ef"><td class="memItemLeft" align="right" valign="top"><a id="a17425d1e82635e7c6b2a04348983b8ef"></a>
-static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_SECTION_OFFSET</b> = DATA_SIZE_SECTION_OFFSET + DATA_SIZE_SECTION_OFFSET</td></tr>
-<tr class="separator:a17425d1e82635e7c6b2a04348983b8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361904b6679ecfdf2e1556a63687fccc"><td class="memItemLeft" align="right" valign="top"><a id="a361904b6679ecfdf2e1556a63687fccc"></a>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>REFCOUNT_OFFSET</b> = 0</td></tr>
+<tr class="separator:a361904b6679ecfdf2e1556a63687fccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2dcf0741ff39af1fec32efe7d74822"><td class="memItemLeft" align="right" valign="top"><a id="acf2dcf0741ff39af1fec32efe7d74822"></a>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>SIZE_OFFSET</b> = REFCOUNT_OFFSET + 4</td></tr>
+<tr class="separator:acf2dcf0741ff39af1fec32efe7d74822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d9e2943927673a579b4a6f0872cb47"><td class="memItemLeft" align="right" valign="top"><a id="a69d9e2943927673a579b4a6f0872cb47"></a>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_OFFSET</b> = SIZE_OFFSET + 4</td></tr>
+<tr class="separator:a69d9e2943927673a579b4a6f0872cb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a6769caf572605b0788f7e59333bb5e5a"><td class="memTemplParams" colspan="2"><a id="a6769caf572605b0788f7e59333bb5e5a"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a6769caf572605b0788f7e59333bb5e5a"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>array</b></td></tr>
+<tr class="separator:a6769caf572605b0788f7e59333bb5e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c36d7df0b30208105f56b2e0084e4b5"><td class="memTemplParams" colspan="2"><a id="a7c36d7df0b30208105f56b2e0084e4b5"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a7c36d7df0b30208105f56b2e0084e4b5"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string</b></td></tr>
+<tr class="separator:a7c36d7df0b30208105f56b2e0084e4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class rtl::copy_on_write&lt; T &gt;</h3>
 
-<p>A template class that allows clients to use copy-on-write. Use <a class="el" href="classrtl_1_1copy__on__write.html#a1339e528bc8c3e57e8026e6938d01ed1">copy()</a> to create your own copy. </p>
+<p>A template class that allows clients to <br  />
+ use copy-on-write. Use <a class="el" href="classrtl_1_1copy__on__write.html#a1053027fbbb6eca5ab9c9550532ae6fc">copy()</a> to create your own copy. </p>
 <p>** inspired by Godot Engine's CowData **</p>
 <p>Provide a Copy on Write buffer for clients</p>
-<p>m_dataPtr holds a pointer to a heap allocated buffer of memory</p>
 <p>When the copy constructor or copy assignment operator is used, the pointer to the other COWs buffer is used and it's refcounter incremented</p>
 <p>Reference counters are stored inside the allocated buffer </p><div class="fragment"><div class="line">0           32                 64    </div>
 <div class="line">┌────────────┬───────────┬──────┐</div>
@@ -192,7 +216,6 @@ class rtl::copy_on_write&lt; T &gt;</h3>
 <li>Set the current buffer to the new buffer <br  />
 </li>
 </ol>
-<p>Sharing works via pointers-to-pointers m_ptr holds the data m_dataPtr will either hold the value of OUR m_ptr if we own it, or another clients m_ptr if we don't.</p>
 <p>The function <a class="el" href="classrtl_1_1copy__on__write.html#a3f35627a05369714f302dc831c603840">__copy_on_write</a> will ensure that we do own our own copy </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3f35627a05369714f302dc831c603840"></a>
@@ -240,7 +263,7 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Resize the buffer to (n * T) + DATA_SECTION_OFFSET bytes Will create a new copy. </p>
+<p>Resize the buffer to (n * T) + DATA_OFFSET bytes Will create a new copy. </p>
 <p>Resizes the buffer</p>
 <p>This will perform a copy-on-write </p>
 

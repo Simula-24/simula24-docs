@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['copy_39',['copy',['../classrtl_1_1copy__on__write.html#a1339e528bc8c3e57e8026e6938d01ed1',1,'rtl::copy_on_write']]]
+  ['back_94',['back',['../classrtl_1_1basic__string.html#ac74888a0e233137b0c1a8877534c87a0',1,'rtl::basic_string::back() const'],['../classrtl_1_1basic__string.html#aff7d8f75729474bd6cce0b685d789928',1,'rtl::basic_string::back()']]]
 ];

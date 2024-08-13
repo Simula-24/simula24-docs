@@ -1,0 +1,79 @@
+\hypertarget{namespacertl}{}\doxysection{rtl Namespace Reference}
+\label{namespacertl}\index{rtl@{rtl}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrtl_1_1array}{array}}
+\begin{DoxyCompactList}\small\item\em array to hold T data \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}}
+\item 
+class \mbox{\hyperlink{classrtl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}}
+\begin{DoxyCompactList}\small\item\em A template class that allows clients to ~\newline
+ use copy-\/on-\/write. Use \mbox{\hyperlink{classrtl_1_1copy__on__write_a1053027fbbb6eca5ab9c9550532ae6fc}{copy()}} to create your own copy. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrtl_1_1function}{function}}
+\begin{DoxyCompactList}\small\item\em Base function pointer template. see \mbox{\hyperlink{classrtl_1_1function_3_01T_07Args_8_8_8_08_4}{rtl\+::function$<$ T(\+Args...)$>$}} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrtl_1_1function_3_01T_07Args_8_8_8_08_4}{function$<$ T(\+Args...)$>$}}
+\begin{DoxyCompactList}\small\item\em function pointer template \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrtl_1_1ostream}{ostream}}
+\item 
+class \mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em Generic Shared Pointer class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrtl_1_1unique__ptr}{unique\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em Generic Unique Smart Pointer class. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrtl_1_1remove__reference}{remove\+\_\+reference}}
+\begin{DoxyCompactList}\small\item\em This was mostly copied from the STL because it has very little performance over head ( if any) and is really the best way to implement perfect forwarding and movement. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrtl_1_1remove__reference_3_01T_01_6_01_4}{remove\+\_\+reference$<$ T \& $>$}}
+\begin{DoxyCompactList}\small\item\em deduce type from reference \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrtl_1_1remove__reference_3_01T_01_6_6_01_4}{remove\+\_\+reference$<$ T \&\& $>$}}
+\begin{DoxyCompactList}\small\item\em deduce type from rvalue reference \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacertl_acafc9ee382d8b707af53ca75d32f6704}\label{namespacertl_acafc9ee382d8b707af53ca75d32f6704}} 
+using {\bfseries string} = \mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}}$<$ char $>$
+\item 
+\mbox{\Hypertarget{namespacertl_a5a773ba02d0ab11a5ee69a6548475040}\label{namespacertl_a5a773ba02d0ab11a5ee69a6548475040}} 
+using {\bfseries wstring} = \mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}}$<$ wchar\+\_\+t $>$
+\item 
+\mbox{\Hypertarget{namespacertl_a42b3564b759732b3fcf430b6f275f600}\label{namespacertl_a42b3564b759732b3fcf430b6f275f600}} 
+{\footnotesize template$<$class T $>$ }\\using \mbox{\hyperlink{namespacertl_a42b3564b759732b3fcf430b6f275f600}{remove\+\_\+reference\+\_\+t}} = typename \mbox{\hyperlink{structrtl_1_1remove__reference}{remove\+\_\+reference}}$<$ T $>$\+::type
+\begin{DoxyCompactList}\small\item\em used as a function argument \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacertl_afe05fee113a4e9430a74f8d7ee36088c}\label{namespacertl_afe05fee113a4e9430a74f8d7ee36088c}} 
+{\footnotesize template$<$class T , class... Args$>$ }\\\mbox{\hyperlink{classrtl_1_1shared__ptr}{shared\+\_\+ptr}}$<$ T $>$ \mbox{\hyperlink{namespacertl_afe05fee113a4e9430a74f8d7ee36088c}{make\+\_\+shared}} (Args... args)
+\begin{DoxyCompactList}\small\item\em Create a new shared pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacertl_a486918a5acb16a52cd8f80dc8d8d118d}\label{namespacertl_a486918a5acb16a52cd8f80dc8d8d118d}} 
+{\footnotesize template$<$class T , class... Args$>$ }\\\mbox{\hyperlink{classrtl_1_1unique__ptr}{unique\+\_\+ptr}}$<$ T $>$ \mbox{\hyperlink{namespacertl_a486918a5acb16a52cd8f80dc8d8d118d}{make\+\_\+unique}} (Args... args)
+\begin{DoxyCompactList}\small\item\em Create a new unique pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacertl_ad4871bba090762a6a51407d08381a8ce}\label{namespacertl_ad4871bba090762a6a51407d08381a8ce}} 
+bool {\bfseries operator==} (const char $\ast$str1, const \mbox{\hyperlink{classbasic__string}{string}} \&str2)
+\item 
+\mbox{\Hypertarget{namespacertl_a25aa1aecac3497bd8bf9848d87400b30}\label{namespacertl_a25aa1aecac3497bd8bf9848d87400b30}} 
+bool {\bfseries operator!=} (const char $\ast$str1, const \mbox{\hyperlink{classbasic__string}{string}} \&str2)
+\item 
+\mbox{\Hypertarget{namespacertl_a5011aa9af08c8a5d7989d6b6ea5478f2}\label{namespacertl_a5011aa9af08c8a5d7989d6b6ea5478f2}} 
+bool {\bfseries operator$>$} (const char $\ast$str1, const \mbox{\hyperlink{classbasic__string}{string}} \&str2)
+\item 
+\mbox{\Hypertarget{namespacertl_a7bb4884da437271b99a97c2b35dc23d3}\label{namespacertl_a7bb4884da437271b99a97c2b35dc23d3}} 
+bool {\bfseries operator$<$} (const char $\ast$str1, const \mbox{\hyperlink{classbasic__string}{string}} \&str2)
+\item 
+\mbox{\Hypertarget{namespacertl_a1ce965a603b01a9a86b670a9ae5ee9d9}\label{namespacertl_a1ce965a603b01a9a86b670a9ae5ee9d9}} 
+\mbox{\hyperlink{classbasic__string}{string}} \mbox{\hyperlink{namespacertl_a1ce965a603b01a9a86b670a9ae5ee9d9}{operator+}} (const char $\ast$str1, const \mbox{\hyperlink{classbasic__string}{string}} \&str2)
+\begin{DoxyCompactList}\small\item\em append str1 to str2 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacertl_a75daea6490499de6dfd0f8c93eb0dccc}\label{namespacertl_a75daea6490499de6dfd0f8c93eb0dccc}} 
+{\footnotesize template$<$class T $>$ }\\constexpr T \&\& \mbox{\hyperlink{namespacertl_a75daea6490499de6dfd0f8c93eb0dccc}{forward}} (\mbox{\hyperlink{namespacertl_a42b3564b759732b3fcf430b6f275f600}{remove\+\_\+reference\+\_\+t}}$<$ T $>$ \&arg)
+\begin{DoxyCompactList}\small\item\em T\& -\/$>$ T\&\& Used for perfect forwarding. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacertl_ac087583e238d8e2125671ba1d4f2d79d}\label{namespacertl_ac087583e238d8e2125671ba1d4f2d79d}} 
+{\footnotesize template$<$class T $>$ }\\constexpr T \&\& {\bfseries forward} (\mbox{\hyperlink{namespacertl_a42b3564b759732b3fcf430b6f275f600}{remove\+\_\+reference\+\_\+t}}$<$ T $>$ \&\&arg)
+\item 
+\mbox{\Hypertarget{namespacertl_a803c8b6ca60d13cc7478c1618822da25}\label{namespacertl_a803c8b6ca60d13cc7478c1618822da25}} 
+{\footnotesize template$<$class T $>$ }\\constexpr \mbox{\hyperlink{structrtl_1_1remove__reference}{remove\+\_\+reference}}$<$ T $>$\+::type \&\& \mbox{\hyperlink{namespacertl_a803c8b6ca60d13cc7478c1618822da25}{move}} (T \&\&arg)
+\begin{DoxyCompactList}\small\item\em Used in move semantics Will move stuff. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the only STL library included in this project why? There are something we cannot do with fancy template metaprograming.
+
+Instead we must rely on information provided by the compiler; information found in the type\+\_\+traits header 

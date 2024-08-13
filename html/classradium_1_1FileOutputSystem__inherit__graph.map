@@ -1,0 +1,4 @@
+<map id="radium::FileOutputSystem" name="radium::FileOutputSystem">
+<area shape="rect" id="node1" title="Write logs to a file." alt="" coords="5,80,197,107"/>
+<area shape="rect" id="node2" href="$classradium_1_1OutputSystem.html" title="Base class for logging output." alt="" coords="17,5,186,32"/>
+</map>

@@ -78,7 +78,7 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;core/memory/Memory.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;xutility&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>rtl</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacertl.html">rtl</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -105,7 +105,7 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classrtl_1_1shared__ptr.html">shared_ptr</a>(<span class="keyword">const</span> <a class="code" href="classrtl_1_1shared__ptr.html">shared_ptr</a>&amp;&amp; other)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        : _int_store(rtl::move(other._int_store))</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        : _int_store(<a class="code" href="namespacertl.html#a803c8b6ca60d13cc7478c1618822da25">rtl::move</a>(other._int_store))</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -118,7 +118,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classrtl_1_1shared__ptr.html">shared_ptr</a>&amp; operator=(<a class="code" href="classrtl_1_1shared__ptr.html">shared_ptr</a>&amp;&amp; other)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        _int_store = rtl::move(other)._int_store;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        _int_store = <a class="code" href="namespacertl.html#a803c8b6ca60d13cc7478c1618822da25">rtl::move</a>(other)._int_store;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (_int_store-&gt;_refcount == 1)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="classradium_1_1Allocator.html#a61f88d1b614c180ded4677425201a4e2">radium::Allocator::free_aligned</a>(_int_store-&gt;_ptr);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="classradium_1_1GenericAllocator.html#a2e4577c55519cfc6dc796d9cd2e3838f">radium::GenericAllocator::free_aligned</a>(_int_store-&gt;_ptr);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">delete</span> _int_store;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">else</span></div>
@@ -169,9 +169,9 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="classrtl_1_1shared__ptr.html">shared_ptr&lt;T&gt;</a> make_shared(Args... args)</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="namespacertl.html#afe05fee113a4e9430a74f8d7ee36088c">  124</a></span>&#160;<a class="code" href="classrtl_1_1shared__ptr.html">shared_ptr&lt;T&gt;</a> <a class="code" href="namespacertl.html#afe05fee113a4e9430a74f8d7ee36088c">make_shared</a>(Args... args)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    T* nt = radium::Allocator::alloc_aligned&lt;T&gt;(1);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    T* nt = radium::GenericAllocator::alloc_aligned&lt;T&gt;(1);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classrtl_1_1shared__ptr.html">shared_ptr&lt;T&gt;</a>(</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">new</span> (nt) T(rtl::forward&lt;Args&gt;(args)...)</div>
@@ -188,18 +188,18 @@ $(function() {
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    ~<a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr</a>()</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (m_ptr)</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="classradium_1_1Allocator.html#a61f88d1b614c180ded4677425201a4e2">radium::Allocator::free_aligned</a>(m_ptr);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="classradium_1_1GenericAllocator.html#a2e4577c55519cfc6dc796d9cd2e3838f">radium::GenericAllocator::free_aligned</a>(m_ptr);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr</a>(<a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr</a>&amp;&amp; other) </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        : m_ptr(rtl::move(other.m_ptr))</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        : m_ptr(<a class="code" href="namespacertl.html#a803c8b6ca60d13cc7478c1618822da25">rtl::move</a>(other.m_ptr))</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        other.m_ptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr</a>&amp; operator=(<a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr</a>&amp;&amp; other)</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        m_ptr = rtl::move(other.m_ptr);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        m_ptr = <a class="code" href="namespacertl.html#a803c8b6ca60d13cc7478c1618822da25">rtl::move</a>(other.m_ptr);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        other.m_ptr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -224,9 +224,9 @@ $(function() {
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">class</span>... Args&gt;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr&lt;T&gt;</a> make_unique(Args... args)</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="namespacertl.html#a486918a5acb16a52cd8f80dc8d8d118d">  191</a></span>&#160;<a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr&lt;T&gt;</a> <a class="code" href="namespacertl.html#a486918a5acb16a52cd8f80dc8d8d118d">make_unique</a>(Args... args)</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    T* nt = radium::Allocator::alloc_aligned&lt;T&gt;(1);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    T* nt = radium::GenericAllocator::alloc_aligned&lt;T&gt;(1);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classrtl_1_1unique__ptr.html">unique_ptr&lt;T&gt;</a>(</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keyword">new</span> (nt) T(rtl::forward&lt;Args&gt;(args)...)</div>
@@ -238,11 +238,15 @@ $(function() {
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;} <span class="comment">// rtl</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CORE_RTL_SMART_PTR_H_</span></div>
-<div class="ttc" id="aclassradium_1_1Allocator_html_a61f88d1b614c180ded4677425201a4e2"><div class="ttname"><a href="classradium_1_1Allocator.html#a61f88d1b614c180ded4677425201a4e2">radium::Allocator::free_aligned</a></div><div class="ttdeci">static void free_aligned(void *ptr)</div><div class="ttdef"><b>Definition:</b> Memory.cpp:43</div></div>
+<div class="ttc" id="aclassradium_1_1GenericAllocator_html_a2e4577c55519cfc6dc796d9cd2e3838f"><div class="ttname"><a href="classradium_1_1GenericAllocator.html#a2e4577c55519cfc6dc796d9cd2e3838f">radium::GenericAllocator::free_aligned</a></div><div class="ttdeci">static void free_aligned(void *ptr)</div><div class="ttdef"><b>Definition:</b> Memory.cpp:33</div></div>
 <div class="ttc" id="aclassrtl_1_1shared__ptr_html"><div class="ttname"><a href="classrtl_1_1shared__ptr.html">rtl::shared_ptr</a></div><div class="ttdoc">Generic Shared Pointer class.</div><div class="ttdef"><b>Definition:</b> smart_ptr.h:32</div></div>
 <div class="ttc" id="aclassrtl_1_1shared__ptr_html_a250f6f1a67958271a1022fde10562bf3"><div class="ttname"><a href="classrtl_1_1shared__ptr.html#a250f6f1a67958271a1022fde10562bf3">rtl::shared_ptr::operator*</a></div><div class="ttdeci">T &amp; operator*()</div><div class="ttdoc">dereference the pointer</div><div class="ttdef"><b>Definition:</b> smart_ptr.h:80</div></div>
 <div class="ttc" id="aclassrtl_1_1shared__ptr_html_a2bfd789328927b277b202130592fccca"><div class="ttname"><a href="classrtl_1_1shared__ptr.html#a2bfd789328927b277b202130592fccca">rtl::shared_ptr::operator-&gt;</a></div><div class="ttdeci">T * operator-&gt;()</div><div class="ttdoc">get the pointer</div><div class="ttdef"><b>Definition:</b> smart_ptr.h:71</div></div>
 <div class="ttc" id="aclassrtl_1_1unique__ptr_html"><div class="ttname"><a href="classrtl_1_1unique__ptr.html">rtl::unique_ptr</a></div><div class="ttdoc">Generic Unique Smart Pointer class.</div><div class="ttdef"><b>Definition:</b> smart_ptr.h:146</div></div>
+<div class="ttc" id="anamespacertl_html"><div class="ttname"><a href="namespacertl.html">rtl</a></div><div class="ttdef"><b>Definition:</b> array.h:7</div></div>
+<div class="ttc" id="anamespacertl_html_a486918a5acb16a52cd8f80dc8d8d118d"><div class="ttname"><a href="namespacertl.html#a486918a5acb16a52cd8f80dc8d8d118d">rtl::make_unique</a></div><div class="ttdeci">unique_ptr&lt; T &gt; make_unique(Args... args)</div><div class="ttdoc">Create a new unique pointer.</div><div class="ttdef"><b>Definition:</b> smart_ptr.h:191</div></div>
+<div class="ttc" id="anamespacertl_html_a803c8b6ca60d13cc7478c1618822da25"><div class="ttname"><a href="namespacertl.html#a803c8b6ca60d13cc7478c1618822da25">rtl::move</a></div><div class="ttdeci">constexpr remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg)</div><div class="ttdoc">Used in move semantics Will move stuff.</div><div class="ttdef"><b>Definition:</b> utility.h:84</div></div>
+<div class="ttc" id="anamespacertl_html_afe05fee113a4e9430a74f8d7ee36088c"><div class="ttname"><a href="namespacertl.html#afe05fee113a4e9430a74f8d7ee36088c">rtl::make_shared</a></div><div class="ttdeci">shared_ptr&lt; T &gt; make_shared(Args... args)</div><div class="ttdoc">Create a new shared pointer.</div><div class="ttdef"><b>Definition:</b> smart_ptr.h:124</div></div>
 <div class="ttc" id="astructrtl_1_1shared__ptr_1_1____ref__cnt__ptr_html"><div class="ttname"><a href="structrtl_1_1shared__ptr_1_1____ref__cnt__ptr.html">rtl::shared_ptr::__ref_cnt_ptr</a></div><div class="ttdoc">A simple container for holding a pointer and   the number of shared_ptrs referencing it.</div><div class="ttdef"><b>Definition:</b> smart_ptr.h:112</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

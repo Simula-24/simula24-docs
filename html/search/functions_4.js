@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['get_5falloc_5fsize_41',['get_alloc_size',['../classrtl_1_1copy__on__write.html#a37fe5cdbc7db77c6849a0000a99dd764',1,'rtl::copy_on_write']]],
-  ['get_5fnum_5fdata_42',['get_num_data',['../classrtl_1_1copy__on__write.html#a52866ecfaab2d48c4055ef4bf3992058',1,'rtl::copy_on_write']]],
-  ['get_5fsize_43',['get_size',['../classrtl_1_1copy__on__write.html#af880073bf0fb164bd5d789b708e290d4',1,'rtl::copy_on_write']]]
+  ['data_98',['data',['../classrtl_1_1basic__string.html#a8aeee1a722f12cf721cccb70f83f9684',1,'rtl::basic_string']]],
+  ['debug_99',['debug',['../classradium_1_1Logger.html#afa5f06ac3ace2a47b18a076a4b178255',1,'radium::Logger']]]
 ];

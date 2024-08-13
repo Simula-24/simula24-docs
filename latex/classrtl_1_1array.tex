@@ -1,0 +1,59 @@
+\hypertarget{classrtl_1_1array}{}\doxysection{rtl\+::array$<$ T $>$ Class Template Reference}
+\label{classrtl_1_1array}\index{rtl::array$<$ T $>$@{rtl::array$<$ T $>$}}
+
+
+array to hold T data  
+
+
+
+
+{\ttfamily \#include $<$array.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a5259433346f0e997ba2dabadf5d75477}\label{classrtl_1_1array_a5259433346f0e997ba2dabadf5d75477}} 
+void {\bfseries resize} (size\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a9801eadfdde6c06754cb3bc4b748220d}\label{classrtl_1_1array_a9801eadfdde6c06754cb3bc4b748220d}} 
+void {\bfseries push\+\_\+back} (const T \&value)
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a6180f7ff62c0292caeee668a12d491cf}\label{classrtl_1_1array_a6180f7ff62c0292caeee668a12d491cf}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_addb4b9227d759056a314fec27f8c7d83}\label{classrtl_1_1array_addb4b9227d759056a314fec27f8c7d83}} 
+const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a32b1b7133cb02c4c6d8b8c64e8c2de16}\label{classrtl_1_1array_a32b1b7133cb02c4c6d8b8c64e8c2de16}} 
+constexpr size\+\_\+t {\bfseries size} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a41d0bf6c80cb9426466b80af5894a056}\label{classrtl_1_1array_a41d0bf6c80cb9426466b80af5894a056}} 
+constexpr bool {\bfseries should\+\_\+resize} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_ad22aa4382be54651cee836df82d686dc}\label{classrtl_1_1array_ad22aa4382be54651cee836df82d686dc}} 
+\mbox{\hyperlink{classrtl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}}$<$ T $>$ \mbox{\hyperlink{classrtl_1_1array_ad22aa4382be54651cee836df82d686dc}{m\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em Holds our data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1array_aa14b9cba4e174c78079217edf25037ad}\label{classrtl_1_1array_aa14b9cba4e174c78079217edf25037ad}} 
+size\+\_\+t \mbox{\hyperlink{classrtl_1_1array_aa14b9cba4e174c78079217edf25037ad}{m\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Pointer to last element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class rtl\+::array$<$ T $>$}
+
+array to hold T data 
+
+This uses a COW buffer to hold the data
+
+elem\+\_\+ptr points to the last element in the buffer, as to reduce resizing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/array.\+h\end{DoxyCompactItemize}

@@ -2,6 +2,120 @@
 \label{classradium_1_1Logger}\index{radium::Logger@{radium::Logger}}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Logging Class.  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+Collaboration diagram for radium\+::Logger\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classradium_1_1Logger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
 \item 
-core/log/log.\+h\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classradium_1_1Logger_a0c162b730da515d0872e26397dc5633c}\label{classradium_1_1Logger_a0c162b730da515d0872e26397dc5633c}} 
+{\bfseries Logger} (const \mbox{\hyperlink{classbasic__string}{rtl\+::string}} \&name)
+\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a1eb53be278fbe69e124383a5347430ec}\label{classradium_1_1Logger_a1eb53be278fbe69e124383a5347430ec}} 
+{\bfseries Logger} (const char $\ast$name)
+\item 
+void \mbox{\hyperlink{classradium_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}{log}} (Log\+Level ll, const char $\ast$msg,...)
+\begin{DoxyCompactList}\small\item\em Log to the \mbox{\hyperlink{classradium_1_1OutputSystem}{Output\+System}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a63fd03daca04addca8bff12d46f15850}\label{classradium_1_1Logger_a63fd03daca04addca8bff12d46f15850}} 
+{\footnotesize template$<$class Output\+System\+Type $>$ }\\void \mbox{\hyperlink{classradium_1_1Logger_a63fd03daca04addca8bff12d46f15850}{set\+Output\+System}} ()
+\begin{DoxyCompactList}\small\item\em Set the output system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_ad5b26e356cfa90d7bce2cfb5c72020f2}\label{classradium_1_1Logger_ad5b26e356cfa90d7bce2cfb5c72020f2}} 
+{\footnotesize template$<$class Output\+System\+Type , class... Construction\+Args$>$ }\\void \mbox{\hyperlink{classradium_1_1Logger_ad5b26e356cfa90d7bce2cfb5c72020f2}{set\+Output\+System}} (Construction\+Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Set the output system and pass Construction\+Args to its constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_afa5f06ac3ace2a47b18a076a4b178255}\label{classradium_1_1Logger_afa5f06ac3ace2a47b18a076a4b178255}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classradium_1_1Logger_afa5f06ac3ace2a47b18a076a4b178255}{debug}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+DEBUG \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_aec0dc34113c8bdd5aeee2d9f93bd8714}\label{classradium_1_1Logger_aec0dc34113c8bdd5aeee2d9f93bd8714}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classradium_1_1Logger_aec0dc34113c8bdd5aeee2d9f93bd8714}{info}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+INFO \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a6e5f61eaa38a34f2b519389d45aceae1}\label{classradium_1_1Logger_a6e5f61eaa38a34f2b519389d45aceae1}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classradium_1_1Logger_a6e5f61eaa38a34f2b519389d45aceae1}{warning}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+WARNING \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_acddda3067df01f8ad54f05e7cc6abae7}\label{classradium_1_1Logger_acddda3067df01f8ad54f05e7cc6abae7}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classradium_1_1Logger_acddda3067df01f8ad54f05e7cc6abae7}{error}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+ERROR \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_aa6996fc1cb6b10ed9ea8d9821090cb03}\label{classradium_1_1Logger_aa6996fc1cb6b10ed9ea8d9821090cb03}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classradium_1_1Logger_aa6996fc1cb6b10ed9ea8d9821090cb03}{critical}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+CRITICAL \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a6a3b5d7abba355bc2a1e9d6a1738519b}\label{classradium_1_1Logger_a6a3b5d7abba355bc2a1e9d6a1738519b}} 
+\mbox{\hyperlink{classradium_1_1OutputSystem}{Output\+System}} $\ast$ {\bfseries m\+\_\+output\+System}
+\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a30ca6e9b08251b883dfa74e5811252ad}\label{classradium_1_1Logger_a30ca6e9b08251b883dfa74e5811252ad}} 
+\mbox{\hyperlink{classbasic__string}{rtl\+::string}} {\bfseries m\+\_\+name}
+\item 
+const char $\ast$ {\bfseries m\+\_\+color\+Map} \mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logging Class. 
+
+The \mbox{\hyperlink{classradium_1_1Logger}{Logger}} class is responsible for constructing output
+
+Output of the logs is delegated to an \mbox{\hyperlink{classradium_1_1OutputSystem}{Output\+System}}
+
+\mbox{\hyperlink{classradium_1_1Logger_a63fd03daca04addca8bff12d46f15850}{Logger\+::set\+Output\+System$<$\+Type$>$()}} creates a new output system
+
+Logger\+::set\+Output\+System$<$\+Type$>$(\+Construction\+Args\&\&...) creates a new output system and passes args... to its constructor
+
+\mbox{\hyperlink{classradium_1_1Logger_aec0dc34113c8bdd5aeee2d9f93bd8714}{Logger\+::info}}, \mbox{\hyperlink{classradium_1_1Logger_afa5f06ac3ace2a47b18a076a4b178255}{Logger\+::debug}}, etc. are wrappers around \mbox{\hyperlink{classradium_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}{Logger\+::log}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classradium_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}\label{classradium_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}} 
+\index{radium::Logger@{radium::Logger}!log@{log}}
+\index{log@{log}!radium::Logger@{radium::Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Logger\+::log (\begin{DoxyParamCaption}\item[{Log\+Level}]{ll,  }\item[{const char $\ast$}]{msg,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Log to the \mbox{\hyperlink{classradium_1_1OutputSystem}{Output\+System}}. 
+
+
+\begin{DoxyEnumerate}
+\item Log with Log\+Level ll
+\item Construct a log based on msg and args
+\item Forward constructed log to the output system 
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classradium_1_1Logger_a4f6058fc13c98b95aae89abf670b17ec}\label{classradium_1_1Logger_a4f6058fc13c98b95aae89abf670b17ec}} 
+\index{radium::Logger@{radium::Logger}!m\_colorMap@{m\_colorMap}}
+\index{m\_colorMap@{m\_colorMap}!radium::Logger@{radium::Logger}}
+\doxysubsubsection{\texorpdfstring{m\_colorMap}{m\_colorMap}}
+{\footnotesize\ttfamily const char$\ast$ radium\+::\+Logger\+::m\+\_\+color\+Map\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \{Colors::GREEN\}, }
+\DoxyCodeLine{        \{Colors::GREEN\}, }
+\DoxyCodeLine{        \{Colors::YELLOW\},}
+\DoxyCodeLine{        \{Colors::RED\},   }
+\DoxyCodeLine{        \{Colors::RED\}    }
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/log/log.\+h\item 
+core/log/log.\+cpp\end{DoxyCompactItemize}

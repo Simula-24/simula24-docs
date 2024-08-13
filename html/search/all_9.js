@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['reference_18',['reference',['../classrtl_1_1copy__on__write.html#ae163f0887ebbb117dd957448eeab8be9',1,'rtl::copy_on_write']]],
-  ['remove_5freference_19',['remove_reference',['../structrtl_1_1remove__reference.html',1,'rtl']]],
-  ['remove_5freference_3c_20t_20_26_20_3e_20',['remove_reference&lt; T &amp; &gt;',['../structrtl_1_1remove__reference_3_01T_01_6_01_4.html',1,'rtl']]],
-  ['remove_5freference_3c_20t_20_26_26_20_3e_21',['remove_reference&lt; T &amp;&amp; &gt;',['../structrtl_1_1remove__reference_3_01T_01_6_6_01_4.html',1,'rtl']]],
-  ['resize_22',['resize',['../classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c',1,'rtl::copy_on_write']]]
+  ['length_31',['length',['../classrtl_1_1basic__string.html#ab306b4f7a35c18a516463bea366a98f2',1,'rtl::basic_string']]],
+  ['log_32',['log',['../classradium_1_1Logger.html#acb22c820855d22a709bbb93d123b9ab6',1,'radium::Logger::log()'],['../classradium_1_1FileOutputSystem.html#a4da4d3da02b3f9ac488eb800c544377d',1,'radium::FileOutputSystem::log()'],['../classradium_1_1OutputSystem.html#a3125b553d8fbe3038b7b80b896058875',1,'radium::OutputSystem::log()'],['../classradium_1_1StdoutSystem.html#ae9e051bc89f4e22c805108220a20920b',1,'radium::StdoutSystem::log()']]],
+  ['logger_33',['Logger',['../classradium_1_1Logger.html',1,'radium']]]
 ];

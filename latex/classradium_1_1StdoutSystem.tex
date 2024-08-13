@@ -1,0 +1,63 @@
+\hypertarget{classradium_1_1StdoutSystem}{}\doxysection{radium\+::Stdout\+System Class Reference}
+\label{classradium_1_1StdoutSystem}\index{radium::StdoutSystem@{radium::StdoutSystem}}
+
+
+Print logs to an output stream such as stdout.  
+
+
+
+
+{\ttfamily \#include $<$Std\+Out\+System.\+h$>$}
+
+
+
+Inheritance diagram for radium\+::Stdout\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classradium_1_1StdoutSystem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for radium\+::Stdout\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classradium_1_1StdoutSystem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1StdoutSystem_a43bd405e102bdc7fe91bfce7a0839e7a}\label{classradium_1_1StdoutSystem_a43bd405e102bdc7fe91bfce7a0839e7a}} 
+{\bfseries Stdout\+System} (FILE $\ast$fp=stderr)
+\item 
+\mbox{\Hypertarget{classradium_1_1StdoutSystem_ac97cbd657ee98567486c36202a7e7cca}\label{classradium_1_1StdoutSystem_ac97cbd657ee98567486c36202a7e7cca}} 
+bool \mbox{\hyperlink{classradium_1_1StdoutSystem_ac97cbd657ee98567486c36202a7e7cca}{supports\+Color}} () override
+\begin{DoxyCompactList}\small\item\em Yes we support color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1StdoutSystem_ae9e051bc89f4e22c805108220a20920b}\label{classradium_1_1StdoutSystem_ae9e051bc89f4e22c805108220a20920b}} 
+void \mbox{\hyperlink{classradium_1_1StdoutSystem_ae9e051bc89f4e22c805108220a20920b}{log}} (const \mbox{\hyperlink{classbasic__string}{rtl\+::string}} \&msg) override
+\begin{DoxyCompactList}\small\item\em send msg.\+c\+\_\+str() to \mbox{\hyperlink{classradium_1_1StdoutSystem_a5b0dcde24c95e2cd0feef38df439b4c8}{m\+\_\+opfp}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1StdoutSystem_ae0497a1b59e65425a25c2131188a4d24}\label{classradium_1_1StdoutSystem_ae0497a1b59e65425a25c2131188a4d24}} 
+void \mbox{\hyperlink{classradium_1_1StdoutSystem_ae0497a1b59e65425a25c2131188a4d24}{flush}} () override
+\begin{DoxyCompactList}\small\item\em not implemented here \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1StdoutSystem_a5b0dcde24c95e2cd0feef38df439b4c8}\label{classradium_1_1StdoutSystem_a5b0dcde24c95e2cd0feef38df439b4c8}} 
+FILE $\ast$ \mbox{\hyperlink{classradium_1_1StdoutSystem_a5b0dcde24c95e2cd0feef38df439b4c8}{m\+\_\+opfp}}
+\begin{DoxyCompactList}\small\item\em output file pointer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Print logs to an output stream such as stdout. 
+
+By default, all logs will be sent to stderr however, this can be configured via the constructor
+
+You {\itshape can} pass a FILE pointer to a file you created, e.\+g. \textquotesingle{}log.\+txt\textquotesingle{}, however this is not recommended, as formatting with color may screw with your output Instead, it is recommended to use File\+Outout\+System 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/log/outputsystems/Std\+Out\+System.\+h\item 
+core/log/outputsystems/Stdout\+System.\+cpp\end{DoxyCompactItemize}
