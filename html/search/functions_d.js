@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['setoutputsystem_122',['setOutputSystem',['../classradium_1_1Logger.html#a63fd03daca04addca8bff12d46f15850',1,'radium::Logger::setOutputSystem()'],['../classradium_1_1Logger.html#ad5b26e356cfa90d7bce2cfb5c72020f2',1,'radium::Logger::setOutputSystem(ConstructionArgs &amp;&amp;... args)']]],
-  ['strlen_123',['strlen',['../classrtl_1_1basic__string.html#aa6f6b81005e38b1258845972e7333c2f',1,'rtl::basic_string']]],
-  ['substr_124',['substr',['../classrtl_1_1basic__string.html#ab2d9e0742025b55bf5ebfd130f938f13',1,'rtl::basic_string']]],
-  ['supportscolor_125',['supportsColor',['../classradium_1_1FileOutputSystem.html#a6e6c6acf2798f7c378816c287c14aacd',1,'radium::FileOutputSystem::supportsColor()'],['../classradium_1_1OutputSystem.html#a5f72b0f3f46dcb9b2c5a8c42f3ff3703',1,'radium::OutputSystem::supportsColor()'],['../classradium_1_1StdoutSystem.html#ac97cbd657ee98567486c36202a7e7cca',1,'radium::StdoutSystem::supportsColor()']]]
+  ['read_264',['read',['../classradium_1_1File.html#a2bdd75d77cc150a77981e4206c96c2c6',1,'radium::File::read(void *out, size_t _szof_1, size_t n, size_t *bytesRead=nullptr)'],['../classradium_1_1File.html#a8f134c510cef1d94475e3f70344aa533',1,'radium::File::read(void *out, size_t numBytes, size_t *bytesRead=nullptr)']]],
+  ['reference_265',['reference',['../classrtl_1_1copy__on__write.html#a926ab509ec076c5cb3ea7ee46cc377ce',1,'rtl::copy_on_write']]],
+  ['remove_266',['remove',['../classradium_1_1sparse__set.html#ab94777df06be635fbdb2907973623e5d',1,'radium::sparse_set']]],
+  ['reserve_267',['reserve',['../classrtl_1_1unordered__map.html#a3c5f557c61413ca295f45be118b93ef4',1,'rtl::unordered_map']]],
+  ['resize_268',['resize',['../classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c',1,'rtl::copy_on_write::resize()'],['../classrtl_1_1unordered__map.html#a49cfb4267ac6e68bdf8dbad89dc2495c',1,'rtl::unordered_map::resize()']]]
 ];

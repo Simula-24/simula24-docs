@@ -29,6 +29,9 @@ Collaboration diagram for radium\+::Logger\+:\nopagebreak
 \item 
 void \mbox{\hyperlink{classradium_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}{log}} (Log\+Level ll, const char $\ast$msg,...)
 \begin{DoxyCompactList}\small\item\em Log to the \mbox{\hyperlink{classradium_1_1OutputSystem}{Output\+System}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a890397fb00cf5f88cb2d80789b6eb22c}\label{classradium_1_1Logger_a890397fb00cf5f88cb2d80789b6eb22c}} 
+void \mbox{\hyperlink{classradium_1_1Logger_a890397fb00cf5f88cb2d80789b6eb22c}{log\+Memory\+Section}} (const void $\ast$start, int length, const char $\ast$msg,...)
+\begin{DoxyCompactList}\small\item\em Log a section of memory from start to start + length This does NOT detect if you are reading from an area of memory that has been freed or does not belong to you. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classradium_1_1Logger_a63fd03daca04addca8bff12d46f15850}\label{classradium_1_1Logger_a63fd03daca04addca8bff12d46f15850}} 
 {\footnotesize template$<$class Output\+System\+Type $>$ }\\void \mbox{\hyperlink{classradium_1_1Logger_a63fd03daca04addca8bff12d46f15850}{set\+Output\+System}} ()
 \begin{DoxyCompactList}\small\item\em Set the output system. \end{DoxyCompactList}\item 
@@ -50,6 +53,18 @@ void \mbox{\hyperlink{classradium_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}{l
 \mbox{\Hypertarget{classradium_1_1Logger_aa6996fc1cb6b10ed9ea8d9821090cb03}\label{classradium_1_1Logger_aa6996fc1cb6b10ed9ea8d9821090cb03}} 
 {\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classradium_1_1Logger_aa6996fc1cb6b10ed9ea8d9821090cb03}{critical}} (const char $\ast$message, Args \&\&... args)
 \begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+CRITICAL \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a2f1e63cb0492dfe2be773c4b7c150cb3}\label{classradium_1_1Logger_a2f1e63cb0492dfe2be773c4b7c150cb3}} 
+void \mbox{\hyperlink{classradium_1_1Logger_a2f1e63cb0492dfe2be773c4b7c150cb3}{write\+Meta\+Data}} (\mbox{\hyperlink{classbasic__string}{rtl\+::string}} \&output)
+\begin{DoxyCompactList}\small\item\em Add current time + logger name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_a7fd0b4d1a7461c206e76871c7c0e117b}\label{classradium_1_1Logger_a7fd0b4d1a7461c206e76871c7c0e117b}} 
+void \mbox{\hyperlink{classradium_1_1Logger_a7fd0b4d1a7461c206e76871c7c0e117b}{write\+Log\+Level}} (Log\+Level ll, \mbox{\hyperlink{classbasic__string}{rtl\+::string}} \&output)
+\begin{DoxyCompactList}\small\item\em write the log level (in color if supported, see \mbox{\hyperlink{classradium_1_1OutputSystem_a5f72b0f3f46dcb9b2c5a8c42f3ff3703}{Output\+System\+::supports\+Color()}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1Logger_aa8bc506ee72726e839fadc5afad842a9}\label{classradium_1_1Logger_aa8bc506ee72726e839fadc5afad842a9}} 
+void \mbox{\hyperlink{classradium_1_1Logger_aa8bc506ee72726e839fadc5afad842a9}{write\+User\+Message}} (\mbox{\hyperlink{classbasic__string}{rtl\+::string}} \&output, const char $\ast$message, va\+\_\+list args)
+\begin{DoxyCompactList}\small\item\em Add the users formatted arguments to the output, uses vsnprintf. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 

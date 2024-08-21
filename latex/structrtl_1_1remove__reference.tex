@@ -26,6 +26,8 @@ struct rtl\+::remove\+\_\+reference$<$ T $>$}
 
 This was mostly copied from the STL because it has very little performance over head ( if any) and is really the best way to implement perfect forwarding and movement. 
 
+disable qualifier warning irrelavent in this case
+
 remove\+\_\+reference$<$\+T$>$\+::type will simply give you the type without the reference
 
 e.\+g. remove\+\_\+reference$<$const int\&$>$\+::type = int

@@ -27,14 +27,14 @@
 \mbox{\Hypertarget{classrtl_1_1basic__string_a77f84601cf9dd39c732685696e21d361}\label{classrtl_1_1basic__string_a77f84601cf9dd39c732685696e21d361}} 
 \mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}} \& {\bfseries operator+=} (const T $\ast$other)
 \item 
-\mbox{\Hypertarget{classrtl_1_1basic__string_af7129c28e4a351ea4fa652092d6c67e0}\label{classrtl_1_1basic__string_af7129c28e4a351ea4fa652092d6c67e0}} 
-\mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}} \& {\bfseries operator+=} (\mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}} \&other)
+\mbox{\Hypertarget{classrtl_1_1basic__string_a875c342f09a008702eee40fb83da875f}\label{classrtl_1_1basic__string_a875c342f09a008702eee40fb83da875f}} 
+\mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}} \& {\bfseries operator+=} (const \mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}} \&other)
 \item 
 \mbox{\Hypertarget{classrtl_1_1basic__string_ab2d9e0742025b55bf5ebfd130f938f13}\label{classrtl_1_1basic__string_ab2d9e0742025b55bf5ebfd130f938f13}} 
 \mbox{\hyperlink{classrtl_1_1basic__string}{basic\+\_\+string}}$<$ T $>$ \mbox{\hyperlink{classrtl_1_1basic__string_ab2d9e0742025b55bf5ebfd130f938f13}{substr}} (size\+\_\+t pos=0, size\+\_\+t count=npos)
 \begin{DoxyCompactList}\small\item\em return a substring \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classrtl_1_1basic__string_acb28ed4fef1c071186441052fef80ff3}\label{classrtl_1_1basic__string_acb28ed4fef1c071186441052fef80ff3}} 
-FORCEINLINE void {\bfseries resize} (size\+\_\+t n)
+\mbox{\Hypertarget{classrtl_1_1basic__string_a82dc33b4075572a4ed4432abe8224854}\label{classrtl_1_1basic__string_a82dc33b4075572a4ed4432abe8224854}} 
+void {\bfseries resize} (size\+\_\+t n)
 \item 
 \mbox{\Hypertarget{classrtl_1_1basic__string_a25ec2d240b88821667acb52d6d005738}\label{classrtl_1_1basic__string_a25ec2d240b88821667acb52d6d005738}} 
 void \mbox{\hyperlink{classrtl_1_1basic__string_a25ec2d240b88821667acb52d6d005738}{assign}} (const T $\ast$chars)
@@ -72,6 +72,12 @@ constexpr T \& \mbox{\hyperlink{classrtl_1_1basic__string_aff7d8f75729474bd6cce0
 \mbox{\Hypertarget{classrtl_1_1basic__string_aa6f6b81005e38b1258845972e7333c2f}\label{classrtl_1_1basic__string_aa6f6b81005e38b1258845972e7333c2f}} 
 static size\+\_\+t \mbox{\hyperlink{classrtl_1_1basic__string_aa6f6b81005e38b1258845972e7333c2f}{strlen}} (const T $\ast$other)
 \begin{DoxyCompactList}\small\item\em Get the length of a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1basic__string_aee1878b54708cfe1a95a1d9b26fc9444}\label{classrtl_1_1basic__string_aee1878b54708cfe1a95a1d9b26fc9444}} 
+\mbox{\hyperlink{classrtl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}}$<$ T $>$ {\bfseries m\+\_\+chars}
+\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -87,12 +93,9 @@ constexpr bool {\bfseries should\+\_\+resize} ()
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classrtl_1_1basic__string_aee1878b54708cfe1a95a1d9b26fc9444}\label{classrtl_1_1basic__string_aee1878b54708cfe1a95a1d9b26fc9444}} 
-\mbox{\hyperlink{classrtl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}}$<$ T $>$ \mbox{\hyperlink{classrtl_1_1basic__string_aee1878b54708cfe1a95a1d9b26fc9444}{m\+\_\+chars}}
-\begin{DoxyCompactList}\small\item\em Our buffer. COW happens implicitly. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classrtl_1_1basic__string_aca75a0bf000665d429c39f605843a22a}\label{classrtl_1_1basic__string_aca75a0bf000665d429c39f605843a22a}} 
-size\+\_\+t {\bfseries m\+\_\+length}
-\end{DoxyCompactItemize}
+size\+\_\+t \mbox{\hyperlink{classrtl_1_1basic__string_aca75a0bf000665d429c39f605843a22a}{m\+\_\+length}}
+\begin{DoxyCompactList}\small\item\em Our buffer. COW happens implicitly. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

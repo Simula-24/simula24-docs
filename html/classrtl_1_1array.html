@@ -86,18 +86,46 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5259433346f0e997ba2dabadf5d75477"><td class="memItemLeft" align="right" valign="top"><a id="a5259433346f0e997ba2dabadf5d75477"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (size_t n)</td></tr>
 <tr class="separator:a5259433346f0e997ba2dabadf5d75477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbba7e0b9cd84eaaac33f06aa4c475ec"><td class="memItemLeft" align="right" valign="top"><a id="afbba7e0b9cd84eaaac33f06aa4c475ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1array.html#afbba7e0b9cd84eaaac33f06aa4c475ec">fill</a> (T value)</td></tr>
+<tr class="memdesc:afbba7e0b9cd84eaaac33f06aa4c475ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill with T. <br /></td></tr>
+<tr class="separator:afbba7e0b9cd84eaaac33f06aa4c475ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60880c5e46016ac68de21c8d1387c1bb"><td class="memItemLeft" align="right" valign="top"><a id="a60880c5e46016ac68de21c8d1387c1bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fill_remaining</b> (T value)</td></tr>
+<tr class="separator:a60880c5e46016ac68de21c8d1387c1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9801eadfdde6c06754cb3bc4b748220d"><td class="memItemLeft" align="right" valign="top"><a id="a9801eadfdde6c06754cb3bc4b748220d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (const T &amp;value)</td></tr>
 <tr class="separator:a9801eadfdde6c06754cb3bc4b748220d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d452f08d801ff28fb9c7c9d0fead0a"><td class="memItemLeft" align="right" valign="top"><a id="ac9d452f08d801ff28fb9c7c9d0fead0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>push_back</b> (T &amp;&amp;value)</td></tr>
+<tr class="separator:ac9d452f08d801ff28fb9c7c9d0fead0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06a081d0f75a68c08cd18b8e6604ff9"><td class="memItemLeft" align="right" valign="top"><a id="ad06a081d0f75a68c08cd18b8e6604ff9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pop_back</b> ()</td></tr>
+<tr class="separator:ad06a081d0f75a68c08cd18b8e6604ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6180f7ff62c0292caeee668a12d491cf"><td class="memItemLeft" align="right" valign="top"><a id="a6180f7ff62c0292caeee668a12d491cf"></a>
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t index)</td></tr>
 <tr class="separator:a6180f7ff62c0292caeee668a12d491cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addb4b9227d759056a314fec27f8c7d83"><td class="memItemLeft" align="right" valign="top"><a id="addb4b9227d759056a314fec27f8c7d83"></a>
 const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t index) const</td></tr>
 <tr class="separator:addb4b9227d759056a314fec27f8c7d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32b1b7133cb02c4c6d8b8c64e8c2de16"><td class="memItemLeft" align="right" valign="top"><a id="a32b1b7133cb02c4c6d8b8c64e8c2de16"></a>
-constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> ()</td></tr>
-<tr class="separator:a32b1b7133cb02c4c6d8b8c64e8c2de16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2200b5b76085acf24d1a4c0ee2d38759"><td class="memItemLeft" align="right" valign="top"><a id="a2200b5b76085acf24d1a4c0ee2d38759"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="separator:a2200b5b76085acf24d1a4c0ee2d38759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3065371b00f4189cc3ae6a59042d5e26"><td class="memItemLeft" align="right" valign="top"><a id="a3065371b00f4189cc3ae6a59042d5e26"></a>
+constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_size</b> () const</td></tr>
+<tr class="separator:a3065371b00f4189cc3ae6a59042d5e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42584176d1121940a9ae8c771934ceab"><td class="memItemLeft" align="right" valign="top"><a id="a42584176d1121940a9ae8c771934ceab"></a>
+constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> () const</td></tr>
+<tr class="separator:a42584176d1121940a9ae8c771934ceab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33fa6d45bdf6069a8a1df0c70ba04103"><td class="memItemLeft" align="right" valign="top"><a id="a33fa6d45bdf6069a8a1df0c70ba04103"></a>
+constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> () const</td></tr>
+<tr class="separator:a33fa6d45bdf6069a8a1df0c70ba04103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef80e4ae31c9c2c52d4653c393f1227"><td class="memItemLeft" align="right" valign="top"><a id="a0ef80e4ae31c9c2c52d4653c393f1227"></a>
+constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>front</b> ()</td></tr>
+<tr class="separator:a0ef80e4ae31c9c2c52d4653c393f1227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0baa0b7f889389aae20d5ba650dd141b"><td class="memItemLeft" align="right" valign="top"><a id="a0baa0b7f889389aae20d5ba650dd141b"></a>
+constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>back</b> ()</td></tr>
+<tr class="separator:a0baa0b7f889389aae20d5ba650dd141b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>

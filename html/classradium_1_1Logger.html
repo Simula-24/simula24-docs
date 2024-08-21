@@ -68,6 +68,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classradium_1_1Logger-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -101,6 +102,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb22c820855d22a709bbb93d123b9ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classradium_1_1Logger.html#acb22c820855d22a709bbb93d123b9ab6">log</a> (LogLevel ll, const char *msg,...)</td></tr>
 <tr class="memdesc:acb22c820855d22a709bbb93d123b9ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log to the <a class="el" href="classradium_1_1OutputSystem.html">OutputSystem</a>.  <a href="classradium_1_1Logger.html#acb22c820855d22a709bbb93d123b9ab6">More...</a><br /></td></tr>
 <tr class="separator:acb22c820855d22a709bbb93d123b9ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890397fb00cf5f88cb2d80789b6eb22c"><td class="memItemLeft" align="right" valign="top"><a id="a890397fb00cf5f88cb2d80789b6eb22c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classradium_1_1Logger.html#a890397fb00cf5f88cb2d80789b6eb22c">logMemorySection</a> (const void *start, int length, const char *msg,...)</td></tr>
+<tr class="memdesc:a890397fb00cf5f88cb2d80789b6eb22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a section of memory from start to start + length This does NOT detect if you are reading from an area of memory that has been freed or does not belong to you. <br /></td></tr>
+<tr class="separator:a890397fb00cf5f88cb2d80789b6eb22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63fd03daca04addca8bff12d46f15850"><td class="memTemplParams" colspan="2"><a id="a63fd03daca04addca8bff12d46f15850"></a>
 template&lt;class OutputSystemType &gt; </td></tr>
 <tr class="memitem:a63fd03daca04addca8bff12d46f15850"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classradium_1_1Logger.html#a63fd03daca04addca8bff12d46f15850">setOutputSystem</a> ()</td></tr>
@@ -136,6 +141,21 @@ template&lt;class... Args&gt; </td></tr>
 <tr class="memitem:aa6996fc1cb6b10ed9ea8d9821090cb03"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classradium_1_1Logger.html#aa6996fc1cb6b10ed9ea8d9821090cb03">critical</a> (const char *message, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:aa6996fc1cb6b10ed9ea8d9821090cb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">fwds to Log with LogLevel::CRITICAL <br /></td></tr>
 <tr class="separator:aa6996fc1cb6b10ed9ea8d9821090cb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2f1e63cb0492dfe2be773c4b7c150cb3"><td class="memItemLeft" align="right" valign="top"><a id="a2f1e63cb0492dfe2be773c4b7c150cb3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classradium_1_1Logger.html#a2f1e63cb0492dfe2be773c4b7c150cb3">writeMetaData</a> (<a class="el" href="classbasic__string.html">rtl::string</a> &amp;output)</td></tr>
+<tr class="memdesc:a2f1e63cb0492dfe2be773c4b7c150cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add current time + logger name. <br /></td></tr>
+<tr class="separator:a2f1e63cb0492dfe2be773c4b7c150cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd0b4d1a7461c206e76871c7c0e117b"><td class="memItemLeft" align="right" valign="top"><a id="a7fd0b4d1a7461c206e76871c7c0e117b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classradium_1_1Logger.html#a7fd0b4d1a7461c206e76871c7c0e117b">writeLogLevel</a> (LogLevel ll, <a class="el" href="classbasic__string.html">rtl::string</a> &amp;output)</td></tr>
+<tr class="memdesc:a7fd0b4d1a7461c206e76871c7c0e117b"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the log level (in color if supported, see <a class="el" href="classradium_1_1OutputSystem.html#a5f72b0f3f46dcb9b2c5a8c42f3ff3703">OutputSystem::supportsColor()</a>) <br /></td></tr>
+<tr class="separator:a7fd0b4d1a7461c206e76871c7c0e117b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8bc506ee72726e839fadc5afad842a9"><td class="memItemLeft" align="right" valign="top"><a id="aa8bc506ee72726e839fadc5afad842a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classradium_1_1Logger.html#aa8bc506ee72726e839fadc5afad842a9">writeUserMessage</a> (<a class="el" href="classbasic__string.html">rtl::string</a> &amp;output, const char *message, va_list args)</td></tr>
+<tr class="memdesc:aa8bc506ee72726e839fadc5afad842a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the users formatted arguments to the output, uses vsnprintf. <br /></td></tr>
+<tr class="separator:aa8bc506ee72726e839fadc5afad842a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>

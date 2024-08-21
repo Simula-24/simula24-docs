@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unique_5fptr_66',['unique_ptr',['../classrtl_1_1unique__ptr.html',1,'rtl']]]
+  ['poolallocator_110',['PoolAllocator',['../classradium_1_1PoolAllocator.html',1,'radium']]]
 ];

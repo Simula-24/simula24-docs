@@ -1,0 +1,156 @@
+\hypertarget{classrtl_1_1unordered__map}{}\doxysection{rtl\+::unordered\+\_\+map$<$ K, V, Hash $>$ Class Template Reference}
+\label{classrtl_1_1unordered__map}\index{rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}}
+
+
+An unordered hash map implementation using \textquotesingle{}Robin Hood\textquotesingle{} collision resolution.  
+
+
+
+
+{\ttfamily \#include $<$hash\+\_\+map.\+h$>$}
+
+
+
+Collaboration diagram for rtl\+::unordered\+\_\+map$<$ K, V, Hash $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classrtl_1_1unordered__map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_aac500efa354586259fe3dc00c4e0d995}\label{classrtl_1_1unordered__map_aac500efa354586259fe3dc00c4e0d995}} 
+using {\bfseries hashing\+\_\+function} = Hash
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_add65a5b45fbcd3e67a4ace80539c6c7f}\label{classrtl_1_1unordered__map_add65a5b45fbcd3e67a4ace80539c6c7f}} 
+using {\bfseries kv\+\_\+map\+\_\+t} = \mbox{\hyperlink{structrtl_1_1displaced__pair}{rtl\+::displaced\+\_\+pair}}$<$ K, V $>$
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a11bebc2928c87c57330a4568ee5cd02d}\label{classrtl_1_1unordered__map_a11bebc2928c87c57330a4568ee5cd02d}} 
+using {\bfseries const\+\_\+iterator} = \mbox{\hyperlink{structrtl_1_1generic__const__iterator}{rtl\+::generic\+\_\+const\+\_\+iterator}}$<$ \mbox{\hyperlink{structrtl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} $>$
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a14ad5748c2affce9a484444ef7a50b93}\label{classrtl_1_1unordered__map_a14ad5748c2affce9a484444ef7a50b93}} 
+using {\bfseries iterator} = \mbox{\hyperlink{structrtl_1_1generic__iterator}{rtl\+::generic\+\_\+iterator}}$<$ \mbox{\hyperlink{structrtl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a0d1d2074ca604ef61af0a7a4af0eb0b4}\label{classrtl_1_1unordered__map_a0d1d2074ca604ef61af0a7a4af0eb0b4}} 
+void \mbox{\hyperlink{classrtl_1_1unordered__map_a0d1d2074ca604ef61af0a7a4af0eb0b4}{insert}} (const \mbox{\hyperlink{structrtl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} \&nkv)
+\begin{DoxyCompactList}\small\item\em Insert new value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a6a56401a52b8554a50ad282f3b545d25}\label{classrtl_1_1unordered__map_a6a56401a52b8554a50ad282f3b545d25}} 
+V \& \mbox{\hyperlink{classrtl_1_1unordered__map_a6a56401a52b8554a50ad282f3b545d25}{at}} (const K \&key)
+\begin{DoxyCompactList}\small\item\em Get value at key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_ae1dcc213325386d1da372f8f7ed56fae}\label{classrtl_1_1unordered__map_ae1dcc213325386d1da372f8f7ed56fae}} 
+V \& \mbox{\hyperlink{classrtl_1_1unordered__map_ae1dcc213325386d1da372f8f7ed56fae}{operator\mbox{[}$\,$\mbox{]}}} (const K \&key)
+\begin{DoxyCompactList}\small\item\em Get element at key. Will create a new on if not exists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a3993288087f9db6cc1e9f49d48a4f1a2}\label{classrtl_1_1unordered__map_a3993288087f9db6cc1e9f49d48a4f1a2}} 
+V \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (K \&\&key)
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_ad4ee96901b6a43a4706d67e3f097a180}\label{classrtl_1_1unordered__map_ad4ee96901b6a43a4706d67e3f097a180}} 
+size\+\_\+t {\bfseries count} (const K \&k) const
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a995d6097db9304c68200c4d97e2fba49}\label{classrtl_1_1unordered__map_a995d6097db9304c68200c4d97e2fba49}} 
+bool {\bfseries contains} (const K \&k) const
+\item 
+\mbox{\hyperlink{structrtl_1_1generic__iterator}{iterator}} \mbox{\hyperlink{classrtl_1_1unordered__map_aebb7d504e0e31d6df273c80d0b103fa2}{find}} (const K \&key)
+\item 
+\mbox{\hyperlink{structrtl_1_1generic__const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classrtl_1_1unordered__map_ad8e3083fe412b35ed25efed1a6c5110f}{find}} (const K \&key) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classrtl_1_1unordered__map_acf6b6a9cdbbf6102934d5752aaf8ab09}{max\+\_\+size}} () const
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_ad0c1c48a6f0893ef0935d41db19d15e2}\label{classrtl_1_1unordered__map_ad0c1c48a6f0893ef0935d41db19d15e2}} 
+size\+\_\+t \mbox{\hyperlink{classrtl_1_1unordered__map_ad0c1c48a6f0893ef0935d41db19d15e2}{size}} () const
+\begin{DoxyCompactList}\small\item\em get current number of elements \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_acd9c27c748c5a5cf16219bee0d26fc83}\label{classrtl_1_1unordered__map_acd9c27c748c5a5cf16219bee0d26fc83}} 
+bool \mbox{\hyperlink{classrtl_1_1unordered__map_acd9c27c748c5a5cf16219bee0d26fc83}{empty}} () const
+\begin{DoxyCompactList}\small\item\em is this map empty? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a49cfb4267ac6e68bdf8dbad89dc2495c}\label{classrtl_1_1unordered__map_a49cfb4267ac6e68bdf8dbad89dc2495c}} 
+void \mbox{\hyperlink{classrtl_1_1unordered__map_a49cfb4267ac6e68bdf8dbad89dc2495c}{resize}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Resize the array and rehash the data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a3c5f557c61413ca295f45be118b93ef4}\label{classrtl_1_1unordered__map_a3c5f557c61413ca295f45be118b93ef4}} 
+void \mbox{\hyperlink{classrtl_1_1unordered__map_a3c5f557c61413ca295f45be118b93ef4}{reserve}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Reserve \textquotesingle{}n\textquotesingle{} entries, MUST be done before inserting data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a78f32fe5d113426205b9e4f449e1ccf1}\label{classrtl_1_1unordered__map_a78f32fe5d113426205b9e4f449e1ccf1}} 
+\mbox{\hyperlink{structrtl_1_1generic__iterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_afae5f82ac96b3e6b694e74c3f6352eef}\label{classrtl_1_1unordered__map_afae5f82ac96b3e6b694e74c3f6352eef}} 
+\mbox{\hyperlink{structrtl_1_1generic__iterator}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a6b46163370670dd7d60d823f4a071416}\label{classrtl_1_1unordered__map_a6b46163370670dd7d60d823f4a071416}} 
+\mbox{\hyperlink{structrtl_1_1generic__const__iterator}{const\+\_\+iterator}} {\bfseries cbegin} () const
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a814c35fc3f7507dde4644728fab3a434}\label{classrtl_1_1unordered__map_a814c35fc3f7507dde4644728fab3a434}} 
+\mbox{\hyperlink{structrtl_1_1generic__const__iterator}{const\+\_\+iterator}} {\bfseries cend} () const
+\item 
+int \mbox{\hyperlink{classrtl_1_1unordered__map_a36a0d485b9cb0da791a695f34b9f1dab}{index\+\_\+of}} (const K \&key) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a7d84fefeaee15fa23b1b72990d6d4248}\label{classrtl_1_1unordered__map_a7d84fefeaee15fa23b1b72990d6d4248}} 
+\mbox{\hyperlink{classrtl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}}$<$ \mbox{\hyperlink{structrtl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} $>$ {\bfseries m\+\_\+data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a84a143d12e75cf0700361332af703ea1}\label{classrtl_1_1unordered__map_a84a143d12e75cf0700361332af703ea1}} 
+void {\bfseries swap} (uint32\+\_\+t old\+\_\+index, uint32\+\_\+t new\+\_\+index, uint32\+\_\+t probelen)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_a228c25cba4d9546ec21da6fe1a56ba1e}\label{classrtl_1_1unordered__map_a228c25cba4d9546ec21da6fe1a56ba1e}} 
+size\+\_\+t {\bfseries m\+\_\+size}
+\item 
+\mbox{\Hypertarget{classrtl_1_1unordered__map_ac170a62ee72d6c8013ea1eaa8e6d43bd}\label{classrtl_1_1unordered__map_ac170a62ee72d6c8013ea1eaa8e6d43bd}} 
+size\+\_\+t {\bfseries m\+\_\+element\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class K, class V, class Hash = rtl\+::hash$<$\+K$>$$>$\newline
+class rtl\+::unordered\+\_\+map$<$ K, V, Hash $>$}
+
+An unordered hash map implementation using \textquotesingle{}Robin Hood\textquotesingle{} collision resolution. 
+
+The API is basically the same as std\+::unordered\+\_\+map 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrtl_1_1unordered__map_aebb7d504e0e31d6df273c80d0b103fa2}\label{classrtl_1_1unordered__map_aebb7d504e0e31d6df273c80d0b103fa2}} 
+\index{rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}!find@{find}}
+\index{find@{find}!rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash  = rtl\+::hash$<$\+K$>$$>$ \\
+\mbox{\hyperlink{structrtl_1_1generic__iterator}{iterator}} \mbox{\hyperlink{classrtl_1_1unordered__map}{rtl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::find (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns an iterator containing key\textquotesingle{}s value end() if not exists \mbox{\Hypertarget{classrtl_1_1unordered__map_ad8e3083fe412b35ed25efed1a6c5110f}\label{classrtl_1_1unordered__map_ad8e3083fe412b35ed25efed1a6c5110f}} 
+\index{rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}!find@{find}}
+\index{find@{find}!rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash  = rtl\+::hash$<$\+K$>$$>$ \\
+\mbox{\hyperlink{structrtl_1_1generic__const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classrtl_1_1unordered__map}{rtl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::find (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns an iterator containing key\textquotesingle{}s value cend() if not exists \mbox{\Hypertarget{classrtl_1_1unordered__map_a36a0d485b9cb0da791a695f34b9f1dab}\label{classrtl_1_1unordered__map_a36a0d485b9cb0da791a695f34b9f1dab}} 
+\index{rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}!index\_of@{index\_of}}
+\index{index\_of@{index\_of}!rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{index\_of()}{index\_of()}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash $>$ \\
+int \mbox{\hyperlink{classrtl_1_1unordered__map}{unordered\+\_\+map}}$<$ K, V, Hash $>$\+::index\+\_\+of (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption}) const}
+
+get the index of \textquotesingle{}key\textquotesingle{}. \begin{DoxyReturn}{Returns}
+-\/1 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrtl_1_1unordered__map_acf6b6a9cdbbf6102934d5752aaf8ab09}\label{classrtl_1_1unordered__map_acf6b6a9cdbbf6102934d5752aaf8ab09}} 
+\index{rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}!max\_size@{max\_size}}
+\index{max\_size@{max\_size}!rtl::unordered\_map$<$ K, V, Hash $>$@{rtl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{max\_size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash  = rtl\+::hash$<$\+K$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrtl_1_1unordered__map}{rtl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+get total number of elements allowed before a resize will occur 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/hash\+\_\+map.\+h\end{DoxyCompactItemize}

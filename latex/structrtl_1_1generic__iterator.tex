@@ -1,0 +1,62 @@
+\hypertarget{structrtl_1_1generic__iterator}{}\doxysection{rtl\+::generic\+\_\+iterator$<$ T, meminc $>$ Struct Template Reference}
+\label{structrtl_1_1generic__iterator}\index{rtl::generic\_iterator$<$ T, meminc $>$@{rtl::generic\_iterator$<$ T, meminc $>$}}
+
+
+Generic iterator container.  
+
+
+
+
+{\ttfamily \#include $<$iterator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_a25e7390b9b3f3591e47abad799241051}\label{structrtl_1_1generic__iterator_a25e7390b9b3f3591e47abad799241051}} 
+{\bfseries generic\+\_\+iterator} (T $\ast$elem)
+\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_acc1629eb8491361b77cb709862523851}\label{structrtl_1_1generic__iterator_acc1629eb8491361b77cb709862523851}} 
+{\bfseries generic\+\_\+iterator} (const \mbox{\hyperlink{structrtl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_a03d6d6111f0d6e370594dd807851d966}\label{structrtl_1_1generic__iterator_a03d6d6111f0d6e370594dd807851d966}} 
+\mbox{\hyperlink{structrtl_1_1generic__iterator}{generic\+\_\+iterator}} \& \mbox{\hyperlink{structrtl_1_1generic__iterator_a03d6d6111f0d6e370594dd807851d966}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em next address/next node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_a003ee938cb0c7c84f26513e591833bae}\label{structrtl_1_1generic__iterator_a003ee938cb0c7c84f26513e591833bae}} 
+\mbox{\hyperlink{structrtl_1_1generic__iterator}{generic\+\_\+iterator}} \& \mbox{\hyperlink{structrtl_1_1generic__iterator_a003ee938cb0c7c84f26513e591833bae}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em previous address/previous node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_a38d180c1803d6be22564e6825c03b461}\label{structrtl_1_1generic__iterator_a38d180c1803d6be22564e6825c03b461}} 
+T \& \mbox{\hyperlink{structrtl_1_1generic__iterator_a38d180c1803d6be22564e6825c03b461}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em dereference \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_a4462559fceb8879bafdb01cc05e18f07}\label{structrtl_1_1generic__iterator_a4462559fceb8879bafdb01cc05e18f07}} 
+T $\ast$ \mbox{\hyperlink{structrtl_1_1generic__iterator_a4462559fceb8879bafdb01cc05e18f07}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em Access via pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_ac55ddcb0118215e3cc3731b67d9667ce}\label{structrtl_1_1generic__iterator_ac55ddcb0118215e3cc3731b67d9667ce}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structrtl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_a903c06ab37e696359be589bf7fa01cc6}\label{structrtl_1_1generic__iterator_a903c06ab37e696359be589bf7fa01cc6}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{structrtl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_aaecaa17775ab686a489cfed0c87a41e2}\label{structrtl_1_1generic__iterator_aaecaa17775ab686a489cfed0c87a41e2}} 
+{\bfseries operator generic\+\_\+iterator} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structrtl_1_1generic__iterator_a9207255ad298764a0ca6330362234003}\label{structrtl_1_1generic__iterator_a9207255ad298764a0ca6330362234003}} 
+T $\ast$ {\bfseries element} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T, bool meminc = true$>$\newline
+struct rtl\+::generic\+\_\+iterator$<$ T, meminc $>$}
+
+Generic iterator container. 
+
+meminc controls the iteration methof If it is set to true, the inc/dec operators will increment memory addresses
+
+Otherwise, this will assume that T is a doubly linked list and use the next and prev functions that MUST be provided by T. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/iterator.\+h\end{DoxyCompactItemize}

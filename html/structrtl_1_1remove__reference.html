@@ -93,6 +93,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>const_type</b> = con
 struct rtl::remove_reference&lt; T &gt;</h3>
 
 <p>This was mostly copied from the STL because it has very little performance over head ( if any) and is really the best way to implement perfect forwarding and movement. </p>
+<p>disable qualifier warning irrelavent in this case</p>
 <p>remove_reference&lt;T&gt;::type will simply give you the type without the reference</p>
 <p>e.g. remove_reference&lt;const int&amp;&gt;::type = int</p>
 <p>This first class exists so the following two can use template specialization </p>

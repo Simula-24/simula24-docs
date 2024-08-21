@@ -1,0 +1,62 @@
+\hypertarget{structrtl_1_1iterator}{}\doxysection{rtl\+::iterator$<$ T, meminc $>$ Struct Template Reference}
+\label{structrtl_1_1iterator}\index{rtl::iterator$<$ T, meminc $>$@{rtl::iterator$<$ T, meminc $>$}}
+
+
+Generic iterator container.  
+
+
+
+
+{\ttfamily \#include $<$iterator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_a3a8ffd667d4fd498eee5f1f31bb50d7d}\label{structrtl_1_1iterator_a3a8ffd667d4fd498eee5f1f31bb50d7d}} 
+{\bfseries iterator} (T $\ast$elem)
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_af7f49546569da12a23bffb28fe56546a}\label{structrtl_1_1iterator_af7f49546569da12a23bffb28fe56546a}} 
+{\bfseries iterator} (const \mbox{\hyperlink{structrtl_1_1iterator}{iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_a6ccc706640f97e41b5ca0f87b933050b}\label{structrtl_1_1iterator_a6ccc706640f97e41b5ca0f87b933050b}} 
+\mbox{\hyperlink{structrtl_1_1iterator}{iterator}} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_ac86cd0797f2a3cc2962d675f4ea4b6f4}\label{structrtl_1_1iterator_ac86cd0797f2a3cc2962d675f4ea4b6f4}} 
+\mbox{\hyperlink{structrtl_1_1iterator}{iterator}} \& {\bfseries operator-\/-\/} ()
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_a71b2b0964aa346bc1cc22d0ced89f0e1}\label{structrtl_1_1iterator_a71b2b0964aa346bc1cc22d0ced89f0e1}} 
+T \& {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_a3d8608f97909dad164b5d4136642e4c0}\label{structrtl_1_1iterator_a3d8608f97909dad164b5d4136642e4c0}} 
+T $\ast$ {\bfseries operator-\/$>$} () const
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_a64a04c189e6ce9c1550526ac8585c8c4}\label{structrtl_1_1iterator_a64a04c189e6ce9c1550526ac8585c8c4}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structrtl_1_1iterator}{iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_a9f0913e749cd8470be086ba2489bf961}\label{structrtl_1_1iterator_a9f0913e749cd8470be086ba2489bf961}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{structrtl_1_1iterator}{iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_a3fa76b7c5aa6618fb2177743cd24e3ca}\label{structrtl_1_1iterator_a3fa76b7c5aa6618fb2177743cd24e3ca}} 
+{\bfseries operator iterator} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structrtl_1_1iterator_acd60d06ae5b1a92838642bbf6b48941c}\label{structrtl_1_1iterator_acd60d06ae5b1a92838642bbf6b48941c}} 
+T $\ast$ {\bfseries element} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T, bool meminc = true$>$\newline
+struct rtl\+::iterator$<$ T, meminc $>$}
+
+Generic iterator container. 
+
+meminc controls the iteration methof If it is set to true, the inc/dec operators will increment memory addresses
+
+Otherwise, this will assume that T is a doubly linked list and use the next and prev functions that MUST be provided by T. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core/rtl/iterator.\+h\end{DoxyCompactItemize}

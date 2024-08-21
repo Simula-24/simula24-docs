@@ -104,41 +104,24 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">void</span>* get_pointer_base_unsafe(<span class="keywordtype">void</span>* ptr)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        assert(ptr);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> ((<span class="keywordtype">void</span>**)ptr)[-1];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> constexpr uintptr_t get_aligned_address_unsafe(<span class="keywordtype">size_t</span> alignment, <span class="keywordtype">void</span>* ptr)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> ((uintptr_t)(ptr)+(<span class="keyword">sizeof</span>(<span class="keywordtype">void</span>*)) + alignment - 1) &amp; ~(alignment - 1);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> constexpr uintptr_t get_num_bytes_aligned_unsafe(<span class="keywordtype">void</span>* ptr)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> (uintptr_t)(ptr) - (uintptr_t)(get_pointer_base_unsafe(ptr)) ;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CORE_MEMORY_MEMORY_H_</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CORE_MEMORY_MEMORY_H_</span></div>
 <div class="ttc" id="aclassradium_1_1GenericAllocator_html"><div class="ttname"><a href="classradium_1_1GenericAllocator.html">radium::GenericAllocator</a></div><div class="ttdef"><b>Definition:</b> Memory.h:16</div></div>
-<div class="ttc" id="aclassradium_1_1GenericAllocator_html_a0f1e621283ed6af7768b58b9ca1afad8"><div class="ttname"><a href="classradium_1_1GenericAllocator.html#a0f1e621283ed6af7768b58b9ca1afad8">radium::GenericAllocator::alloc_aligned</a></div><div class="ttdeci">static void * alloc_aligned(size_t size, size_t n, size_t alignment)</div><div class="ttdef"><b>Definition:</b> Memory.cpp:17</div></div>
-<div class="ttc" id="aclassradium_1_1GenericAllocator_html_a2e4577c55519cfc6dc796d9cd2e3838f"><div class="ttname"><a href="classradium_1_1GenericAllocator.html#a2e4577c55519cfc6dc796d9cd2e3838f">radium::GenericAllocator::free_aligned</a></div><div class="ttdeci">static void free_aligned(void *ptr)</div><div class="ttdef"><b>Definition:</b> Memory.cpp:33</div></div>
+<div class="ttc" id="aclassradium_1_1GenericAllocator_html_a0f1e621283ed6af7768b58b9ca1afad8"><div class="ttname"><a href="classradium_1_1GenericAllocator.html#a0f1e621283ed6af7768b58b9ca1afad8">radium::GenericAllocator::alloc_aligned</a></div><div class="ttdeci">static void * alloc_aligned(size_t size, size_t n, size_t alignment)</div><div class="ttdef"><b>Definition:</b> Memory.cpp:18</div></div>
+<div class="ttc" id="aclassradium_1_1GenericAllocator_html_a2e4577c55519cfc6dc796d9cd2e3838f"><div class="ttname"><a href="classradium_1_1GenericAllocator.html#a2e4577c55519cfc6dc796d9cd2e3838f">radium::GenericAllocator::free_aligned</a></div><div class="ttdeci">static void free_aligned(void *ptr)</div><div class="ttdef"><b>Definition:</b> Memory.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

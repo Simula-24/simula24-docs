@@ -1,0 +1,93 @@
+\hypertarget{classradium_1_1thread}{}\doxysection{radium\+::thread Class Reference}
+\label{classradium_1_1thread}\index{radium::thread@{radium::thread}}
+
+
+Basic Thread class.  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+
+
+Collaboration diagram for radium\+::thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classradium_1_1thread__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1thread_acbbd3a9fa22f25aece057169b93871b1}\label{classradium_1_1thread_acbbd3a9fa22f25aece057169b93871b1}} 
+{\footnotesize template$<$class T , class ... Args$>$ }\\{\bfseries thread} (T \&\&t, Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classradium_1_1thread_a4c461d6a1624c2eb40c8cb6962bbdc09}\label{classradium_1_1thread_a4c461d6a1624c2eb40c8cb6962bbdc09}} 
+\mbox{\hyperlink{classradium_1_1thread}{thread}} \& {\bfseries operator=} (\mbox{\hyperlink{classradium_1_1thread}{thread}} \&\&other)
+\item 
+\mbox{\Hypertarget{classradium_1_1thread_ac77d974035148375cbcd0835d631b3d0}\label{classradium_1_1thread_ac77d974035148375cbcd0835d631b3d0}} 
+void \mbox{\hyperlink{classradium_1_1thread_ac77d974035148375cbcd0835d631b3d0}{join}} ()
+\begin{DoxyCompactList}\small\item\em wait for this thread to finish \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1thread_a2a537ff2d75751d0a3eb3617f0a5ca70}\label{classradium_1_1thread_a2a537ff2d75751d0a3eb3617f0a5ca70}} 
+size\+\_\+t \mbox{\hyperlink{classradium_1_1thread_a2a537ff2d75751d0a3eb3617f0a5ca70}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em The TID for {\itshape this} thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1thread_afbb27768bc1b6f5be8718f96b51c189e}\label{classradium_1_1thread_afbb27768bc1b6f5be8718f96b51c189e}} 
+const Thread\+Object {\bfseries get\+Native\+Thread\+Object} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1thread_ac43406627d82fd4559bb0ac423ef41f7}\label{classradium_1_1thread_ac43406627d82fd4559bb0ac423ef41f7}} 
+static size\+\_\+t \mbox{\hyperlink{classradium_1_1thread_ac43406627d82fd4559bb0ac423ef41f7}{get\+Thread\+ID}} ()
+\begin{DoxyCompactList}\small\item\em get thread id for caller \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1thread_ab06afdabda1feb4a899bb6a1b56b9d70}\label{classradium_1_1thread_ab06afdabda1feb4a899bb6a1b56b9d70}} 
+void \mbox{\hyperlink{classradium_1_1thread_ab06afdabda1feb4a899bb6a1b56b9d70}{start}} (void $\ast$function, void $\ast$args)
+\begin{DoxyCompactList}\small\item\em start a thread \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1thread_abcd1010c5563cfe3ad28401b32c2d76c}\label{classradium_1_1thread_abcd1010c5563cfe3ad28401b32c2d76c}} 
+Thread\+Object \mbox{\hyperlink{classradium_1_1thread_abcd1010c5563cfe3ad28401b32c2d76c}{m\+\_\+thread}}
+\begin{DoxyCompactList}\small\item\em native thread object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classradium_1_1thread_a3833d9d345fc5e6023c5ffe8a5205b0f}\label{classradium_1_1thread_a3833d9d345fc5e6023c5ffe8a5205b0f}} 
+size\+\_\+t {\bfseries m\+\_\+id}
+\item 
+\mbox{\hyperlink{classrtl_1_1function}{rtl\+::function}}$<$ void()$>$ \mbox{\hyperlink{classradium_1_1thread_a7b10a1b97eddad85ba970da29eae532e}{dummy}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basic Thread class. 
+
+This relies on the operating system\textquotesingle{}s thread API Specifically Window\textquotesingle{}s Thread API and pthreads on $\ast$nix Implementations are found in /platform/$<$name$>$/thread/thread.cpp
+
+To use\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classradium_1_1thread}{radium::thread}} mythread(myfunction, myargs...);    }
+\DoxyCodeLine{mythread.join(); }
+
+\end{DoxyCode}
+
+
+Thread supports multiple arguments by hiding them inside of a lambda stored in @dummy
+
+This dummy function is what \mbox{\hyperlink{classradium_1_1dummy__thread__runner}{dummy\+\_\+thread\+\_\+runner}} will run 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classradium_1_1thread_a7b10a1b97eddad85ba970da29eae532e}\label{classradium_1_1thread_a7b10a1b97eddad85ba970da29eae532e}} 
+\index{radium::thread@{radium::thread}!dummy@{dummy}}
+\index{dummy@{dummy}!radium::thread@{radium::thread}}
+\doxysubsubsection{\texorpdfstring{dummy}{dummy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrtl_1_1function}{rtl\+::function}}$<$void()$>$ radium\+::thread\+::dummy\hspace{0.3cm}{\ttfamily [private]}}
+
+dummy function. Holds a lambda that calls the actual function 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/thread/thread.\+h\item 
+platform/unix/thread/thread.\+cpp\end{DoxyCompactItemize}

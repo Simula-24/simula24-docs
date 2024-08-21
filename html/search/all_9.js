@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['length_31',['length',['../classrtl_1_1basic__string.html#ab306b4f7a35c18a516463bea366a98f2',1,'rtl::basic_string']]],
-  ['log_32',['log',['../classradium_1_1Logger.html#acb22c820855d22a709bbb93d123b9ab6',1,'radium::Logger::log()'],['../classradium_1_1FileOutputSystem.html#a4da4d3da02b3f9ac488eb800c544377d',1,'radium::FileOutputSystem::log()'],['../classradium_1_1OutputSystem.html#a3125b553d8fbe3038b7b80b896058875',1,'radium::OutputSystem::log()'],['../classradium_1_1StdoutSystem.html#ae9e051bc89f4e22c805108220a20920b',1,'radium::StdoutSystem::log()']]],
-  ['logger_33',['Logger',['../classradium_1_1Logger.html',1,'radium']]]
+  ['index_5fof_73',['index_of',['../classrtl_1_1unordered__map.html#a36a0d485b9cb0da791a695f34b9f1dab',1,'rtl::unordered_map']]],
+  ['info_74',['info',['../classradium_1_1Logger.html#aec0dc34113c8bdd5aeee2d9f93bd8714',1,'radium::Logger']]],
+  ['initalloc_75',['initAlloc',['../classradium_1_1PoolAllocator.html#ab6f865064c6d046d827fa6ceef253d3e',1,'radium::PoolAllocator']]],
+  ['initallocn_76',['initAllocN',['../classradium_1_1PoolAllocator.html#a6cdf7a8d587a43e4a482c7483c8cdead',1,'radium::PoolAllocator']]],
+  ['insert_77',['insert',['../classrtl_1_1unordered__map.html#a0d1d2074ca604ef61af0a7a4af0eb0b4',1,'rtl::unordered_map']]]
 ];

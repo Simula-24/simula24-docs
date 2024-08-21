@@ -1,0 +1,81 @@
+\hypertarget{classradium_1_1sparse__set}{}\doxysection{radium\+::sparse\+\_\+set$<$ Index $>$ Class Template Reference}
+\label{classradium_1_1sparse__set}\index{radium::sparse\_set$<$ Index $>$@{radium::sparse\_set$<$ Index $>$}}
+
+
+A sparse set implementations.  
+
+
+
+
+{\ttfamily \#include $<$sparse\+\_\+set.\+h$>$}
+
+
+
+Collaboration diagram for radium\+::sparse\+\_\+set$<$ Index $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classradium_1_1sparse__set__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_a573e96d4c326e8ebe38a7852a4f1f9cc}\label{classradium_1_1sparse__set_a573e96d4c326e8ebe38a7852a4f1f9cc}} 
+{\bfseries sparse\+\_\+set} (index\+\_\+t sparse\+\_\+size=32, index\+\_\+t dense\+\_\+size=24)
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_abbf25813cee35b68426e3123180abc19}\label{classradium_1_1sparse__set_abbf25813cee35b68426e3123180abc19}} 
+void \mbox{\hyperlink{classradium_1_1sparse__set_abbf25813cee35b68426e3123180abc19}{add}} (index\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Add ID to the dense array and associate its position with the sparse array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classradium_1_1sparse__set_ab94777df06be635fbdb2907973623e5d}{remove}} (index\+\_\+t id)
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_a063b5c9d360d3859d19edd04a305c496}\label{classradium_1_1sparse__set_a063b5c9d360d3859d19edd04a305c496}} 
+bool {\bfseries contains} (index\+\_\+t id)
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_abd3d2b0f1a34578e5868da754fa962e7}\label{classradium_1_1sparse__set_abd3d2b0f1a34578e5868da754fa962e7}} 
+index\+\_\+t {\bfseries get\+\_\+position} (index\+\_\+t pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_ae9a86ab88629094918b7c526a2e838df}\label{classradium_1_1sparse__set_ae9a86ab88629094918b7c526a2e838df}} 
+using {\bfseries index\+\_\+t} = Index
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_a50bd489e8a598fee9b871172240c624f}\label{classradium_1_1sparse__set_a50bd489e8a598fee9b871172240c624f}} 
+\mbox{\hyperlink{classrtl_1_1array}{rtl\+::array}}$<$ index\+\_\+t $>$ {\bfseries m\+\_\+sparse\+\_\+array}
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_aa75728cdb0d759817600962b98148086}\label{classradium_1_1sparse__set_aa75728cdb0d759817600962b98148086}} 
+\mbox{\hyperlink{classrtl_1_1array}{rtl\+::array}}$<$ index\+\_\+t $>$ {\bfseries m\+\_\+dense\+\_\+array}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classradium_1_1sparse__set_a85380b24d4bd659045fad61aae26594b}\label{classradium_1_1sparse__set_a85380b24d4bd659045fad61aae26594b}} 
+constexpr static index\+\_\+t \mbox{\hyperlink{classradium_1_1sparse__set_a85380b24d4bd659045fad61aae26594b}{EMPTY\+\_\+\+SLOT}} = -\/1
+\begin{DoxyCompactList}\small\item\em tombstone value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Index = radium\+::\+I32$>$\newline
+class radium\+::sparse\+\_\+set$<$ Index $>$}
+
+A sparse set implementations. 
+
+\href{https://skypjack.github.io/2020-08-02-ecs-baf-part-9/}{\texttt{ https\+://skypjack.\+github.\+io/2020-\/08-\/02-\/ecs-\/baf-\/part-\/9/}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classradium_1_1sparse__set_ab94777df06be635fbdb2907973623e5d}\label{classradium_1_1sparse__set_ab94777df06be635fbdb2907973623e5d}} 
+\index{radium::sparse\_set$<$ Index $>$@{radium::sparse\_set$<$ Index $>$}!remove@{remove}}
+\index{remove@{remove}!radium::sparse\_set$<$ Index $>$@{radium::sparse\_set$<$ Index $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename Index  = radium\+::\+I32$>$ \\
+void \mbox{\hyperlink{classradium_1_1sparse__set}{radium\+::sparse\+\_\+set}}$<$ Index $>$\+::remove (\begin{DoxyParamCaption}\item[{index\+\_\+t}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@remove Remove ID if it exists Will mark its spot with the tombstone value 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scene/ecs/sparse\+\_\+set.\+h\end{DoxyCompactItemize}

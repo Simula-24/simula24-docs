@@ -99,15 +99,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a88feb3ebcc954fad0044b6cf60f58888"><td class="memItemLeft" align="right" valign="top"><a id="a88feb3ebcc954fad0044b6cf60f58888"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>shared_ptr</b> (T *_new)</td></tr>
-<tr class="separator:a88feb3ebcc954fad0044b6cf60f58888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd74d23e0100b70acb789daa5240b59"><td class="memTemplParams" colspan="2"><a id="a7fd74d23e0100b70acb789daa5240b59"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a7fd74d23e0100b70acb789daa5240b59"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shared_ptr</b> (U *_new)</td></tr>
+<tr class="separator:a7fd74d23e0100b70acb789daa5240b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbd400c63486d8458123d7aa5b0163f4"><td class="memItemLeft" align="right" valign="top"><a id="adbd400c63486d8458123d7aa5b0163f4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>shared_ptr</b> (const <a class="el" href="classrtl_1_1shared__ptr.html">shared_ptr</a> &amp;other)</td></tr>
 <tr class="separator:adbd400c63486d8458123d7aa5b0163f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4701d548882315009e4749a3aad00767"><td class="memItemLeft" align="right" valign="top"><a id="a4701d548882315009e4749a3aad00767"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>shared_ptr</b> (const <a class="el" href="classrtl_1_1shared__ptr.html">shared_ptr</a> &amp;&amp;other)</td></tr>
-<tr class="separator:a4701d548882315009e4749a3aad00767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861fb55715e271035a8d918632924f69"><td class="memItemLeft" align="right" valign="top"><a id="a861fb55715e271035a8d918632924f69"></a>
 <a class="el" href="classrtl_1_1shared__ptr.html">shared_ptr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classrtl_1_1shared__ptr.html">shared_ptr</a> &amp;other)</td></tr>
 <tr class="separator:a861fb55715e271035a8d918632924f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +120,10 @@ T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1shared__ptr.html#a250f6f1a67958271a1022fde10562bf3">operator*</a> ()</td></tr>
 <tr class="memdesc:a250f6f1a67958271a1022fde10562bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">dereference the pointer <br /></td></tr>
 <tr class="separator:a250f6f1a67958271a1022fde10562bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa324690dcabbbdd015a7251d1705d52"><td class="memTemplParams" colspan="2"><a id="aaa324690dcabbbdd015a7251d1705d52"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:aaa324690dcabbbdd015a7251d1705d52"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shared_ptr</b> (const <a class="el" href="classrtl_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;other, std::enable_if_t&lt; std::is_convertible_v&lt; U *, T * &gt;, int &gt;=0)</td></tr>
+<tr class="separator:aaa324690dcabbbdd015a7251d1705d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcbb523f1514c8dc65060aae11a0fffa"><td class="memItemLeft" align="right" valign="top"><a id="abcbb523f1514c8dc65060aae11a0fffa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="separator:abcbb523f1514c8dc65060aae11a0fffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +142,7 @@ Private Attributes</h2></td></tr>
 class rtl::shared_ptr&lt; T &gt;</h3>
 
 <p>Generic Shared Pointer class. </p>
-<p>create via <a class="el" href="namespacertl.html#afe05fee113a4e9430a74f8d7ee36088c">rtl::make_shared</a> &lt;YourType&gt;(YourArgs...);</p>
+<p>create via <a class="el" href="namespacertl.html#ab96afeae25e16a70257cb3ad5ac44e8e">rtl::make_shared</a> &lt;YourType&gt;(YourArgs...);</p>
 <p>This is a reference counted Smart Pointer. It will use a structure called <a class="el" href="structrtl_1_1shared__ptr_1_1____ref__cnt__ptr.html">__ref_cnt_ptr</a> to hold the pointer and it's reference count</p>
 <p>Copying this class will simply increase the reference count Moving this class will NOT</p>
 <p>During destruction, this class will try to release itself</p><ol type="1">

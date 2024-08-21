@@ -15,8 +15,20 @@ array to hold T data
 \mbox{\Hypertarget{classrtl_1_1array_a5259433346f0e997ba2dabadf5d75477}\label{classrtl_1_1array_a5259433346f0e997ba2dabadf5d75477}} 
 void {\bfseries resize} (size\+\_\+t n)
 \item 
+\mbox{\Hypertarget{classrtl_1_1array_afbba7e0b9cd84eaaac33f06aa4c475ec}\label{classrtl_1_1array_afbba7e0b9cd84eaaac33f06aa4c475ec}} 
+void \mbox{\hyperlink{classrtl_1_1array_afbba7e0b9cd84eaaac33f06aa4c475ec}{fill}} (T value)
+\begin{DoxyCompactList}\small\item\em Fill with T. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrtl_1_1array_a60880c5e46016ac68de21c8d1387c1bb}\label{classrtl_1_1array_a60880c5e46016ac68de21c8d1387c1bb}} 
+void {\bfseries fill\+\_\+remaining} (T value)
+\item 
 \mbox{\Hypertarget{classrtl_1_1array_a9801eadfdde6c06754cb3bc4b748220d}\label{classrtl_1_1array_a9801eadfdde6c06754cb3bc4b748220d}} 
 void {\bfseries push\+\_\+back} (const T \&value)
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_ac9d452f08d801ff28fb9c7c9d0fead0a}\label{classrtl_1_1array_ac9d452f08d801ff28fb9c7c9d0fead0a}} 
+void {\bfseries push\+\_\+back} (T \&\&value)
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_ad06a081d0f75a68c08cd18b8e6604ff9}\label{classrtl_1_1array_ad06a081d0f75a68c08cd18b8e6604ff9}} 
+void {\bfseries pop\+\_\+back} ()
 \item 
 \mbox{\Hypertarget{classrtl_1_1array_a6180f7ff62c0292caeee668a12d491cf}\label{classrtl_1_1array_a6180f7ff62c0292caeee668a12d491cf}} 
 T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index)
@@ -24,8 +36,23 @@ T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index)
 \mbox{\Hypertarget{classrtl_1_1array_addb4b9227d759056a314fec27f8c7d83}\label{classrtl_1_1array_addb4b9227d759056a314fec27f8c7d83}} 
 const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const
 \item 
-\mbox{\Hypertarget{classrtl_1_1array_a32b1b7133cb02c4c6d8b8c64e8c2de16}\label{classrtl_1_1array_a32b1b7133cb02c4c6d8b8c64e8c2de16}} 
-constexpr size\+\_\+t {\bfseries size} ()
+\mbox{\Hypertarget{classrtl_1_1array_a2200b5b76085acf24d1a4c0ee2d38759}\label{classrtl_1_1array_a2200b5b76085acf24d1a4c0ee2d38759}} 
+constexpr size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a3065371b00f4189cc3ae6a59042d5e26}\label{classrtl_1_1array_a3065371b00f4189cc3ae6a59042d5e26}} 
+constexpr size\+\_\+t {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a42584176d1121940a9ae8c771934ceab}\label{classrtl_1_1array_a42584176d1121940a9ae8c771934ceab}} 
+constexpr const T \& {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a33fa6d45bdf6069a8a1df0c70ba04103}\label{classrtl_1_1array_a33fa6d45bdf6069a8a1df0c70ba04103}} 
+constexpr const T \& {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a0ef80e4ae31c9c2c52d4653c393f1227}\label{classrtl_1_1array_a0ef80e4ae31c9c2c52d4653c393f1227}} 
+constexpr T \& {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classrtl_1_1array_a0baa0b7f889389aae20d5ba650dd141b}\label{classrtl_1_1array_a0baa0b7f889389aae20d5ba650dd141b}} 
+constexpr T \& {\bfseries back} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}

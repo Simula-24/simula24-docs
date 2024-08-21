@@ -106,6 +106,12 @@ const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#ac8c06c3eb6b23f241b7d9d23653fe1bc">at_c</a> (size_t where)</td></tr>
 <tr class="memdesc:ac8c06c3eb6b23f241b7d9d23653fe1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">data[where] with copy <br /></td></tr>
 <tr class="separator:ac8c06c3eb6b23f241b7d9d23653fe1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabeadcfc23d32a2f41138870e5989177"><td class="memItemLeft" align="right" valign="top"><a id="aabeadcfc23d32a2f41138870e5989177"></a>
+T *&#160;</td><td class="memItemRight" valign="bottom"><b>at_pc</b> (size_t where)</td></tr>
+<tr class="separator:aabeadcfc23d32a2f41138870e5989177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2422993137a684675c89d61251b9a5f"><td class="memItemLeft" align="right" valign="top"><a id="ac2422993137a684675c89d61251b9a5f"></a>
+const T *&#160;</td><td class="memItemRight" valign="bottom"><b>at_p</b> (size_t where) const</td></tr>
+<tr class="separator:ac2422993137a684675c89d61251b9a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1053027fbbb6eca5ab9c9550532ae6fc"><td class="memItemLeft" align="right" valign="top"><a id="a1053027fbbb6eca5ab9c9550532ae6fc"></a>
 T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a1053027fbbb6eca5ab9c9550532ae6fc">copy</a> ()</td></tr>
 <tr class="memdesc:a1053027fbbb6eca5ab9c9550532ae6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get your own copy. <br /></td></tr>
@@ -122,6 +128,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a52866ecfaab2d48c4055ef4bf3992058">get_num_data</a> () const</td></tr>
 <tr class="memdesc:a52866ecfaab2d48c4055ef4bf3992058"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many individual T's can fit in the data section This is generally what you will want to use. <br /></td></tr>
 <tr class="separator:a52866ecfaab2d48c4055ef4bf3992058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab03d99338c696fcfdc978a04652bd5"><td class="memItemLeft" align="right" valign="top"><a id="aeab03d99338c696fcfdc978a04652bd5"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_allocation_size</b> () const</td></tr>
+<tr class="separator:aeab03d99338c696fcfdc978a04652bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d581cba2441eeec164a63f5ad81fb9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c">resize</a> (size_t n)</td></tr>
 <tr class="memdesc:a8d581cba2441eeec164a63f5ad81fb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resize the buffer to (n * T) + DATA_OFFSET bytes Will create a new copy.  <a href="classrtl_1_1copy__on__write.html#a8d581cba2441eeec164a63f5ad81fb9c">More...</a><br /></td></tr>
 <tr class="separator:a8d581cba2441eeec164a63f5ad81fb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +204,10 @@ template&lt;class U &gt; </td></tr>
 template&lt;class U &gt; </td></tr>
 <tr class="memitem:a7c36d7df0b30208105f56b2e0084e4b5"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_string</b></td></tr>
 <tr class="separator:a7c36d7df0b30208105f56b2e0084e4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c3b918e05a30835aee5a721b39f9cc"><td class="memTemplParams" colspan="2"><a id="a05c3b918e05a30835aee5a721b39f9cc"></a>
+template&lt;class K , class V , class H &gt; </td></tr>
+<tr class="memitem:a05c3b918e05a30835aee5a721b39f9cc"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>hash_map</b></td></tr>
+<tr class="separator:a05c3b918e05a30835aee5a721b39f9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
