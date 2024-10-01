@@ -1,4 +1,0 @@
-<map id="radium::PoolAllocator&lt; T &gt;" name="radium::PoolAllocator&lt; T &gt;">
-<area shape="rect" id="node1" title="Allocator for objects that should be placed sequentially in memory e.g. for quicker cache access." alt="" coords="5,109,205,136"/>
-<area shape="rect" id="node2" href="$structradium_1_1PoolAllocator_1_1__free__list.html" title=" " alt="" coords="24,5,187,47"/>
-</map>

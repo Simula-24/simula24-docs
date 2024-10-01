@@ -1,4 +1,0 @@
-<map id="radium::ScopedMutexLocker" name="radium::ScopedMutexLocker">
-<area shape="rect" id="node1" title="Auto locks/unlocks mutexes Should only be used inside of functions." alt="" coords="5,95,212,121"/>
-<area shape="rect" id="node2" href="$classradium_1_1Mutex.html" title="Mutual Exclusion." alt="" coords="50,5,167,32"/>
-</map>

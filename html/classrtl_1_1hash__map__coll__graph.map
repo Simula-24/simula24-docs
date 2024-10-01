@@ -1,4 +1,0 @@
-<map id="rtl::hash_map&lt; K, V, Hash &gt;" name="rtl::hash_map&lt; K, V, Hash &gt;">
-<area shape="rect" id="node1" title="A hash_map implementation using &#39;Robin Hood&#39; collision resolution." alt="" coords="11,109,167,151"/>
-<area shape="rect" id="node2" href="$classrtl_1_1copy__on__write.html" title=" " alt="" coords="5,5,173,47"/>
-</map>
