@@ -1,0 +1,56 @@
+\hypertarget{classsimula24_1_1Mutex}{}\doxysection{simula24\+::Mutex Class Reference}
+\label{classsimula24_1_1Mutex}\index{simula24::Mutex@{simula24::Mutex}}
+
+
+Mutual Exclusion.  
+
+
+
+
+{\ttfamily \#include $<$mutex.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsimula24_1_1Mutex_ac9e9182407f5f74892318607888e9be4}{$\sim$\+Mutex}} ()
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Mutex_a5b4b2b989685722fe328431569455d2d}\label{classsimula24_1_1Mutex_a5b4b2b989685722fe328431569455d2d}} 
+Status \mbox{\hyperlink{classsimula24_1_1Mutex_a5b4b2b989685722fe328431569455d2d}{create}} ()
+\begin{DoxyCompactList}\small\item\em Create a new mutex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Mutex_ac7ec9db96b713edd418966af1da837b3}\label{classsimula24_1_1Mutex_ac7ec9db96b713edd418966af1da837b3}} 
+void \mbox{\hyperlink{classsimula24_1_1Mutex_ac7ec9db96b713edd418966af1da837b3}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destory the mutex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Mutex_ad91be808bf0a60a16f10b897ec246d3a}\label{classsimula24_1_1Mutex_ad91be808bf0a60a16f10b897ec246d3a}} 
+void \mbox{\hyperlink{classsimula24_1_1Mutex_ad91be808bf0a60a16f10b897ec246d3a}{lock}} ()
+\begin{DoxyCompactList}\small\item\em lock \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Mutex_a546a5b797ba29959357586aa2b3740a8}\label{classsimula24_1_1Mutex_a546a5b797ba29959357586aa2b3740a8}} 
+void \mbox{\hyperlink{classsimula24_1_1Mutex_a546a5b797ba29959357586aa2b3740a8}{unlock}} ()
+\begin{DoxyCompactList}\small\item\em unlock \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Mutex_a766598b57d30fbe7460a556a09967f99}\label{classsimula24_1_1Mutex_a766598b57d30fbe7460a556a09967f99}} 
+Mutex\+Object \mbox{\hyperlink{classsimula24_1_1Mutex_a766598b57d30fbe7460a556a09967f99}{m\+\_\+mtx}}
+\begin{DoxyCompactList}\small\item\em HANDLE on win32, pthread\+\_\+mutex\+\_\+t on linux. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mutual Exclusion. 
+
+Wrapper around OS thread-\/api Mutexes (e.\+g. windows Mutexes and pthreads)
+
+Implementations found under /platform/$<$platform$>$/thread/thread.cpp 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsimula24_1_1Mutex_ac9e9182407f5f74892318607888e9be4}\label{classsimula24_1_1Mutex_ac9e9182407f5f74892318607888e9be4}} 
+\index{simula24::Mutex@{simula24::Mutex}!````~Mutex@{$\sim$Mutex}}
+\index{````~Mutex@{$\sim$Mutex}!simula24::Mutex@{simula24::Mutex}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mutex()}{~Mutex()}}
+{\footnotesize\ttfamily Mutex\+::$\sim$\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This will destroy a mutex if it\textquotesingle{}s been createds 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/thread/mutex.\+h\item 
+simula24/platform/windows/thread/mutex.\+cpp\end{DoxyCompactItemize}

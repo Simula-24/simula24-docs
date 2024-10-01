@@ -1,0 +1,173 @@
+\hypertarget{classstl_1_1unordered__map}{}\doxysection{stl\+::unordered\+\_\+map$<$ K, V, Hash $>$ Class Template Reference}
+\label{classstl_1_1unordered__map}\index{stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}}
+
+
+An unordered hash map implementation using \textquotesingle{}Robin Hood\textquotesingle{} collision resolution.  
+
+
+
+
+{\ttfamily \#include $<$unordered\+\_\+map.\+h$>$}
+
+
+
+Collaboration diagram for stl\+::unordered\+\_\+map$<$ K, V, Hash $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classstl_1_1unordered__map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a3d9e86cdca51bf022b638661706ac81d}\label{classstl_1_1unordered__map_a3d9e86cdca51bf022b638661706ac81d}} 
+using {\bfseries hashing\+\_\+function} = Hash
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ada0f48bff7b664b7b4510f94c76118d2}\label{classstl_1_1unordered__map_ada0f48bff7b664b7b4510f94c76118d2}} 
+using {\bfseries kv\+\_\+map\+\_\+t} = \mbox{\hyperlink{structstl_1_1displaced__pair}{stl\+::displaced\+\_\+pair}}$<$ K, V $>$
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ad5990a9b70fb6f4cfbb348d077ed32fe}\label{classstl_1_1unordered__map_ad5990a9b70fb6f4cfbb348d077ed32fe}} 
+using {\bfseries const\+\_\+iterator} = \mbox{\hyperlink{structstl_1_1generic__const__iterator}{stl\+::generic\+\_\+const\+\_\+iterator}}$<$ \mbox{\hyperlink{structstl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} $>$
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a41131cb230dd41a2c571384a8c838132}\label{classstl_1_1unordered__map_a41131cb230dd41a2c571384a8c838132}} 
+using {\bfseries iterator} = \mbox{\hyperlink{structstl_1_1generic__iterator}{stl\+::generic\+\_\+iterator}}$<$ \mbox{\hyperlink{structstl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a5c0eb5c5f5b950efb5130f0e0c98bfd7}\label{classstl_1_1unordered__map_a5c0eb5c5f5b950efb5130f0e0c98bfd7}} 
+void \mbox{\hyperlink{classstl_1_1unordered__map_a5c0eb5c5f5b950efb5130f0e0c98bfd7}{insert}} (const \mbox{\hyperlink{structstl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} \&nkv)
+\begin{DoxyCompactList}\small\item\em Insert new value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ad4ece20bf88e87c5b3590a6c8334bab8}\label{classstl_1_1unordered__map_ad4ece20bf88e87c5b3590a6c8334bab8}} 
+V \& \mbox{\hyperlink{classstl_1_1unordered__map_ad4ece20bf88e87c5b3590a6c8334bab8}{at}} (const K \&key)
+\begin{DoxyCompactList}\small\item\em Get value at key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a9c7d09a9b42aadef82f8e39c4029eaa4}\label{classstl_1_1unordered__map_a9c7d09a9b42aadef82f8e39c4029eaa4}} 
+V \& \mbox{\hyperlink{classstl_1_1unordered__map_a9c7d09a9b42aadef82f8e39c4029eaa4}{operator\mbox{[}$\,$\mbox{]}}} (const K \&key)
+\begin{DoxyCompactList}\small\item\em Get element at key. Will create a new on if not exists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a0a120a1412b4f006c3813f02363c8827}\label{classstl_1_1unordered__map_a0a120a1412b4f006c3813f02363c8827}} 
+V \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (K \&\&key)
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a460929c0bc34ff4183e875850821cb1a}\label{classstl_1_1unordered__map_a460929c0bc34ff4183e875850821cb1a}} 
+size\+\_\+t {\bfseries count} (const K \&k) const
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a9da86ff4dd802a5292987ce5b4276e04}\label{classstl_1_1unordered__map_a9da86ff4dd802a5292987ce5b4276e04}} 
+bool {\bfseries contains} (const K \&k) const
+\item 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{iterator}} \mbox{\hyperlink{classstl_1_1unordered__map_a37e57506e59f37d4f28eaab8a8dc7f6a}{find}} (const K \&key)
+\item 
+\mbox{\hyperlink{structstl_1_1generic__const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classstl_1_1unordered__map_aea01c4e505d7593fb9b76079224b0e88}{find}} (const K \&key) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classstl_1_1unordered__map_ab765e483b9ee450b4e1edc01c9721569}{erase}} (const K \&k)
+\begin{DoxyCompactList}\small\item\em Erase elements with Key k. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_adc3bb1e6574233496dcf5d96b75a3b68}\label{classstl_1_1unordered__map_adc3bb1e6574233496dcf5d96b75a3b68}} 
+size\+\_\+t {\bfseries erase} (\mbox{\hyperlink{structstl_1_1generic__iterator}{iterator}} i)
+\item 
+size\+\_\+t \mbox{\hyperlink{classstl_1_1unordered__map_aaa52463c153fb7f752e8744f7886d4a1}{max\+\_\+size}} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a8ea623f0e19c54c50a3ac1638c9f7aa9}\label{classstl_1_1unordered__map_a8ea623f0e19c54c50a3ac1638c9f7aa9}} 
+size\+\_\+t \mbox{\hyperlink{classstl_1_1unordered__map_a8ea623f0e19c54c50a3ac1638c9f7aa9}{size}} () const
+\begin{DoxyCompactList}\small\item\em get current number of elements \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_aba9cfd5842149c0cd2cb1397bcefcff2}\label{classstl_1_1unordered__map_aba9cfd5842149c0cd2cb1397bcefcff2}} 
+bool \mbox{\hyperlink{classstl_1_1unordered__map_aba9cfd5842149c0cd2cb1397bcefcff2}{empty}} () const
+\begin{DoxyCompactList}\small\item\em is this map empty? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ae393e67256d7e246b47975a72190b96f}\label{classstl_1_1unordered__map_ae393e67256d7e246b47975a72190b96f}} 
+void \mbox{\hyperlink{classstl_1_1unordered__map_ae393e67256d7e246b47975a72190b96f}{resize}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Resize the array and rehash the data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ad0cb8619718a6321a6e51c89688befb0}\label{classstl_1_1unordered__map_ad0cb8619718a6321a6e51c89688befb0}} 
+void \mbox{\hyperlink{classstl_1_1unordered__map_ad0cb8619718a6321a6e51c89688befb0}{reserve}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Reserve \textquotesingle{}n\textquotesingle{} entries, MUST be done before inserting data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ab8d1e638d02f05ad66ba790c59bd7d2e}\label{classstl_1_1unordered__map_ab8d1e638d02f05ad66ba790c59bd7d2e}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a0ca7b0bc335a411e18f1b0c4015bdcf3}\label{classstl_1_1unordered__map_a0ca7b0bc335a411e18f1b0c4015bdcf3}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a4c39933c0d0471c205d5f07f4e8940e5}\label{classstl_1_1unordered__map_a4c39933c0d0471c205d5f07f4e8940e5}} 
+\mbox{\hyperlink{structstl_1_1generic__const__iterator}{const\+\_\+iterator}} {\bfseries cbegin} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a858d151dca036af695ac0ee6bc9c7986}\label{classstl_1_1unordered__map_a858d151dca036af695ac0ee6bc9c7986}} 
+\mbox{\hyperlink{structstl_1_1generic__const__iterator}{const\+\_\+iterator}} {\bfseries cend} () const
+\item 
+int \mbox{\hyperlink{classstl_1_1unordered__map_a148f408c2cbcd0cad10b62514730bb36}{index\+\_\+of}} (const K \&key) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ad89d6c8048463de74bd1c428ad111c0d}\label{classstl_1_1unordered__map_ad89d6c8048463de74bd1c428ad111c0d}} 
+\mbox{\hyperlink{classstl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}}$<$ \mbox{\hyperlink{structstl_1_1displaced__pair}{kv\+\_\+map\+\_\+t}} $>$ {\bfseries m\+\_\+data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a11e81d09cd9a49e7279d0cc22df312ed}\label{classstl_1_1unordered__map_a11e81d09cd9a49e7279d0cc22df312ed}} 
+void {\bfseries swap} (uint32\+\_\+t old\+\_\+index, uint32\+\_\+t new\+\_\+index, uint32\+\_\+t probelen)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_ad11a5a093c1b7a86a82830f86c3b80aa}\label{classstl_1_1unordered__map_ad11a5a093c1b7a86a82830f86c3b80aa}} 
+size\+\_\+t {\bfseries m\+\_\+size}
+\item 
+\mbox{\Hypertarget{classstl_1_1unordered__map_a8b23d5415b528ae38389a72d639fec88}\label{classstl_1_1unordered__map_a8b23d5415b528ae38389a72d639fec88}} 
+size\+\_\+t {\bfseries m\+\_\+element\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class K, class V, class Hash = stl\+::hash$<$\+K$>$$>$\newline
+class stl\+::unordered\+\_\+map$<$ K, V, Hash $>$}
+
+An unordered hash map implementation using \textquotesingle{}Robin Hood\textquotesingle{} collision resolution. 
+
+The API is basically the same as std\+::unordered\+\_\+map 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstl_1_1unordered__map_ab765e483b9ee450b4e1edc01c9721569}\label{classstl_1_1unordered__map_ab765e483b9ee450b4e1edc01c9721569}} 
+\index{stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}!erase@{erase}}
+\index{erase@{erase}!stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash $>$ \\
+size\+\_\+t \mbox{\hyperlink{classstl_1_1unordered__map}{stl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::erase (\begin{DoxyParamCaption}\item[{const K \&}]{k }\end{DoxyParamCaption})}
+
+
+
+Erase elements with Key k. 
+
+TODO\+: test code\mbox{\Hypertarget{classstl_1_1unordered__map_a37e57506e59f37d4f28eaab8a8dc7f6a}\label{classstl_1_1unordered__map_a37e57506e59f37d4f28eaab8a8dc7f6a}} 
+\index{stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}!find@{find}}
+\index{find@{find}!stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash  = stl\+::hash$<$\+K$>$$>$ \\
+\mbox{\hyperlink{structstl_1_1generic__iterator}{iterator}} \mbox{\hyperlink{classstl_1_1unordered__map}{stl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::find (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns an iterator containing key\textquotesingle{}s value end() if not exists \mbox{\Hypertarget{classstl_1_1unordered__map_aea01c4e505d7593fb9b76079224b0e88}\label{classstl_1_1unordered__map_aea01c4e505d7593fb9b76079224b0e88}} 
+\index{stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}!find@{find}}
+\index{find@{find}!stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash  = stl\+::hash$<$\+K$>$$>$ \\
+\mbox{\hyperlink{structstl_1_1generic__const__iterator}{const\+\_\+iterator}} \mbox{\hyperlink{classstl_1_1unordered__map}{stl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::find (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns an iterator containing key\textquotesingle{}s value cend() if not exists \mbox{\Hypertarget{classstl_1_1unordered__map_a148f408c2cbcd0cad10b62514730bb36}\label{classstl_1_1unordered__map_a148f408c2cbcd0cad10b62514730bb36}} 
+\index{stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}!index\_of@{index\_of}}
+\index{index\_of@{index\_of}!stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{index\_of()}{index\_of()}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash $>$ \\
+int \mbox{\hyperlink{classstl_1_1unordered__map}{stl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::index\+\_\+of (\begin{DoxyParamCaption}\item[{const K \&}]{key }\end{DoxyParamCaption}) const}
+
+get the index of \textquotesingle{}key\textquotesingle{}. \begin{DoxyReturn}{Returns}
+-\/1 on failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstl_1_1unordered__map_aaa52463c153fb7f752e8744f7886d4a1}\label{classstl_1_1unordered__map_aaa52463c153fb7f752e8744f7886d4a1}} 
+\index{stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}!max\_size@{max\_size}}
+\index{max\_size@{max\_size}!stl::unordered\_map$<$ K, V, Hash $>$@{stl::unordered\_map$<$ K, V, Hash $>$}}
+\doxysubsubsection{\texorpdfstring{max\_size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$class K , class V , class Hash  = stl\+::hash$<$\+K$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classstl_1_1unordered__map}{stl\+::unordered\+\_\+map}}$<$ K, V, Hash $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+get total number of elements allowed before a resize will occur 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/unordered\+\_\+map.\+h\end{DoxyCompactItemize}

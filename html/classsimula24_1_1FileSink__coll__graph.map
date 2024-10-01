@@ -1,0 +1,5 @@
+<map id="simula24::FileSink" name="simula24::FileSink">
+<area shape="rect" id="node1" title="Write logs to a file." alt="" coords="98,109,239,136"/>
+<area shape="rect" id="node2" href="$classsimula24_1_1BaseSink.html" title="Base class for logging strategies." alt="" coords="5,13,156,39"/>
+<area shape="rect" id="node3" href="$classstl_1_1array.html" title=" " alt="" coords="180,5,333,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classsimula24_1_1BaseSink.html" title="Base class for logging strategies." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$classsimula24_1_1ConsoleSink.html" title="Sink that prints logs to stderr." alt="" coords="204,5,375,32"/>
+<area shape="rect" id="node3" href="$classsimula24_1_1FileSink.html" title="Write logs to a file." alt="" coords="219,56,360,83"/>
+</map>

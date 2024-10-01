@@ -1,0 +1,57 @@
+\hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4}{}\doxysection{stl\+::variant$<$ typelist$<$ Types... $>$ $>$ Class Template Reference}
+\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4}\index{stl::variant$<$ typelist$<$ Types... $>$ $>$@{stl::variant$<$ typelist$<$ Types... $>$ $>$}}
+
+
+Variant, holds @\+Types types in a union Each of these functions is only enabled if the type passed to it is contained in the typelist. see typelist\+\_\+contains.  
+
+
+
+
+{\ttfamily \#include $<$variant.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{unionstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_1_1Storage}{Storage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a5747eab8c2b4170778d06ca57afffc5a}\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a5747eab8c2b4170778d06ca57afffc5a}} 
+{\footnotesize template$<$typename T , bool  = typelist\+\_\+contains$<$\+T, typelist$<$\+Types...$>$ $>$()$>$ }\\void \mbox{\hyperlink{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a5747eab8c2b4170778d06ca57afffc5a}{set}} (T \&\&val)
+\begin{DoxyCompactList}\small\item\em Set the value to \textquotesingle{}val\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a802dc73109afe5801579e3a6c3bb879b}\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a802dc73109afe5801579e3a6c3bb879b}} 
+{\footnotesize template$<$typename T , bool  = typelist\+\_\+contains$<$\+T, typelist$<$\+Types...$>$ $>$()$>$ }\\void \mbox{\hyperlink{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a802dc73109afe5801579e3a6c3bb879b}{operator=}} (T \&\&val)
+\begin{DoxyCompactList}\small\item\em Set the value to \textquotesingle{}val\textquotesingle{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a6cd7177927ab579f749367c7f06083af}\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a6cd7177927ab579f749367c7f06083af}} 
+{\footnotesize template$<$typename T , bool  = typelist\+\_\+contains$<$\+T, typelist$<$\+Types...$>$ $>$()$>$ }\\constexpr T \& \mbox{\hyperlink{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a6cd7177927ab579f749367c7f06083af}{as}} ()
+\begin{DoxyCompactList}\small\item\em get the value of T in the typelist \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a9988a9550013216711b65873803432be}\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a9988a9550013216711b65873803432be}} 
+{\footnotesize template$<$typename T , bool  = typelist\+\_\+contains$<$\+T, typelist$<$\+Types...$>$ $>$()$>$ }\\constexpr \mbox{\hyperlink{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a9988a9550013216711b65873803432be}{operator T}} ()
+\begin{DoxyCompactList}\small\item\em Type conversion operator for any type in the union. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_ac0701d6e52d2f3bcaa1691c9f4b335ed}\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_ac0701d6e52d2f3bcaa1691c9f4b335ed}} 
+{\footnotesize template$<$typename T , size\+\_\+t idx, typename first , typename... list$>$ }\\static constexpr size\+\_\+t {\bfseries find} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_ae616bd08f5e66f00bd9a708bae633a72}\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_ae616bd08f5e66f00bd9a708bae633a72}} 
+size\+\_\+t {\bfseries m\+\_\+idx} \{ 0 \}
+\item 
+\mbox{\Hypertarget{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a8efe9f777b82e8530abbb6b814deb88d}\label{classstl_1_1variant_3_01typelist_3_01Types_8_8_8_01_4_01_4_a8efe9f777b82e8530abbb6b814deb88d}} 
+Storage {\bfseries m\+\_\+var\+Storage}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename... Types$>$\newline
+class stl\+::variant$<$ typelist$<$ Types... $>$ $>$}
+
+Variant, holds @\+Types types in a union Each of these functions is only enabled if the type passed to it is contained in the typelist. see typelist\+\_\+contains. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/variant.\+h\end{DoxyCompactItemize}

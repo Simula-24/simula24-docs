@@ -1,0 +1,94 @@
+\hypertarget{classsimula24_1_1thread}{}\doxysection{simula24\+::thread Class Reference}
+\label{classsimula24_1_1thread}\index{simula24::thread@{simula24::thread}}
+
+
+Basic Thread class.  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+
+
+Collaboration diagram for simula24\+::thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classsimula24_1_1thread__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_acfb38e6d31355c62d477ac1acb316a2e}\label{classsimula24_1_1thread_acfb38e6d31355c62d477ac1acb316a2e}} 
+{\footnotesize template$<$class T , class ... Args$>$ }\\{\bfseries thread} (T \&\&t, Args \&\&... args)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_a0671b1f40f0a54226b7378860a0b7e74}\label{classsimula24_1_1thread_a0671b1f40f0a54226b7378860a0b7e74}} 
+\mbox{\hyperlink{classsimula24_1_1thread}{thread}} \& {\bfseries operator=} (\mbox{\hyperlink{classsimula24_1_1thread}{thread}} \&\&other)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_ac77d974035148375cbcd0835d631b3d0}\label{classsimula24_1_1thread_ac77d974035148375cbcd0835d631b3d0}} 
+void \mbox{\hyperlink{classsimula24_1_1thread_ac77d974035148375cbcd0835d631b3d0}{join}} ()
+\begin{DoxyCompactList}\small\item\em wait for this thread to finish \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_a2a537ff2d75751d0a3eb3617f0a5ca70}\label{classsimula24_1_1thread_a2a537ff2d75751d0a3eb3617f0a5ca70}} 
+size\+\_\+t \mbox{\hyperlink{classsimula24_1_1thread_a2a537ff2d75751d0a3eb3617f0a5ca70}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em The TID for {\itshape this} thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_a03bfef1a1f201a5aa2494ce2b8258792}\label{classsimula24_1_1thread_a03bfef1a1f201a5aa2494ce2b8258792}} 
+const Thread\+Object {\bfseries get\+Native\+Thread\+Object} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_ac43406627d82fd4559bb0ac423ef41f7}\label{classsimula24_1_1thread_ac43406627d82fd4559bb0ac423ef41f7}} 
+static size\+\_\+t \mbox{\hyperlink{classsimula24_1_1thread_ac43406627d82fd4559bb0ac423ef41f7}{get\+Thread\+ID}} ()
+\begin{DoxyCompactList}\small\item\em get thread id for caller \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_ab06afdabda1feb4a899bb6a1b56b9d70}\label{classsimula24_1_1thread_ab06afdabda1feb4a899bb6a1b56b9d70}} 
+void \mbox{\hyperlink{classsimula24_1_1thread_ab06afdabda1feb4a899bb6a1b56b9d70}{start}} (void $\ast$function, void $\ast$args)
+\begin{DoxyCompactList}\small\item\em start a thread \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_aad9a986ef509a9a98e61c95e1fb486bc}\label{classsimula24_1_1thread_aad9a986ef509a9a98e61c95e1fb486bc}} 
+Thread\+Object \mbox{\hyperlink{classsimula24_1_1thread_aad9a986ef509a9a98e61c95e1fb486bc}{m\+\_\+thread}}
+\begin{DoxyCompactList}\small\item\em native thread object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1thread_adc04d7c1fc766703ca4b0a4d4f03309b}\label{classsimula24_1_1thread_adc04d7c1fc766703ca4b0a4d4f03309b}} 
+size\+\_\+t {\bfseries m\+\_\+id}
+\item 
+\mbox{\hyperlink{classstl_1_1function}{stl\+::function}}$<$ void()$>$ \mbox{\hyperlink{classsimula24_1_1thread_a541ca7ffb2d99084a8998a3e52b315a1}{dummy}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Basic Thread class. 
+
+This relies on the operating system\textquotesingle{}s thread API Specifically Window\textquotesingle{}s Thread API and pthreads on $\ast$nix Implementations are found in /platform/$<$name$>$/thread/thread.cpp
+
+To use\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classsimula24_1_1thread}{simula24::thread}} mythread(myfunction, myargs...);    }
+\DoxyCodeLine{mythread.join(); }
+
+\end{DoxyCode}
+
+
+Thread supports multiple arguments by hiding them inside of a lambda stored in @dummy
+
+This dummy function is what \mbox{\hyperlink{classsimula24_1_1dummy__thread__runner}{dummy\+\_\+thread\+\_\+runner}} will run 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsimula24_1_1thread_a541ca7ffb2d99084a8998a3e52b315a1}\label{classsimula24_1_1thread_a541ca7ffb2d99084a8998a3e52b315a1}} 
+\index{simula24::thread@{simula24::thread}!dummy@{dummy}}
+\index{dummy@{dummy}!simula24::thread@{simula24::thread}}
+\doxysubsubsection{\texorpdfstring{dummy}{dummy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstl_1_1function}{stl\+::function}}$<$void()$>$ simula24\+::thread\+::dummy\hspace{0.3cm}{\ttfamily [private]}}
+
+dummy function. Holds a lambda that calls the actual function 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/thread/thread.\+h\item 
+simula24/platform/windows/thread/thread.\+cpp\end{DoxyCompactItemize}

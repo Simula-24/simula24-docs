@@ -1,0 +1,74 @@
+\hypertarget{structstl_1_1generic__iterator}{}\doxysection{stl\+::generic\+\_\+iterator$<$ T, linked\+\_\+list $>$ Struct Template Reference}
+\label{structstl_1_1generic__iterator}\index{stl::generic\_iterator$<$ T, linked\_list $>$@{stl::generic\_iterator$<$ T, linked\_list $>$}}
+
+
+Generic iterator container.  
+
+
+
+
+{\ttfamily \#include $<$iterator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_ac446c5cec924507aa475b81638cda0f7}\label{structstl_1_1generic__iterator_ac446c5cec924507aa475b81638cda0f7}} 
+{\bfseries generic\+\_\+iterator} (T $\ast$elem)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_acee77c8c1c7f7f80d3a14185c85bfe36}\label{structstl_1_1generic__iterator_acee77c8c1c7f7f80d3a14185c85bfe36}} 
+{\bfseries generic\+\_\+iterator} (const \mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a9d832babe293bee52553f20a9e850f7f}\label{structstl_1_1generic__iterator_a9d832babe293bee52553f20a9e850f7f}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \& \mbox{\hyperlink{structstl_1_1generic__iterator_a9d832babe293bee52553f20a9e850f7f}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em next address/next node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_aece9ae5127dca51abffb9617041ee596}\label{structstl_1_1generic__iterator_aece9ae5127dca51abffb9617041ee596}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \& \mbox{\hyperlink{structstl_1_1generic__iterator_aece9ae5127dca51abffb9617041ee596}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em previous address/previous node \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a34d95c356f42377135e09d3ec5a64178}\label{structstl_1_1generic__iterator_a34d95c356f42377135e09d3ec5a64178}} 
+T \& \mbox{\hyperlink{structstl_1_1generic__iterator_a34d95c356f42377135e09d3ec5a64178}{operator$\ast$}} () const
+\begin{DoxyCompactList}\small\item\em dereference \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a3624892ea0ec56c763f607963dce3004}\label{structstl_1_1generic__iterator_a3624892ea0ec56c763f607963dce3004}} 
+T $\ast$ \mbox{\hyperlink{structstl_1_1generic__iterator_a3624892ea0ec56c763f607963dce3004}{operator-\/$>$}} () const
+\begin{DoxyCompactList}\small\item\em Access via pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a6fc467bcf6e63f23f34ba3b2ed208a7c}\label{structstl_1_1generic__iterator_a6fc467bcf6e63f23f34ba3b2ed208a7c}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_ad4e9cad252600bd5a162e02e128a6b45}\label{structstl_1_1generic__iterator_ad4e9cad252600bd5a162e02e128a6b45}} 
+bool {\bfseries operator!=} (const \mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a0650639d34f785b8d4539f1921f9f688}\label{structstl_1_1generic__iterator_a0650639d34f785b8d4539f1921f9f688}} 
+constexpr bool {\bfseries operator$>$} (const \mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a652edf47ba8b8e51ebed15336a2d0360}\label{structstl_1_1generic__iterator_a652edf47ba8b8e51ebed15336a2d0360}} 
+constexpr bool {\bfseries operator$<$} (const \mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_aa9cc23f249e856c0492bb2e126509685}\label{structstl_1_1generic__iterator_aa9cc23f249e856c0492bb2e126509685}} 
+constexpr bool {\bfseries operator$<$=} (const \mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_aeb9dbfc67f6335e545f645c387f2fede}\label{structstl_1_1generic__iterator_aeb9dbfc67f6335e545f645c387f2fede}} 
+constexpr bool {\bfseries operator$>$=} (const \mbox{\hyperlink{structstl_1_1generic__iterator}{generic\+\_\+iterator}} \&o)
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a86e429e6d6ffea668e81fad2e4afb1f1}\label{structstl_1_1generic__iterator_a86e429e6d6ffea668e81fad2e4afb1f1}} 
+{\bfseries operator generic\+\_\+iterator} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstl_1_1generic__iterator_a2a6edf010b248988f58b1994595e1844}\label{structstl_1_1generic__iterator_a2a6edf010b248988f58b1994595e1844}} 
+T $\ast$ {\bfseries element} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T, bool linked\+\_\+list = false$>$\newline
+struct stl\+::generic\+\_\+iterator$<$ T, linked\+\_\+list $>$}
+
+Generic iterator container. 
+
+meminc controls the iteration methof If it is set to true, the inc/dec operators will increment memory addresses
+
+Otherwise, this will assume that T is a doubly linked list and use the next and prev functions that MUST be provided by T. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/iterator.\+h\end{DoxyCompactItemize}

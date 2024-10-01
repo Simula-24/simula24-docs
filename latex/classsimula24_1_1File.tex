@@ -1,0 +1,108 @@
+\hypertarget{classsimula24_1_1File}{}\doxysection{simula24\+::File Class Reference}
+\label{classsimula24_1_1File}\index{simula24::File@{simula24::File}}
+
+
+Easy-\/to-\/use \mbox{\hyperlink{classsimula24_1_1File}{File}} access.  
+
+
+
+
+{\ttfamily \#include $<$File.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420}{Access\+Mode}} \{ \newline
+{\bfseries READ}
+, \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420ab7185873909ae21499efe2c98cb7289e}{WRITE}}
+, \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420a9e146b513eaf1da5acd19e6bb57fdf36}{READ\+\_\+\+WRITE}}
+, \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420a222c60c1f6c3a944b393d802919732fd}{WRITE\+\_\+\+READ}}
+, \newline
+\mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420aba6ccf3f730df5df7284a90f48965af1}{APPEND}}
+, \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420ad17f263b794390b2088b3fb5ffd38794}{READ\+\_\+\+APPEND}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1File_a368c2cb45b5960f0e49d33928918424b}\label{classsimula24_1_1File_a368c2cb45b5960f0e49d33928918424b}} 
+Status \mbox{\hyperlink{classsimula24_1_1File_a368c2cb45b5960f0e49d33928918424b}{open}} (const char $\ast$filename, \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420}{Access\+Mode}} mode)
+\begin{DoxyCompactList}\small\item\em Open a file with a certain mode. Returns OK on success. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1File_a55ec8ea7d602b725abfaea8620c054f1}\label{classsimula24_1_1File_a55ec8ea7d602b725abfaea8620c054f1}} 
+Status {\bfseries open} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&filename, \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420}{Access\+Mode}} mode)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1File_a83cbce54d6c3b8c2f417b51f6b3f488c}\label{classsimula24_1_1File_a83cbce54d6c3b8c2f417b51f6b3f488c}} 
+void \mbox{\hyperlink{classsimula24_1_1File_a83cbce54d6c3b8c2f417b51f6b3f488c}{close}} ()
+\begin{DoxyCompactList}\small\item\em close the file if it is open \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1File_acefe4022d6918d3f82851b74a5437d43}\label{classsimula24_1_1File_acefe4022d6918d3f82851b74a5437d43}} 
+bool {\bfseries is\+Open} () const
+\item 
+\mbox{\Hypertarget{classsimula24_1_1File_a3c254f056ed48b99e5c6617ade40fa5c}\label{classsimula24_1_1File_a3c254f056ed48b99e5c6617ade40fa5c}} 
+size\+\_\+t \mbox{\hyperlink{classsimula24_1_1File_a3c254f056ed48b99e5c6617ade40fa5c}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em get the current size of the file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1File_a2bdd75d77cc150a77981e4206c96c2c6}\label{classsimula24_1_1File_a2bdd75d77cc150a77981e4206c96c2c6}} 
+Status \mbox{\hyperlink{classsimula24_1_1File_a2bdd75d77cc150a77981e4206c96c2c6}{read}} (void $\ast$out, size\+\_\+t \+\_\+szof\+\_\+1, size\+\_\+t n, size\+\_\+t $\ast$bytes\+Read=nullptr)
+\begin{DoxyCompactList}\small\item\em read \+\_\+szof\+\_\+1 $\ast$ n bytes from the file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1File_a8f134c510cef1d94475e3f70344aa533}\label{classsimula24_1_1File_a8f134c510cef1d94475e3f70344aa533}} 
+Status \mbox{\hyperlink{classsimula24_1_1File_a8f134c510cef1d94475e3f70344aa533}{read}} (void $\ast$out, size\+\_\+t num\+Bytes, size\+\_\+t $\ast$bytes\+Read=nullptr)
+\begin{DoxyCompactList}\small\item\em read num\+Bytes bytes from the file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1File_acd748dd10b4e71c8cb566193048ea4ae}\label{classsimula24_1_1File_acd748dd10b4e71c8cb566193048ea4ae}} 
+Status \mbox{\hyperlink{classsimula24_1_1File_acd748dd10b4e71c8cb566193048ea4ae}{write}} (const void $\ast$in, size\+\_\+t num\+Bytes, size\+\_\+t $\ast$bytes\+Written=nullptr)
+\begin{DoxyCompactList}\small\item\em write num\+Bytes bytes to the file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1File_ab2ec99903af5a7c1b1516c9c8115fbf7}\label{classsimula24_1_1File_ab2ec99903af5a7c1b1516c9c8115fbf7}} 
+Status \mbox{\hyperlink{classsimula24_1_1File_ab2ec99903af5a7c1b1516c9c8115fbf7}{write}} (const void $\ast$in, size\+\_\+t \+\_\+szof\+\_\+1, size\+\_\+t n, size\+\_\+t $\ast$bytes\+Written=nullptr)
+\begin{DoxyCompactList}\small\item\em write \+\_\+szof\+\_\+1 $\ast$ n bytes to the file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1File_ab0c50d50050f0b512802691f76b6dd29}\label{classsimula24_1_1File_ab0c50d50050f0b512802691f76b6dd29}} 
+File\+Object \mbox{\hyperlink{classsimula24_1_1File_ab0c50d50050f0b512802691f76b6dd29}{m\+\_\+file}}
+\begin{DoxyCompactList}\small\item\em Abstraction. This is FILE$\ast$ on $\ast$nix and HANDLE on windows. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1File_aa73f03ebbff79e7c582be07468ac97cf}\label{classsimula24_1_1File_aa73f03ebbff79e7c582be07468ac97cf}} 
+bool {\bfseries m\+\_\+is\+Open}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1File_a6dd332bfb284b5773a7c8eef24d638f6}\label{classsimula24_1_1File_a6dd332bfb284b5773a7c8eef24d638f6}} 
+\mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420}{Access\+Mode}} \mbox{\hyperlink{classsimula24_1_1File_a6dd332bfb284b5773a7c8eef24d638f6}{m\+\_\+amode}}
+\begin{DoxyCompactList}\small\item\em stores the access mode set during file opening/creation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Easy-\/to-\/use \mbox{\hyperlink{classsimula24_1_1File}{File}} access. 
+
+Implementations are found in /platform/$<$platform$>$/file.cpp 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420}\label{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420}} 
+\index{simula24::File@{simula24::File}!AccessMode@{AccessMode}}
+\index{AccessMode@{AccessMode}!simula24::File@{simula24::File}}
+\doxysubsubsection{\texorpdfstring{AccessMode}{AccessMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420}{simula24\+::\+File\+::\+Access\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRITE@{WRITE}!simula24::File@{simula24::File}}\index{simula24::File@{simula24::File}!WRITE@{WRITE}}}\mbox{\Hypertarget{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420ab7185873909ae21499efe2c98cb7289e}\label{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420ab7185873909ae21499efe2c98cb7289e}} 
+WRITE&\textquotesingle{}rb\textquotesingle{} $\vert$ GENERIC\+\_\+\+READ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{READ\_WRITE@{READ\_WRITE}!simula24::File@{simula24::File}}\index{simula24::File@{simula24::File}!READ\_WRITE@{READ\_WRITE}}}\mbox{\Hypertarget{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420a9e146b513eaf1da5acd19e6bb57fdf36}\label{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420a9e146b513eaf1da5acd19e6bb57fdf36}} 
+READ\+\_\+\+WRITE&\textquotesingle{}wb\textquotesingle{} $\vert$ GENERIC\+\_\+\+WRITE \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRITE\_READ@{WRITE\_READ}!simula24::File@{simula24::File}}\index{simula24::File@{simula24::File}!WRITE\_READ@{WRITE\_READ}}}\mbox{\Hypertarget{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420a222c60c1f6c3a944b393d802919732fd}\label{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420a222c60c1f6c3a944b393d802919732fd}} 
+WRITE\+\_\+\+READ&\textquotesingle{}rb+\textquotesingle{} $\vert$ GENERIC\+\_\+\+READ $\vert$ GENERIC\+\_\+\+WRITE \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{APPEND@{APPEND}!simula24::File@{simula24::File}}\index{simula24::File@{simula24::File}!APPEND@{APPEND}}}\mbox{\Hypertarget{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420aba6ccf3f730df5df7284a90f48965af1}\label{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420aba6ccf3f730df5df7284a90f48965af1}} 
+APPEND&\textquotesingle{}wb+\textquotesingle{} $\vert$ GENERIC\+\_\+\+READ $\vert$ GENERIC\+\_\+\+WRITE \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{READ\_APPEND@{READ\_APPEND}!simula24::File@{simula24::File}}\index{simula24::File@{simula24::File}!READ\_APPEND@{READ\_APPEND}}}\mbox{\Hypertarget{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420ad17f263b794390b2088b3fb5ffd38794}\label{classsimula24_1_1File_a4030ceb654f727fa22c692c4ae1d6420ad17f263b794390b2088b3fb5ffd38794}} 
+READ\+\_\+\+APPEND&\textquotesingle{}a\textquotesingle{} $\vert$ FILE\+\_\+\+APPEND \textquotesingle{}a+\textquotesingle{} $\vert$ FILE\+\_\+\+APPEND \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/io/File.\+h\item 
+simula24/platform/unix/File.\+cpp\end{DoxyCompactItemize}

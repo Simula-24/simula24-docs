@@ -1,0 +1,4 @@
+<map id="simula24::ConsoleSink" name="simula24::ConsoleSink">
+<area shape="rect" id="node1" title="Sink that prints logs to stderr." alt="" coords="5,80,176,107"/>
+<area shape="rect" id="node2" href="$classsimula24_1_1BaseSink.html" title="Base class for logging strategies." alt="" coords="15,5,166,32"/>
+</map>

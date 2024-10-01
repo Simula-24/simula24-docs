@@ -1,0 +1,101 @@
+Simula24\textquotesingle{}s loggers are composed of two components\+: a base logger, and a sink. Using this model, the logger constructs the output and the sink does {\itshape something} with the output (e.\+g. writing to a file)\hypertarget{md_docs_logging_autotoc_md1}{}\doxysection{Construction}\label{md_docs_logging_autotoc_md1}
+All logges must have a name and can optionally be created with a sink in place. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C++\}}
+\DoxyCodeLine{\#include <core/log/log.h>}
+\DoxyCodeLine{}
+\DoxyCodeLine{// no sink}
+\DoxyCodeLine{simula24::Logger lawger1("{}lawg"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{// with sink, these MUST derive from simula24::BaseSink}
+\DoxyCodeLine{}
+\DoxyCodeLine{// no sink constructor arguments}
+\DoxyCodeLine{simula24::Logger lawger2 = simula24::Logger::createLogger<ConsoleSink>("{}lawg"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{// with sink constructor arguments}
+\DoxyCodeLine{}
+\DoxyCodeLine{simula24::Logger flawger2 = simula24::Logger::createLogger<FileSink>("{}filelawg"{}, "{}lawg.txt"{});}
+
+\end{DoxyCode}
+\hypertarget{md_docs_logging_autotoc_md2}{}\doxysection{Sinks}\label{md_docs_logging_autotoc_md2}
+A sink simply operates on output. You could technically have a sink independent of the logger.
+
+To log with a sink, you can call the {\ttfamily log} function and pass it a {\ttfamily stl\+::string}.\hypertarget{md_docs_logging_autotoc_md3}{}\doxysection{Using the loggers}\label{md_docs_logging_autotoc_md3}
+There are 5 log levels\+:
+\begin{DoxyEnumerate}
+\item Info
+\item Debug
+\item Warning
+\item Error
+\item Critical
+\end{DoxyEnumerate}
+
+These are stored in the {\ttfamily simula24\+::\+Log\+Level} enum class.
+
+To create a log, you can call the log function for any given {\ttfamily Logger}. You must pass a log level, a string, and optional format arguments.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C++\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{using simula24::Logger;}
+\DoxyCodeLine{}
+\DoxyCodeLine{Logger myLoggger = Logger::createLogger<ConsoleSink>("{}logg"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{myLoggger.log(LogLevel::INFO, "{}My message with no format"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{myLoggger.log(LogLevel::INFO, "{}My message with \%d format argument"{}, 1);}
+
+\end{DoxyCode}
+
+
+Note that the {\ttfamily Logger} will automatically append a newline to logs.\hypertarget{md_docs_logging_autotoc_md4}{}\doxysubsection{Log Level functions}\label{md_docs_logging_autotoc_md4}
+Writing {\ttfamily my\+Logger.\+log(Log\+Level\+::\+INFO,....)} will get tedious {\itshape fast}.
+
+Instead you an use functions like {\ttfamily Logger\+::info}, {\ttfamily Logger\+::critical}, etc.
+
+These are templated wrappers around {\ttfamily Logger\+::log} that pass {\ttfamily Log\+Level}s for you.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Logger loggMan = Logger::createLogger<ConsoleSink>("{}Logg"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{loggMan.warning("{}I am a warning"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{loggMan.critical("{}haha I'm going to crash your app"{}).}
+
+\end{DoxyCode}
+\hypertarget{md_docs_logging_autotoc_md5}{}\doxysubsection{Log Filters}\label{md_docs_logging_autotoc_md5}
+You can also set the lowest {\ttfamily Log\+Level} you want to receive logs for\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C++\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{Logger logan = Logger::createLogger<ConsoleSink>("{}logan"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{logan.setLogFilter(LogLevel::WARNING);}
+\DoxyCodeLine{}
+\DoxyCodeLine{logan.info("{}I will be ignored"{});}
+\DoxyCodeLine{logan.debug("{}As will I"{});}
+\DoxyCodeLine{logan.warning("{}I will not be"{});}
+
+\end{DoxyCode}
+
+
+The default is {\ttfamily Log\+Level\+::\+INFO}.\hypertarget{md_docs_logging_autotoc_md6}{}\doxysubsection{Engine/\+Client Loggers}\label{md_docs_logging_autotoc_md6}
+Simula24 has two built in loggers, one meant for the engine, one for the game/client. These are found in the {\ttfamily Debug\+Loggers} class.
+
+To make logging easier, 10 macros have been defined, 1 for each logger/log level.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \{C++\}}
+\DoxyCodeLine{\#include <core/log/log.h>}
+\DoxyCodeLine{}
+\DoxyCodeLine{ENGINE\_CRITICAL("{}THE DEVS HAVE DONE SOMETHING STUPID"{});}
+\DoxyCodeLine{}
+\DoxyCodeLine{CLIENT\_ERROR("{}THE PLAYER HAS DONE SOMETHING STUPID"{});}
+
+\end{DoxyCode}
+ 

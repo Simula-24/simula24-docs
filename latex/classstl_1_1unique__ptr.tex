@@ -1,0 +1,58 @@
+\hypertarget{classstl_1_1unique__ptr}{}\doxysection{stl\+::unique\+\_\+ptr$<$ T $>$ Class Template Reference}
+\label{classstl_1_1unique__ptr}\index{stl::unique\_ptr$<$ T $>$@{stl::unique\_ptr$<$ T $>$}}
+
+
+Generic Unique Smart Pointer class.  
+
+
+
+
+{\ttfamily \#include $<$smart\+\_\+ptr.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_acc4f4c2606e4509fab10513eb4aa437e}\label{classstl_1_1unique__ptr_acc4f4c2606e4509fab10513eb4aa437e}} 
+{\bfseries unique\+\_\+ptr} (T $\ast$\+\_\+new)
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_a45a29ca2d4564060ba1da6a0d6101b90}\label{classstl_1_1unique__ptr_a45a29ca2d4564060ba1da6a0d6101b90}} 
+{\bfseries unique\+\_\+ptr} (\mbox{\hyperlink{classstl_1_1unique__ptr}{unique\+\_\+ptr}} \&\&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_a47204a4f7d77fd90884ee8323b56ef58}\label{classstl_1_1unique__ptr_a47204a4f7d77fd90884ee8323b56ef58}} 
+{\footnotesize template$<$class U , std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ U $\ast$, T $\ast$ $>$, int $>$  = 0$>$ }\\{\bfseries unique\+\_\+ptr} (\mbox{\hyperlink{classstl_1_1unique__ptr}{unique\+\_\+ptr}}$<$ U $>$ \&\&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_a4ea483131d0d8ba763d99eccdded50fe}\label{classstl_1_1unique__ptr_a4ea483131d0d8ba763d99eccdded50fe}} 
+{\footnotesize template$<$class U $>$ }\\\mbox{\hyperlink{classstl_1_1unique__ptr}{unique\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{classstl_1_1unique__ptr}{unique\+\_\+ptr}}$<$ U $>$ \&\&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_a91122ef992bade5338d111a47601670e}\label{classstl_1_1unique__ptr_a91122ef992bade5338d111a47601670e}} 
+\mbox{\hyperlink{classstl_1_1unique__ptr}{unique\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{classstl_1_1unique__ptr}{unique\+\_\+ptr}} \&\&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_a52c6b9b999cee12a6100499ace54d8cf}\label{classstl_1_1unique__ptr_a52c6b9b999cee12a6100499ace54d8cf}} 
+T \& {\bfseries operator$\ast$} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_ab45c125cf8f2ee23a0d8dc1dafc1daeb}\label{classstl_1_1unique__ptr_ab45c125cf8f2ee23a0d8dc1dafc1daeb}} 
+T $\ast$ {\bfseries operator-\/$>$} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1unique__ptr_a78aa5589f0645c7aae79c0f56e626a91}\label{classstl_1_1unique__ptr_a78aa5589f0645c7aae79c0f56e626a91}} 
+T $\ast$ {\bfseries m\+\_\+ptr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class stl\+::unique\+\_\+ptr$<$ T $>$}
+
+Generic Unique Smart Pointer class. 
+
+This object cannot be shared or copied, it can only be moved
+
+Create with simula24\+::make\+\_\+unique$<$\+T$>$
+
+Access the data via the overloaded member access operators 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/smart\+\_\+ptr.\+h\end{DoxyCompactItemize}

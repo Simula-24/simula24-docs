@@ -1,0 +1,4 @@
+<map id="stl::shared_ptr&lt; T &gt;" name="stl::shared_ptr&lt; T &gt;">
+<area shape="rect" id="node1" title="Generic Shared Pointer class." alt="" coords="13,95,167,121"/>
+<area shape="rect" id="node2" href="$structstl_1_1RefCountContainer.html" title="A simple container for holding a pointer and &#160;&#160;the number of shared_ptrs referencing it." alt="" coords="5,5,175,32"/>
+</map>

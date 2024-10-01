@@ -1,0 +1,197 @@
+\hypertarget{classstl_1_1copy__on__write}{}\doxysection{stl\+::copy\+\_\+on\+\_\+write$<$ T $>$ Class Template Reference}
+\label{classstl_1_1copy__on__write}\index{stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}}
+
+
+A template class that allows clients to ~\newline
+ use copy-\/on-\/write. Use \mbox{\hyperlink{classstl_1_1copy__on__write_a520862481863bb8fce12cbb99d3f79a0}{copy()}} to create your own copy.  
+
+
+
+
+{\ttfamily \#include $<$copy\+\_\+on\+\_\+write.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstl_1_1copy__on__write_1_1CowHdr}{Cow\+Hdr}}
+\begin{DoxyCompactList}\small\item\em A nicer way of obtain header data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a442ed6f035d559514b9deb214aa08f25}\label{classstl_1_1copy__on__write_a442ed6f035d559514b9deb214aa08f25}} 
+{\bfseries copy\+\_\+on\+\_\+write} (const \mbox{\hyperlink{classstl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}} \&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_af91bc84cf463c80d618cbde86d48b435}\label{classstl_1_1copy__on__write_af91bc84cf463c80d618cbde86d48b435}} 
+\mbox{\hyperlink{classstl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}} \& {\bfseries operator=} (const \mbox{\hyperlink{classstl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}} \&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a7b1240733731ddd1b3be40fd14519350}\label{classstl_1_1copy__on__write_a7b1240733731ddd1b3be40fd14519350}} 
+const T \& \mbox{\hyperlink{classstl_1_1copy__on__write_a7b1240733731ddd1b3be40fd14519350}{at}} (size\+\_\+t where) const
+\begin{DoxyCompactList}\small\item\em data\mbox{[}where\mbox{]} without a copy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a40504ce0e803453854637ecd735d4656}\label{classstl_1_1copy__on__write_a40504ce0e803453854637ecd735d4656}} 
+T \& \mbox{\hyperlink{classstl_1_1copy__on__write_a40504ce0e803453854637ecd735d4656}{at\+\_\+m}} (size\+\_\+t where)
+\begin{DoxyCompactList}\small\item\em data\mbox{[}where\mbox{]} with a copy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_abc41a4dbd5c0cfd3567927b320b6f75a}\label{classstl_1_1copy__on__write_abc41a4dbd5c0cfd3567927b320b6f75a}} 
+uint32\+\_\+t \mbox{\hyperlink{classstl_1_1copy__on__write_abc41a4dbd5c0cfd3567927b320b6f75a}{get\+\_\+total\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em TOTAL size of data section in bytes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a892bf50a9493ecb393458746f842f54b}\label{classstl_1_1copy__on__write_a892bf50a9493ecb393458746f842f54b}} 
+uint32\+\_\+t \mbox{\hyperlink{classstl_1_1copy__on__write_a892bf50a9493ecb393458746f842f54b}{get\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Get total number of T\textquotesingle{}s that can fit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a2847968dd2bb00f59c601294a102d61b}\label{classstl_1_1copy__on__write_a2847968dd2bb00f59c601294a102d61b}} 
+constexpr const T \& \mbox{\hyperlink{classstl_1_1copy__on__write_a2847968dd2bb00f59c601294a102d61b}{reference}} () const
+\begin{DoxyCompactList}\small\item\em obtain a reference to the data \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a520862481863bb8fce12cbb99d3f79a0}\label{classstl_1_1copy__on__write_a520862481863bb8fce12cbb99d3f79a0}} 
+constexpr T \& \mbox{\hyperlink{classstl_1_1copy__on__write_a520862481863bb8fce12cbb99d3f79a0}{copy}} ()
+\begin{DoxyCompactList}\small\item\em obtain a reference to the data and create a copy \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_acf30c3b4d74094942a90429b36925752}\label{classstl_1_1copy__on__write_acf30c3b4d74094942a90429b36925752}} 
+void \mbox{\hyperlink{classstl_1_1copy__on__write_acf30c3b4d74094942a90429b36925752}{copydata}} (const T $\ast$source, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Copy to the {\itshape data section offset} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_afcdfdade48f5c9062cb3efeb208b30ec}\label{classstl_1_1copy__on__write_afcdfdade48f5c9062cb3efeb208b30ec}} 
+void \mbox{\hyperlink{classstl_1_1copy__on__write_afcdfdade48f5c9062cb3efeb208b30ec}{copydata}} (const T $\ast$source, size\+\_\+t n, size\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Copy to the data section + offset Note that this will copy relative to the offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstl_1_1copy__on__write_abc85d7f89e5fa038748125c016517e15}{resize}} (size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Resize the buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_ab0eb64b6d9d5ebef3e32cb49dd2cb39e}\label{classstl_1_1copy__on__write_ab0eb64b6d9d5ebef3e32cb49dd2cb39e}} 
+constexpr uint32\+\_\+t {\bfseries get\+\_\+reference\+\_\+count} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a7855fd955c8f310b2af80e3945a62e51}\label{classstl_1_1copy__on__write_a7855fd955c8f310b2af80e3945a62e51}} 
+constexpr uint32\+\_\+t {\bfseries get\+\_\+data\+\_\+size} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a790c35fece5580c9dadf66a170375e40}\label{classstl_1_1copy__on__write_a790c35fece5580c9dadf66a170375e40}} 
+constexpr \mbox{\hyperlink{structstl_1_1copy__on__write_1_1CowHdr}{Cow\+Hdr}} $\ast$ {\bfseries get\+\_\+cow\+\_\+header} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a1238a146a0c19fe5c3e38257ec44b2b5}\label{classstl_1_1copy__on__write_a1238a146a0c19fe5c3e38257ec44b2b5}} 
+constexpr const \mbox{\hyperlink{structstl_1_1copy__on__write_1_1CowHdr}{Cow\+Hdr}} $\ast$ {\bfseries get\+\_\+cow\+\_\+header} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a78da7123585952627b480549e555fb30}\label{classstl_1_1copy__on__write_a78da7123585952627b480549e555fb30}} 
+constexpr T $\ast$ {\bfseries get\+\_\+data} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a41b91da055e78c3a2a687857ffc61a81}\label{classstl_1_1copy__on__write_a41b91da055e78c3a2a687857ffc61a81}} 
+constexpr const T $\ast$ {\bfseries get\+\_\+data} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a3b2027c34d7e5faaf3ab0359896490c3}\label{classstl_1_1copy__on__write_a3b2027c34d7e5faaf3ab0359896490c3}} 
+constexpr uint32\+\_\+t $\ast$ {\bfseries get\+\_\+refc\+\_\+ptr} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a9803eaab4f48c59268d24d2789c2355d}\label{classstl_1_1copy__on__write_a9803eaab4f48c59268d24d2789c2355d}} 
+constexpr uint32\+\_\+t $\ast$ {\bfseries get\+\_\+data\+\_\+size\+\_\+ptr} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a537986d15843fe645e23b5fc8b318778}\label{classstl_1_1copy__on__write_a537986d15843fe645e23b5fc8b318778}} 
+constexpr size\+\_\+t {\bfseries get\+\_\+alloc\+\_\+size} (size\+\_\+t n)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classstl_1_1copy__on__write_adedfb820d167c70ba16a64b2d01f09e7}{create\+\_\+copy}} ()
+\begin{DoxyCompactList}\small\item\em Create a copy of the buffer for our own use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstl_1_1copy__on__write_a3bbbc63ca764b718fed550f4994e857b}{ref}} ()
+\begin{DoxyCompactList}\small\item\em Add a reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstl_1_1copy__on__write_a1dfb13fcc4549953322bf5f4927982dd}{unref}} ()
+\begin{DoxyCompactList}\small\item\em Remove a reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a074428c98b8ad60b916ea8df5247a228}\label{classstl_1_1copy__on__write_a074428c98b8ad60b916ea8df5247a228}} 
+void {\bfseries create\+\_\+empty} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a39a31ddb4d94498ef0b3ded93bd6cb11}\label{classstl_1_1copy__on__write_a39a31ddb4d94498ef0b3ded93bd6cb11}} 
+T $\ast$ {\bfseries m\+\_\+ptr}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_ad4871b5647539853bfbe51e0d6d05193}\label{classstl_1_1copy__on__write_ad4871b5647539853bfbe51e0d6d05193}} 
+static constexpr size\+\_\+t {\bfseries REFCOUNT\+\_\+\+OFFSET} = 0
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a1421ed127b41e7851ee0062f40f43ca3}\label{classstl_1_1copy__on__write_a1421ed127b41e7851ee0062f40f43ca3}} 
+static constexpr size\+\_\+t {\bfseries SIZE\+\_\+\+OFFSET} = REFCOUNT\+\_\+\+OFFSET + 4
+\item 
+\mbox{\Hypertarget{classstl_1_1copy__on__write_a994a8ae36d886ca94af5f50d4af2e5fe}\label{classstl_1_1copy__on__write_a994a8ae36d886ca94af5f50d4af2e5fe}} 
+static constexpr size\+\_\+t {\bfseries DATA\+\_\+\+OFFSET} = SIZE\+\_\+\+OFFSET + 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class stl\+::copy\+\_\+on\+\_\+write$<$ T $>$}
+
+A template class that allows clients to ~\newline
+ use copy-\/on-\/write. Use \mbox{\hyperlink{classstl_1_1copy__on__write_a520862481863bb8fce12cbb99d3f79a0}{copy()}} to create your own copy. 
+
+Provide a Copy on Write buffer for clients
+
+When the copy constructor or copy assignment operator is used, the pointer to the other COWs buffer is used and it\textquotesingle{}s refcounter incremented
+
+Reference counters are stored inside the allocated buffer 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{0           32                 64    }
+\DoxyCodeLine{┌────────────┬───────────┬──────┐}
+\DoxyCodeLine{│  Ref Count │ Data Size │ Data │    }
+\DoxyCodeLine{└────────────┴───────────┴──────┘}
+
+\end{DoxyCode}
+
+
+When a copy occurs\+:
+\begin{DoxyEnumerate}
+\item Create a new buffer and copy the existing buffer\textquotesingle{}s data into it.
+\item Decrement the old buffer\textquotesingle{}s ref count
+\item Set the new buffer\textquotesingle{}s ref count to 1
+\item Set the current buffer to the new buffer ~\newline
+
+\end{DoxyEnumerate}
+
+The function \+\_\+\+\_\+copy\+\_\+on\+\_\+write will ensure that we do own our own copy 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstl_1_1copy__on__write_adedfb820d167c70ba16a64b2d01f09e7}\label{classstl_1_1copy__on__write_adedfb820d167c70ba16a64b2d01f09e7}} 
+\index{stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}!create\_copy@{create\_copy}}
+\index{create\_copy@{create\_copy}!stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{create\_copy()}{create\_copy()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+uint32\+\_\+t \mbox{\hyperlink{classstl_1_1copy__on__write}{stl\+::copy\+\_\+on\+\_\+write}}$<$ T $>$\+::create\+\_\+copy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Create a copy of the buffer for our own use. 
+
+This will automatically occur when any non-\/const functions are called
+
+If the buffer is empty or the reference count is less than 2, nothing will happen \mbox{\Hypertarget{classstl_1_1copy__on__write_a3bbbc63ca764b718fed550f4994e857b}\label{classstl_1_1copy__on__write_a3bbbc63ca764b718fed550f4994e857b}} 
+\index{stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}!ref@{ref}}
+\index{ref@{ref}!stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classstl_1_1copy__on__write}{stl\+::copy\+\_\+on\+\_\+write}}$<$ T $>$\+::ref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Add a reference. 
+
+This is called during any of the rule of 5 \mbox{\Hypertarget{classstl_1_1copy__on__write_abc85d7f89e5fa038748125c016517e15}\label{classstl_1_1copy__on__write_abc85d7f89e5fa038748125c016517e15}} 
+\index{stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classstl_1_1copy__on__write}{stl\+::copy\+\_\+on\+\_\+write}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Resize the buffer. 
+
+This will create a new copy \mbox{\Hypertarget{classstl_1_1copy__on__write_a1dfb13fcc4549953322bf5f4927982dd}\label{classstl_1_1copy__on__write_a1dfb13fcc4549953322bf5f4927982dd}} 
+\index{stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}!unref@{unref}}
+\index{unref@{unref}!stl::copy\_on\_write$<$ T $>$@{stl::copy\_on\_write$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{unref()}{unref()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classstl_1_1copy__on__write}{stl\+::copy\+\_\+on\+\_\+write}}$<$ T $>$\+::unref\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Remove a reference. 
+
+Happens during destruction
+
+If the reference count is 0 after removal, the data is free-\/ed 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/copy\+\_\+on\+\_\+write.\+h\end{DoxyCompactItemize}

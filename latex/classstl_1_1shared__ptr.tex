@@ -1,0 +1,102 @@
+\hypertarget{classstl_1_1shared__ptr}{}\doxysection{stl\+::shared\+\_\+ptr$<$ T $>$ Class Template Reference}
+\label{classstl_1_1shared__ptr}\index{stl::shared\_ptr$<$ T $>$@{stl::shared\_ptr$<$ T $>$}}
+
+
+Generic Shared Pointer class.  
+
+
+
+
+{\ttfamily \#include $<$smart\+\_\+ptr.\+h$>$}
+
+
+
+Collaboration diagram for stl\+::shared\+\_\+ptr$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classstl_1_1shared__ptr__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a4db4dd28640fb13451042b7a79cfa529}\label{classstl_1_1shared__ptr_a4db4dd28640fb13451042b7a79cfa529}} 
+{\footnotesize template$<$class U $>$ }\\{\bfseries shared\+\_\+ptr} (U $\ast$\+\_\+new)
+\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_aed0409747ae70a0f9e1922660bc02602}\label{classstl_1_1shared__ptr_aed0409747ae70a0f9e1922660bc02602}} 
+{\bfseries shared\+\_\+ptr} (const \mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}} \&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a6a10e6846562353e7c70f8b9391a34c1}\label{classstl_1_1shared__ptr_a6a10e6846562353e7c70f8b9391a34c1}} 
+\mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}} \& {\bfseries operator=} (const \mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}} \&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_ab2622ff8912e4ecf7b16007ee49ae658}\label{classstl_1_1shared__ptr_ab2622ff8912e4ecf7b16007ee49ae658}} 
+\mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}} \&\&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a938c656379266d8968cfd32247cdc48c}\label{classstl_1_1shared__ptr_a938c656379266d8968cfd32247cdc48c}} 
+T $\ast$ \mbox{\hyperlink{classstl_1_1shared__ptr_a938c656379266d8968cfd32247cdc48c}{operator-\/$>$}} ()
+\begin{DoxyCompactList}\small\item\em get the pointer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a939b02a694bb537a3e22d00f356825d1}\label{classstl_1_1shared__ptr_a939b02a694bb537a3e22d00f356825d1}} 
+T \& \mbox{\hyperlink{classstl_1_1shared__ptr_a939b02a694bb537a3e22d00f356825d1}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em dereference the pointer \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_ad9393b4919357361a8f53b1a58cd2adc}\label{classstl_1_1shared__ptr_ad9393b4919357361a8f53b1a58cd2adc}} 
+{\footnotesize template$<$class U $>$ }\\\mbox{\hyperlink{classstl_1_1shared__ptr_ad9393b4919357361a8f53b1a58cd2adc}{shared\+\_\+ptr}} (const \mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}}$<$ U $>$ \&other, std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+convertible\+\_\+v$<$ U $\ast$, T $\ast$ $>$, int $>$=0)
+\begin{DoxyCompactList}\small\item\em Convert between a convertable type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_ae0be7d7ec3182599eb13b5bee411c181}\label{classstl_1_1shared__ptr_ae0be7d7ec3182599eb13b5bee411c181}} 
+{\footnotesize template$<$class U $>$ }\\\mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}}$<$ U $>$ \mbox{\hyperlink{classstl_1_1shared__ptr_ae0be7d7ec3182599eb13b5bee411c181}{static\+\_\+pointer\+\_\+cast}} ()
+\begin{DoxyCompactList}\small\item\em Convert between parent and child types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a8ade2a8cc79b95df08f48e53b2f8f717}\label{classstl_1_1shared__ptr_a8ade2a8cc79b95df08f48e53b2f8f717}} 
+bool {\bfseries is\+Same} (const \mbox{\hyperlink{classstl_1_1shared__ptr}{shared\+\_\+ptr}} \&other)
+\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a2c4a7ed755b846fdef7f10e0c8be7db4}\label{classstl_1_1shared__ptr_a2c4a7ed755b846fdef7f10e0c8be7db4}} 
+bool {\bfseries is\+Valid} ()
+\item 
+void \mbox{\hyperlink{classstl_1_1shared__ptr_ad75637b63457bab5d98205a2d04e35f2}{release}} ()
+\begin{DoxyCompactList}\small\item\em Release the pointer because we are done with it This is automatically called from our destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a414ddca5d02ae7c26d35dd1b464c56f9}\label{classstl_1_1shared__ptr_a414ddca5d02ae7c26d35dd1b464c56f9}} 
+uint32\+\_\+t {\bfseries reference\+\_\+count} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1shared__ptr_a47104bd90e9ac2656ca6a392e4e1017d}\label{classstl_1_1shared__ptr_a47104bd90e9ac2656ca6a392e4e1017d}} 
+\mbox{\hyperlink{structstl_1_1RefCountContainer}{Ref\+Count\+Container}} $\ast$ {\bfseries \+\_\+int\+\_\+store}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class stl\+::shared\+\_\+ptr$<$ T $>$}
+
+Generic Shared Pointer class. 
+
+create via simula24\+::make\+\_\+shared $<$\+Your\+Type$>$(Your\+Args...);
+
+This is a reference counted Smart Pointer. It will use a structure called \mbox{\hyperlink{structstl_1_1RefCountContainer}{Ref\+Count\+Container}} to hold the pointer and it\textquotesingle{}s reference count
+
+Copying this class will simply increase the reference count Moving this class will NOT
+
+During destruction, this class will try to release itself
+\begin{DoxyEnumerate}
+\item if the reference count is 1, we are the owner\+: destroy the data
+\item otherwise, decrement the refcount 
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstl_1_1shared__ptr_ad75637b63457bab5d98205a2d04e35f2}\label{classstl_1_1shared__ptr_ad75637b63457bab5d98205a2d04e35f2}} 
+\index{stl::shared\_ptr$<$ T $>$@{stl::shared\_ptr$<$ T $>$}!release@{release}}
+\index{release@{release}!stl::shared\_ptr$<$ T $>$@{stl::shared\_ptr$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classstl_1_1shared__ptr}{stl\+::shared\+\_\+ptr}}$<$ T $>$\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Release the pointer because we are done with it This is automatically called from our destructor. 
+
+This will decrease the reference count or if it is 0, it will destroy/free the resource 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/smart\+\_\+ptr.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\hypertarget{structstl_1_1RefCountContainer}{}\doxysection{stl\+::Ref\+Count\+Container Struct Reference}
+\label{structstl_1_1RefCountContainer}\index{stl::RefCountContainer@{stl::RefCountContainer}}
+
+
+A simple container for holding a pointer and ~\newline
+ the number of shared\+\_\+ptrs referencing it.  
+
+
+
+
+{\ttfamily \#include $<$smart\+\_\+ptr.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstl_1_1RefCountContainer_ab0b2ab2e15ee8165c124abadeb36ad7e}\label{structstl_1_1RefCountContainer_ab0b2ab2e15ee8165c124abadeb36ad7e}} 
+void $\ast$ {\bfseries \+\_\+ptr}
+\item 
+\mbox{\Hypertarget{structstl_1_1RefCountContainer_a4e1358f4524fdf750e5b8de6ddb5f372}\label{structstl_1_1RefCountContainer_a4e1358f4524fdf750e5b8de6ddb5f372}} 
+uint32\+\_\+t {\bfseries \+\_\+refcount}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple container for holding a pointer and ~\newline
+ the number of shared\+\_\+ptrs referencing it. 
+
+void$\ast$ is for type erasure such that this structure can be shared between shared\+\_\+ptrs with convertable types or base-\/derived types 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/smart\+\_\+ptr.\+h\end{DoxyCompactItemize}

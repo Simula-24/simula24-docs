@@ -1,0 +1,91 @@
+\hypertarget{classsimula24_1_1FileSink}{}\doxysection{simula24\+::File\+Sink Class Reference}
+\label{classsimula24_1_1FileSink}\index{simula24::FileSink@{simula24::FileSink}}
+
+
+Write logs to a file.  
+
+
+
+
+{\ttfamily \#include $<$File\+Sink.\+h$>$}
+
+
+
+Inheritance diagram for simula24\+::File\+Sink\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classsimula24_1_1FileSink__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for simula24\+::File\+Sink\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classsimula24_1_1FileSink__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_ac8c3e95b9f84fc9dd20723319372a886}\label{classsimula24_1_1FileSink_ac8c3e95b9f84fc9dd20723319372a886}} 
+{\bfseries File\+Sink} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&filename, int flush\+Rate=DEFAULT\+\_\+\+FLUSH\+\_\+\+RATE)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_abf3455469b80cd4b36211edaad18dd5e}\label{classsimula24_1_1FileSink_abf3455469b80cd4b36211edaad18dd5e}} 
+{\bfseries File\+Sink} (const char $\ast$filename, int flush\+Rate=DEFAULT\+\_\+\+FLUSH\+\_\+\+RATE)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_ad2818c9f78f5784cb695efd7436017d5}\label{classsimula24_1_1FileSink_ad2818c9f78f5784cb695efd7436017d5}} 
+bool {\bfseries supports\+Color} () override
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_acaf7d83beb5c9e7f7a5b4e1048cff3c9}\label{classsimula24_1_1FileSink_acaf7d83beb5c9e7f7a5b4e1048cff3c9}} 
+void {\bfseries log} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&msg) override
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_a77d2bae1e293c71f31df4059796f4daa}\label{classsimula24_1_1FileSink_a77d2bae1e293c71f31df4059796f4daa}} 
+void {\bfseries flush} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_a4005f690127fba4267762c14791228dc}\label{classsimula24_1_1FileSink_a4005f690127fba4267762c14791228dc}} 
+static constexpr int {\bfseries DEFAULT\+\_\+\+FLUSH\+\_\+\+RATE} = 10
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_af80ecc5f77965e1e7ae46229b0e6a148}\label{classsimula24_1_1FileSink_af80ecc5f77965e1e7ae46229b0e6a148}} 
+bool {\bfseries open\+File} (const char $\ast$name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_af29d547138f5a6664a3fd0d69c0a7f18}\label{classsimula24_1_1FileSink_af29d547138f5a6664a3fd0d69c0a7f18}} 
+int {\bfseries m\+\_\+flush\+Rate}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_a0891822ab0258386720d9d292a919f47}\label{classsimula24_1_1FileSink_a0891822ab0258386720d9d292a919f47}} 
+int {\bfseries m\+\_\+cur\+Flush\+Interval}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_a55c4d79e822cace0bc4b904d3905ff78}\label{classsimula24_1_1FileSink_a55c4d79e822cace0bc4b904d3905ff78}} 
+FILE $\ast$ {\bfseries m\+\_\+out}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1FileSink_a3300e052ebcb837d4fd8ab3f0ccfc6d4}\label{classsimula24_1_1FileSink_a3300e052ebcb837d4fd8ab3f0ccfc6d4}} 
+\mbox{\hyperlink{classstl_1_1array}{stl\+::array}}$<$ \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} $>$ {\bfseries m\+\_\+log\+Cache}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Write logs to a file. 
+
+This will write logs to a file every {\itshape n} logs sent to it This works by using an internal cache of recent logs (m\+\_\+log\+Cache)
+
+You can configure this in the constructor by setting the {\ttfamily flush\+Rate} parameter
+
+Any remaining logs will automatically be flushed during destruction 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/log/sink/File\+Sink.\+h\item 
+simula24/core/log/sink/File\+Sink.\+cpp\end{DoxyCompactItemize}

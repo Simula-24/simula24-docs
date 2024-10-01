@@ -1,0 +1,158 @@
+\hypertarget{classsimula24_1_1Logger}{}\doxysection{simula24\+::Logger Class Reference}
+\label{classsimula24_1_1Logger}\index{simula24::Logger@{simula24::Logger}}
+
+
+Logging Class.  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+
+
+Collaboration diagram for simula24\+::Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classsimula24_1_1Logger__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a9db3cf97f0a94fb7831d7378cc44a64e}\label{classsimula24_1_1Logger_a9db3cf97f0a94fb7831d7378cc44a64e}} 
+\mbox{\hyperlink{classsimula24_1_1Logger_a9db3cf97f0a94fb7831d7378cc44a64e}{Logger}} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&name)
+\begin{DoxyCompactList}\small\item\em the init-\/list code duplication IS necessary otherwise set\+Sink will NOT work. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a159f290dd35c6731133c83118aca16d7}\label{classsimula24_1_1Logger_a159f290dd35c6731133c83118aca16d7}} 
+{\bfseries Logger} (const char $\ast$name)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a8b6d5f354011a911ee54ac62d75cc274}\label{classsimula24_1_1Logger_a8b6d5f354011a911ee54ac62d75cc274}} 
+{\bfseries Logger} (const \mbox{\hyperlink{classsimula24_1_1Logger}{Logger}} \&)=default
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a945c96d80ed52da95d39c3a017783e13}\label{classsimula24_1_1Logger_a945c96d80ed52da95d39c3a017783e13}} 
+\mbox{\hyperlink{classsimula24_1_1Logger}{Logger}} \& {\bfseries operator=} (const \mbox{\hyperlink{classsimula24_1_1Logger}{Logger}} \&)=default
+\item 
+void \mbox{\hyperlink{classsimula24_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}{log}} (Log\+Level ll, const char $\ast$msg,...)
+\begin{DoxyCompactList}\small\item\em Log to the \mbox{\hyperlink{classsimula24_1_1BaseSink}{Base\+Sink}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a890397fb00cf5f88cb2d80789b6eb22c}\label{classsimula24_1_1Logger_a890397fb00cf5f88cb2d80789b6eb22c}} 
+void \mbox{\hyperlink{classsimula24_1_1Logger_a890397fb00cf5f88cb2d80789b6eb22c}{log\+Memory\+Section}} (const void $\ast$start, int length, const char $\ast$msg,...)
+\begin{DoxyCompactList}\small\item\em Log a section of memory from start to start + length This does NOT detect if you are reading from an area of memory that has been freed or does not belong to you. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_aee477533c4857be15cf42dafd9c526e8}\label{classsimula24_1_1Logger_aee477533c4857be15cf42dafd9c526e8}} 
+void {\bfseries set\+Log\+Filter} (Log\+Level ll)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_aacfda9e44acf6929ab6632fde9ec8ac2}\label{classsimula24_1_1Logger_aacfda9e44acf6929ab6632fde9ec8ac2}} 
+{\footnotesize template$<$class Sink\+Type $>$ }\\void \mbox{\hyperlink{classsimula24_1_1Logger_aacfda9e44acf6929ab6632fde9ec8ac2}{set\+Sink}} ()
+\begin{DoxyCompactList}\small\item\em Set the output system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a49d0285ca10b9c3029915aebdac9998c}\label{classsimula24_1_1Logger_a49d0285ca10b9c3029915aebdac9998c}} 
+{\footnotesize template$<$class Sink\+Type , class... Construction\+Args$>$ }\\void \mbox{\hyperlink{classsimula24_1_1Logger_a49d0285ca10b9c3029915aebdac9998c}{set\+Sink}} (Construction\+Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Set the output system and pass Construction\+Args to its constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_adfc3baa5884e68ed574cbc079d7babad}\label{classsimula24_1_1Logger_adfc3baa5884e68ed574cbc079d7babad}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classsimula24_1_1Logger_adfc3baa5884e68ed574cbc079d7babad}{debug}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+DEBUG \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a6c347929759f3fb5b9dad7e200e13a3c}\label{classsimula24_1_1Logger_a6c347929759f3fb5b9dad7e200e13a3c}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classsimula24_1_1Logger_a6c347929759f3fb5b9dad7e200e13a3c}{info}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+INFO \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_aa9ca23cdcd30e88e3c8337fc2506028e}\label{classsimula24_1_1Logger_aa9ca23cdcd30e88e3c8337fc2506028e}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classsimula24_1_1Logger_aa9ca23cdcd30e88e3c8337fc2506028e}{warning}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+WARNING \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a868023ba3fd575aa1d8d56bb99f678ed}\label{classsimula24_1_1Logger_a868023ba3fd575aa1d8d56bb99f678ed}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classsimula24_1_1Logger_a868023ba3fd575aa1d8d56bb99f678ed}{error}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+ERROR \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a55e362f0009a21677dfc70f9a30a882e}\label{classsimula24_1_1Logger_a55e362f0009a21677dfc70f9a30a882e}} 
+{\footnotesize template$<$class... Args$>$ }\\constexpr void \mbox{\hyperlink{classsimula24_1_1Logger_a55e362f0009a21677dfc70f9a30a882e}{critical}} (const char $\ast$message, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em fwds to Log with Log\+Level\+::\+CRITICAL \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_abbb3951f374ae347fc5ec7c223de9ca3}\label{classsimula24_1_1Logger_abbb3951f374ae347fc5ec7c223de9ca3}} 
+{\footnotesize template$<$class Sink\+Type $>$ }\\static \mbox{\hyperlink{classsimula24_1_1Logger}{Logger}} \mbox{\hyperlink{classsimula24_1_1Logger_abbb3951f374ae347fc5ec7c223de9ca3}{create\+Logger}} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&name) requires(std
+\begin{DoxyCompactList}\small\item\em Construct a logger with a sink. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a8503918a7af4154896204c7e3c6c783d}\label{classsimula24_1_1Logger_a8503918a7af4154896204c7e3c6c783d}} 
+{\footnotesize template$<$class Sink\+Type , class... Construction\+Args$>$ }\\static \mbox{\hyperlink{classsimula24_1_1Logger}{Logger}} \mbox{\hyperlink{classsimula24_1_1Logger_a8503918a7af4154896204c7e3c6c783d}{create\+Logger}} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&name, Construction\+Args \&\&... args) requires(std
+\begin{DoxyCompactList}\small\item\em Construct a logger with a sink and pass arguments to the sink\textquotesingle{}s constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a0c79e767632e907606164b4d4a4a6243}\label{classsimula24_1_1Logger_a0c79e767632e907606164b4d4a4a6243}} 
+void \mbox{\hyperlink{classsimula24_1_1Logger_a0c79e767632e907606164b4d4a4a6243}{write\+Meta\+Data}} (\mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&output)
+\begin{DoxyCompactList}\small\item\em Add current time + logger name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a4c740b2e50eacaf8aea0459ac2df7b8d}\label{classsimula24_1_1Logger_a4c740b2e50eacaf8aea0459ac2df7b8d}} 
+void \mbox{\hyperlink{classsimula24_1_1Logger_a4c740b2e50eacaf8aea0459ac2df7b8d}{write\+Log\+Level}} (Log\+Level ll, \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&output)
+\begin{DoxyCompactList}\small\item\em write the log level (in color if supported, see Base\+Sink\+::supports\+Color()) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a7833a45dc5ca3cdeefc0e2775fd1e7cb}\label{classsimula24_1_1Logger_a7833a45dc5ca3cdeefc0e2775fd1e7cb}} 
+void \mbox{\hyperlink{classsimula24_1_1Logger_a7833a45dc5ca3cdeefc0e2775fd1e7cb}{write\+User\+Message}} (\mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&output, const char $\ast$message, va\+\_\+list args)
+\begin{DoxyCompactList}\small\item\em Add the users formatted arguments to the output, uses vsnprintf. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a4b0de5379315e481bbf17360100b4322}\label{classsimula24_1_1Logger_a4b0de5379315e481bbf17360100b4322}} 
+\mbox{\hyperlink{classsimula24_1_1BaseSink}{Base\+Sink}} $\ast$ {\bfseries m\+\_\+sink}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_accdb1411d4711d9cce4f92af55027f8c}\label{classsimula24_1_1Logger_accdb1411d4711d9cce4f92af55027f8c}} 
+\mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} {\bfseries m\+\_\+name}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1Logger_a5ff84350776126f1eecc28ad2676ba9c}\label{classsimula24_1_1Logger_a5ff84350776126f1eecc28ad2676ba9c}} 
+Log\+Level {\bfseries m\+\_\+lowest\+Level}
+\item 
+const char $\ast$ {\bfseries m\+\_\+color\+Map} \mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logging Class. 
+
+The \mbox{\hyperlink{classsimula24_1_1Logger}{Logger}} class is responsible for constructing output
+
+Output of the logs is delegated to an BaseS
+
+\mbox{\hyperlink{classsimula24_1_1Logger_aacfda9e44acf6929ab6632fde9ec8ac2}{Logger\+::set\+Sink$<$\+Type$>$()}} creates a new output system
+
+Logger\+::set\+Sink$<$\+Type$>$(\+Construction\+Args\&\&...) creates a new output system and passes args... to its constructor
+
+\mbox{\hyperlink{classsimula24_1_1Logger_a6c347929759f3fb5b9dad7e200e13a3c}{Logger\+::info}}, \mbox{\hyperlink{classsimula24_1_1Logger_adfc3baa5884e68ed574cbc079d7babad}{Logger\+::debug}}, etc. are wrappers around \mbox{\hyperlink{classsimula24_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}{Logger\+::log}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsimula24_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}\label{classsimula24_1_1Logger_acb22c820855d22a709bbb93d123b9ab6}} 
+\index{simula24::Logger@{simula24::Logger}!log@{log}}
+\index{log@{log}!simula24::Logger@{simula24::Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Logger\+::log (\begin{DoxyParamCaption}\item[{Log\+Level}]{ll,  }\item[{const char $\ast$}]{msg,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Log to the \mbox{\hyperlink{classsimula24_1_1BaseSink}{Base\+Sink}}. 
+
+
+\begin{DoxyEnumerate}
+\item Log with Log\+Level ll
+\item Construct a log based on msg and args
+\item Forward constructed log to the output system 
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsimula24_1_1Logger_a6f7e6a03d00b228a90bb32cd2b5bdcb8}\label{classsimula24_1_1Logger_a6f7e6a03d00b228a90bb32cd2b5bdcb8}} 
+\index{simula24::Logger@{simula24::Logger}!m\_colorMap@{m\_colorMap}}
+\index{m\_colorMap@{m\_colorMap}!simula24::Logger@{simula24::Logger}}
+\doxysubsubsection{\texorpdfstring{m\_colorMap}{m\_colorMap}}
+{\footnotesize\ttfamily const char$\ast$ simula24\+::\+Logger\+::m\+\_\+color\+Map\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \{Colors::GREEN\}, }
+\DoxyCodeLine{        \{Colors::GREEN\}, }
+\DoxyCodeLine{        \{Colors::YELLOW\},}
+\DoxyCodeLine{        \{Colors::RED\},   }
+\DoxyCodeLine{        \{Colors::RED\}    }
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/log/log.\+h\item 
+simula24/core/log/log.\+cpp\end{DoxyCompactItemize}

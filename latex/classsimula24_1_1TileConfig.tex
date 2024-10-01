@@ -1,0 +1,88 @@
+\hypertarget{classsimula24_1_1TileConfig}{}\doxysection{simula24\+::Tile\+Config Class Reference}
+\label{classsimula24_1_1TileConfig}\index{simula24::TileConfig@{simula24::TileConfig}}
+
+
+Handles parsing of a tile sheet + its config.  
+
+
+
+
+{\ttfamily \#include $<$Tile\+Config.\+h$>$}
+
+
+
+Collaboration diagram for simula24\+::Tile\+Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classsimula24_1_1TileConfig__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a914369f90490eb6801e87252e3b2c342}\label{classsimula24_1_1TileConfig_a914369f90490eb6801e87252e3b2c342}} 
+using {\bfseries Tile\+Cfg\+Iter} = \mbox{\hyperlink{classstl_1_1array}{stl\+::array}}$<$ \mbox{\hyperlink{structsimula24_1_1TileSheetConfig}{Tile\+Sheet\+Config}} $>$\+::iterator
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a276b63a158c091f8f3aaf32659a27617}\label{classsimula24_1_1TileConfig_a276b63a158c091f8f3aaf32659a27617}} 
+using {\bfseries CTile\+Cfg\+Iter} = \mbox{\hyperlink{classstl_1_1array}{stl\+::array}}$<$ \mbox{\hyperlink{structsimula24_1_1TileSheetConfig}{Tile\+Sheet\+Config}} $>$\+::const\+\_\+iterator
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a31436a74c8aba64c2def9dbf8c118452}\label{classsimula24_1_1TileConfig_a31436a74c8aba64c2def9dbf8c118452}} 
+Status \mbox{\hyperlink{classsimula24_1_1TileConfig_a31436a74c8aba64c2def9dbf8c118452}{load}} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&config\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Load and parse a config file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a15af3d472900b9b8eefcf2ff1788302b}\label{classsimula24_1_1TileConfig_a15af3d472900b9b8eefcf2ff1788302b}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{Tile\+Cfg\+Iter}} {\bfseries get\+Config\+Iter\+Begin} ()
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a205ce6b28b56510f3d9a36fdb6c41410}\label{classsimula24_1_1TileConfig_a205ce6b28b56510f3d9a36fdb6c41410}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{Tile\+Cfg\+Iter}} {\bfseries get\+Config\+Iter\+End} ()
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a8ae8689ebac334a6eeb09bdaeca8b5a9}\label{classsimula24_1_1TileConfig_a8ae8689ebac334a6eeb09bdaeca8b5a9}} 
+\mbox{\hyperlink{structstl_1_1generic__const__iterator}{CTile\+Cfg\+Iter}} {\bfseries get\+CConfig\+Iter\+Begin} () const
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a9299736c043c1562cb0122a0eadf0019}\label{classsimula24_1_1TileConfig_a9299736c043c1562cb0122a0eadf0019}} 
+\mbox{\hyperlink{structstl_1_1generic__const__iterator}{CTile\+Cfg\+Iter}} {\bfseries get\+CConfig\+Iter\+End} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_aceb32a8206d38a43ac6f41be11371467}\label{classsimula24_1_1TileConfig_aceb32a8206d38a43ac6f41be11371467}} 
+bool \mbox{\hyperlink{classsimula24_1_1TileConfig_aceb32a8206d38a43ac6f41be11371467}{extract\+Dimensions}} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&source, int \&w\+\_\+out, int \&h\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Extract the width and height using this format\+: $<$h$>$x$<$w$>$ or $<$h$>$X$<$w$>$ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsimula24_1_1TileConfig_abed7d4a10064d6b50350176b7b5f693d}{parse\+Config}} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&cfg)
+\begin{DoxyCompactList}\small\item\em Parse the configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_a0065a3c6804875869690b5d60a91d60f}\label{classsimula24_1_1TileConfig_a0065a3c6804875869690b5d60a91d60f}} 
+\mbox{\hyperlink{classstl_1_1array}{stl\+::array}}$<$ \mbox{\hyperlink{structsimula24_1_1TileSheetConfig}{Tile\+Sheet\+Config}} $>$ {\bfseries m\+\_\+sheet\+Configs}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles parsing of a tile sheet + its config. 
+
+NOTE\+: we might need a texture manager class due to how SDL\+\_\+\+Renderer is shared/used 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsimula24_1_1TileConfig_abed7d4a10064d6b50350176b7b5f693d}\label{classsimula24_1_1TileConfig_abed7d4a10064d6b50350176b7b5f693d}} 
+\index{simula24::TileConfig@{simula24::TileConfig}!parseConfig@{parseConfig}}
+\index{parseConfig@{parseConfig}!simula24::TileConfig@{simula24::TileConfig}}
+\doxysubsubsection{\texorpdfstring{parseConfig()}{parseConfig()}}
+{\footnotesize\ttfamily bool Tile\+Config\+::parse\+Config (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&}]{cfg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Parse the configuration file. 
+
+Essentially we are taking something like key=value Finding the position of \textquotesingle{}=\textquotesingle{} and \textquotesingle{}~\newline
+\textquotesingle{} And extracting both using substrings key=value~\newline
+pos$\sim$$\sim$$^\wedge$ $^\wedge$ $^\wedge$$\sim$$\sim$nextnl \textbackslash{} nexteq
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/game/tile/Tile\+Config.\+h\item 
+simula24/game/tile/Tile\+Config.\+cpp\end{DoxyCompactItemize}

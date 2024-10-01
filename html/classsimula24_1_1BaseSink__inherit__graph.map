@@ -1,0 +1,5 @@
+<map id="simula24::BaseSink" name="simula24::BaseSink">
+<area shape="rect" id="node1" title="Base class for logging strategies." alt="" coords="105,5,255,32"/>
+<area shape="rect" id="node2" href="$classsimula24_1_1ConsoleSink.html" title="Sink that prints logs to stderr." alt="" coords="5,80,176,107"/>
+<area shape="rect" id="node3" href="$classsimula24_1_1FileSink.html" title="Write logs to a file." alt="" coords="200,80,341,107"/>
+</map>

@@ -1,0 +1,110 @@
+\hypertarget{classstl_1_1array}{}\doxysection{stl\+::array$<$ T $>$ Class Template Reference}
+\label{classstl_1_1array}\index{stl::array$<$ T $>$@{stl::array$<$ T $>$}}
+
+
+array to hold T data  
+
+
+
+
+{\ttfamily \#include $<$array.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a63ab3441c5a36cbbb3f8c7754f56056d}\label{classstl_1_1array_a63ab3441c5a36cbbb3f8c7754f56056d}} 
+using {\bfseries const\+\_\+iterator} = \mbox{\hyperlink{structstl_1_1generic__const__iterator}{stl\+::generic\+\_\+const\+\_\+iterator}}$<$ T $>$
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a6c1cfb2334467c7f84b62d8000be1c00}\label{classstl_1_1array_a6c1cfb2334467c7f84b62d8000be1c00}} 
+using {\bfseries iterator} = \mbox{\hyperlink{structstl_1_1generic__iterator}{stl\+::generic\+\_\+iterator}}$<$ T $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a1296179fc00de70216733e2fa0a4f436}\label{classstl_1_1array_a1296179fc00de70216733e2fa0a4f436}} 
+void {\bfseries resize} (size\+\_\+t n)
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a951f3f82080cb8496851d05a57130afe}\label{classstl_1_1array_a951f3f82080cb8496851d05a57130afe}} 
+void \mbox{\hyperlink{classstl_1_1array_a951f3f82080cb8496851d05a57130afe}{fill}} (T value)
+\begin{DoxyCompactList}\small\item\em Fill with T. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1array_acb4328aaecb4e2519d65f1716d835af5}\label{classstl_1_1array_acb4328aaecb4e2519d65f1716d835af5}} 
+void {\bfseries fill\+\_\+remaining} (T value)
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a784e50b564727b07666fa802edd200b5}\label{classstl_1_1array_a784e50b564727b07666fa802edd200b5}} 
+void {\bfseries push\+\_\+back} (const T \&value)
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a023cb56bde95d1b8cb63093f674ee503}\label{classstl_1_1array_a023cb56bde95d1b8cb63093f674ee503}} 
+void {\bfseries push\+\_\+back} (T \&\&value)
+\item 
+\mbox{\Hypertarget{classstl_1_1array_aaa26e90128d51a4a5418f69b843e7891}\label{classstl_1_1array_aaa26e90128d51a4a5418f69b843e7891}} 
+void {\bfseries pop\+\_\+back} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a8bc44b21650ebaad67e82baedf59aa59}\label{classstl_1_1array_a8bc44b21650ebaad67e82baedf59aa59}} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index)
+\item 
+\mbox{\Hypertarget{classstl_1_1array_af32b96a5f3d43bbf6e51a70603ebab72}\label{classstl_1_1array_af32b96a5f3d43bbf6e51a70603ebab72}} 
+const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a4ad3ef7bf9460deb9bf508ad24928490}\label{classstl_1_1array_a4ad3ef7bf9460deb9bf508ad24928490}} 
+bool {\bfseries contains} (const T \&value) const
+\item 
+\mbox{\Hypertarget{classstl_1_1array_ae4b6351dba59aaf37ab3a840a3b0e818}\label{classstl_1_1array_ae4b6351dba59aaf37ab3a840a3b0e818}} 
+constexpr size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a31132f7a4c284f791ee93eadaa1929e1}\label{classstl_1_1array_a31132f7a4c284f791ee93eadaa1929e1}} 
+constexpr size\+\_\+t {\bfseries max\+\_\+size} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a98e25c9fed6e57054f894608e0e7e4f0}\label{classstl_1_1array_a98e25c9fed6e57054f894608e0e7e4f0}} 
+constexpr const T \& {\bfseries front} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a3fe301fbf770ae129f6255a58147e392}\label{classstl_1_1array_a3fe301fbf770ae129f6255a58147e392}} 
+constexpr const T \& {\bfseries back} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a42ea975ccc2d15e2799c5a33e81c4d80}\label{classstl_1_1array_a42ea975ccc2d15e2799c5a33e81c4d80}} 
+constexpr T \& {\bfseries front} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1array_aecbdef584a3e62614286d0fb26dc549c}\label{classstl_1_1array_aecbdef584a3e62614286d0fb26dc549c}} 
+constexpr T \& {\bfseries back} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1array_aaaba1d2093846ea91ef1f3667c3d9b57}\label{classstl_1_1array_aaaba1d2093846ea91ef1f3667c3d9b57}} 
+constexpr \mbox{\hyperlink{structstl_1_1generic__iterator}{iterator}} {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a13bd38d0b88126f6cf6bd2197a24d32c}\label{classstl_1_1array_a13bd38d0b88126f6cf6bd2197a24d32c}} 
+constexpr \mbox{\hyperlink{structstl_1_1generic__iterator}{iterator}} {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a95a18e1acc69785d9972c9dcc5717433}\label{classstl_1_1array_a95a18e1acc69785d9972c9dcc5717433}} 
+constexpr \mbox{\hyperlink{structstl_1_1generic__const__iterator}{const\+\_\+iterator}} {\bfseries cbegin} () const
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a570fc76820c9f62f946584b4f058a9b6}\label{classstl_1_1array_a570fc76820c9f62f946584b4f058a9b6}} 
+constexpr \mbox{\hyperlink{structstl_1_1generic__const__iterator}{const\+\_\+iterator}} {\bfseries cend} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1array_ab48291068b2879ee57163a14b72f5bfc}\label{classstl_1_1array_ab48291068b2879ee57163a14b72f5bfc}} 
+constexpr bool {\bfseries should\+\_\+resize} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstl_1_1array_a6a8bf109bf619a5b9824c35410d27754}\label{classstl_1_1array_a6a8bf109bf619a5b9824c35410d27754}} 
+\mbox{\hyperlink{classstl_1_1copy__on__write}{copy\+\_\+on\+\_\+write}}$<$ T $>$ \mbox{\hyperlink{classstl_1_1array_a6a8bf109bf619a5b9824c35410d27754}{m\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em Holds our data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstl_1_1array_afc70d141aee821c1fd4343d7a3163244}\label{classstl_1_1array_afc70d141aee821c1fd4343d7a3163244}} 
+size\+\_\+t \mbox{\hyperlink{classstl_1_1array_afc70d141aee821c1fd4343d7a3163244}{m\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em Pointer to last element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class stl\+::array$<$ T $>$}
+
+array to hold T data 
+
+This uses a COW buffer to hold the data
+
+elem\+\_\+ptr points to the last element in the buffer, as to reduce resizing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/array.\+h\end{DoxyCompactItemize}

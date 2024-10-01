@@ -1,0 +1,51 @@
+\hypertarget{classsimula24_1_1TileSheetParser}{}\doxysection{simula24\+::Tile\+Sheet\+Parser Class Reference}
+\label{classsimula24_1_1TileSheetParser}\index{simula24::TileSheetParser@{simula24::TileSheetParser}}
+
+
+Collaboration diagram for simula24\+::Tile\+Sheet\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsimula24_1_1TileSheetParser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_a3531d78cd7416ce5b1ddc74bd46beada}\label{classsimula24_1_1TileSheetParser_a3531d78cd7416ce5b1ddc74bd46beada}} 
+Status {\bfseries load\+Config} (const \mbox{\hyperlink{classstl_1_1basic__string}{stl\+::string}} \&name)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_a6d88840d04043ec47714c8b4eeaace0e}\label{classsimula24_1_1TileSheetParser_a6d88840d04043ec47714c8b4eeaace0e}} 
+\mbox{\hyperlink{classstl_1_1shared__ptr}{stl\+::shared\+\_\+ptr}}$<$ \mbox{\hyperlink{classsimula24_1_1TileSheet}{Tile\+Sheet}} $>$ {\bfseries get\+Next\+Sheet} ()
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_aea360d89472952607c3ce5af0b2274cf}\label{classsimula24_1_1TileSheetParser_aea360d89472952607c3ce5af0b2274cf}} 
+bool {\bfseries good} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_a59d62a299e49e978083fd839be19d5df}\label{classsimula24_1_1TileSheetParser_a59d62a299e49e978083fd839be19d5df}} 
+bool {\bfseries generate\+Tile\+Coordinates} (const \mbox{\hyperlink{structsimula24_1_1TileSheetConfig}{Tile\+Sheet\+Config}} \&tsc, \mbox{\hyperlink{classsimula24_1_1TileSheet}{Tile\+Sheet}} \&dest)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_a9a7df99609f342963f5de6d2673b197f}\label{classsimula24_1_1TileSheetParser_a9a7df99609f342963f5de6d2673b197f}} 
+\mbox{\hyperlink{classsimula24_1_1TileConfig}{Tile\+Config}} {\bfseries m\+\_\+tcfg}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_a691779e90ba373af8cd8a508e75278e8}\label{classsimula24_1_1TileSheetParser_a691779e90ba373af8cd8a508e75278e8}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{Tile\+Config\+::\+Tile\+Cfg\+Iter}} {\bfseries m\+\_\+cfg\+Iter}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_a096fd779c83534ca69744032e349b54b}\label{classsimula24_1_1TileSheetParser_a096fd779c83534ca69744032e349b54b}} 
+\mbox{\hyperlink{structstl_1_1generic__iterator}{Tile\+Config\+::\+Tile\+Cfg\+Iter}} {\bfseries m\+\_\+cfg\+Iter\+End}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheetParser_a8afc490e3bd78f2a301fe45bdeb0f3b0}\label{classsimula24_1_1TileSheetParser_a8afc490e3bd78f2a301fe45bdeb0f3b0}} 
+bool {\bfseries m\+\_\+is\+Good}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/game/tile/Tile\+Sheet\+Parser.\+h\item 
+simula24/game/tile/Tile\+Sheet\+Parser.\+cpp\end{DoxyCompactItemize}

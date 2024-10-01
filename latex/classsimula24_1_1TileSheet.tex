@@ -1,0 +1,56 @@
+\hypertarget{classsimula24_1_1TileSheet}{}\doxysection{simula24\+::Tile\+Sheet Class Reference}
+\label{classsimula24_1_1TileSheet}\index{simula24::TileSheet@{simula24::TileSheet}}
+
+
+Represents a single tilesheet.  
+
+
+
+
+{\ttfamily \#include $<$Tile\+Sheet.\+h$>$}
+
+
+
+Collaboration diagram for simula24\+::Tile\+Sheet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classsimula24_1_1TileSheet__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheet_ab849727b7323cae0e3e4494a86a9ed9d}\label{classsimula24_1_1TileSheet_ab849727b7323cae0e3e4494a86a9ed9d}} 
+const SDL\+\_\+\+Rect \& {\bfseries get\+Tile} (size\+\_\+t id) const
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheet_a821da061bd228fc7e8abdf019080c5d2}\label{classsimula24_1_1TileSheet_a821da061bd228fc7e8abdf019080c5d2}} 
+void {\bfseries add\+Tile} (const SDL\+\_\+\+Rect \&tile\+Loc)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheet_ac411ea361c03d8eb555192a20bd95e97}\label{classsimula24_1_1TileSheet_ac411ea361c03d8eb555192a20bd95e97}} 
+void {\bfseries set\+Texture} (SDL\+\_\+\+Texture $\ast$texture)
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheet_ab1c749b2ba17118fd441d43a28affae1}\label{classsimula24_1_1TileSheet_ab1c749b2ba17118fd441d43a28affae1}} 
+size\+\_\+t {\bfseries get\+Num\+Tiles} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheet_afc71485cb52de4509812a82b2a9398f5}\label{classsimula24_1_1TileSheet_afc71485cb52de4509812a82b2a9398f5}} 
+\mbox{\hyperlink{classstl_1_1array}{stl\+::array}}$<$ SDL\+\_\+\+Rect $>$ {\bfseries m\+\_\+tiles}
+\item 
+\mbox{\Hypertarget{classsimula24_1_1TileSheet_a009c92dbaf6564d5e82d275571395b10}\label{classsimula24_1_1TileSheet_a009c92dbaf6564d5e82d275571395b10}} 
+SDL\+\_\+\+Texture $\ast$ {\bfseries m\+\_\+sheet}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single tilesheet. 
+
+This class holds an array of rectangles, each referencing a part of the tilesheet 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simula24/game/tile/Tile\+Sheet.\+h\item 
+simula24/game/tile/Tile\+Sheet.\+cpp\end{DoxyCompactItemize}

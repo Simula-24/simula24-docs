@@ -1,0 +1,39 @@
+\hypertarget{structstl_1_1remove__reference}{}\doxysection{stl\+::remove\+\_\+reference$<$ T $>$ Struct Template Reference}
+\label{structstl_1_1remove__reference}\index{stl::remove\_reference$<$ T $>$@{stl::remove\_reference$<$ T $>$}}
+
+
+This was mostly copied from the STL because it has very little performance over head ( if any) and is really the best way to implement perfect forwarding and movement.  
+
+
+
+
+{\ttfamily \#include $<$utility.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structstl_1_1remove__reference_a457965408278eccce16e3976b6fc360e}\label{structstl_1_1remove__reference_a457965408278eccce16e3976b6fc360e}} 
+using {\bfseries type} = T
+\item 
+\mbox{\Hypertarget{structstl_1_1remove__reference_a0341d12d0c14717e0d0259d5a1584994}\label{structstl_1_1remove__reference_a0341d12d0c14717e0d0259d5a1584994}} 
+using {\bfseries const\+\_\+type} = const T
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+struct stl\+::remove\+\_\+reference$<$ T $>$}
+
+This was mostly copied from the STL because it has very little performance over head ( if any) and is really the best way to implement perfect forwarding and movement. 
+
+disable qualifier warning irrelavent in this case
+
+remove\+\_\+reference$<$\+T$>$\+::type will simply give you the type without the reference
+
+e.\+g. remove\+\_\+reference$<$const int\&$>$\+::type = int
+
+This first class exists so the following two can use template specialization 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+simula24/core/stl/utility.\+h\end{DoxyCompactItemize}
